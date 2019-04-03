@@ -37,14 +37,14 @@ $(function() {
 	// Bind to scroll
 	$(window).scroll(function(){
 		var fromTop = $(this).scrollTop()+topMenuHeight;
-		
+
 		var cur = scrollItems.map(function(){
 			if ($(this).offset().top < fromTop)
 			return this;
 		});
 		cur = cur[cur.length-1];
 		var id = cur && cur.length ? cur[0].id : "";
-		
+
 		if (lastId !== id) {
 			lastId = id;
 			menuItems
@@ -61,20 +61,26 @@ $(function() {
 	topMenuHeight = topMenu.outerHeight()+15,
 	menuItems = topMenu.find("a"),
 	scrollItems = menuItems.map(function(){
-		var item = $($(this).attr("href"));
+    var href = $(this).attr("href");
+
+	  if (!href.match(/^#/)) {
+	    return
+    }
+
+	  var item = $(href);
 		if (item.length) { return item; }
 	});
-	
+
 	$(window).scroll(function(){
 		var fromTop = $(this).scrollTop()+topMenuHeight;
-		
+
 		var cur = scrollItems.map(function(){
 			if ($(this).offset().top < fromTop)
 			return this;
 		});
 		cur = cur[cur.length-1];
 		var id = cur && cur.length ? cur[0].id : "";
-		
+
 		if (lastId !== id) {
 			lastId = id;
 			menuItems
@@ -104,6 +110,6 @@ $(function() {
 	/*---------------------------------------------------*/
 
 	$('input[placeholder], textarea[placeholder]').placeholder();
-	
+
 
 });
