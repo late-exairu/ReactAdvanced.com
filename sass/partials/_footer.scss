@@ -63,8 +63,13 @@
 }
 
 .f-logo{
+	a {
+		text-decoration: none;
+	}
+
+
 	display: flex;
-	
+
 	&:before{
 		content: '';
 		display: inline-block;

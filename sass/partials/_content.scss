@@ -2,7 +2,7 @@
 -----------------------------------------------------------------------------*/
 
 .content {
-	
+
 }
 
 
@@ -12,7 +12,7 @@
 	margin: 0 auto;
 	position: relative;
 	z-index: 1;
-	
+
 	&__link {
 		display: block;
 		height: 100%;
@@ -76,15 +76,15 @@
 			color: $clr-green;
 
 			&.w{
-				margin-right: -20px;
+				margin-right: 10px;
 
 				@include xs{
-					margin: 0 -16px 0 -15px;
+					margin: 0 3px 0 -15px;
 				}
 			}
 
 			&.o{
-				margin-right: 0px;
+				margin-right: -10px;
 			}
 
 			&.f{
@@ -174,7 +174,7 @@
 	}
 
 	@include md{
-		
+
 		&__title{
 			font-size: 46px;
 
@@ -201,7 +201,7 @@
 				padding-left: 60px;
 			}
 		}
-		
+
 		&__title{
 			font-size: 38px;
 
@@ -212,7 +212,7 @@
 	}
 
 	@include xs{
-		
+
 		&__title{
 			font-size: 28px;
 			padding: 40px 0 0;
@@ -482,7 +482,7 @@
 
 .about{
 	position: relative;
-	
+
 	&__left{
 		padding: 0 0 0 100px;
 		max-width: 55%;
@@ -656,7 +656,7 @@
 	}
 
 	&__desc{
-		
+
 	}
 
 	&__img{
@@ -882,7 +882,7 @@
 		&__img-wrap{
 			margin: 0 0 20px;
 		}
-		
+
 		&__name{
 			font-size: 32px;
 		}
@@ -901,7 +901,7 @@
 		&__img-wrap{
 			margin: 0 0 10px;
 		}
-		
+
 		&__name{
 			font-size: 28px;
 		}
@@ -921,7 +921,7 @@
 		&__img-wrap{
 			margin: 0 0 10px;
 		}
-		
+
 		&__name{
 			font-size: 24px;
 		}
@@ -946,7 +946,7 @@
 				transform: translate(5px, -5px);
 			}
 		}
-		
+
 	}
 }
 
@@ -954,7 +954,7 @@
 	position: relative;
 	background: url(../img/intro_bg.png) center center no-repeat;
 	background-size: cover;
-	
+
 	.section__head-r{
 		margin: auto 0 0;
 		padding: 0;
