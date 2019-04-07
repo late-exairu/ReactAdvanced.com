@@ -1,0 +1,34 @@
+/* Fonts
+-----------------------------------------------------------------------------*/
+
+@font-face {
+	font-family: "GothamPro";
+	src:url(../fonts/GothamPro.woff2) format("woff2"),
+		url(../fonts/GothamPro.woff) format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "GothamPro";
+	src:url(../fonts/GothamProMedium.woff2) format("woff2"),
+		url(../fonts/GothamProMedium.woff) format("woff");
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "GothamPro";
+	src:url(../fonts/GothamProBold.woff2) format("woff2"),
+		url(../fonts/GothamProBold.woff) format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "RumbleBrave";
+	src:url(../fonts/RumbleBrave.woff2) format("woff2"),
+		url(../fonts/RumbleBrave.woff) format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
