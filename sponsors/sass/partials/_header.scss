@@ -167,7 +167,7 @@
 		right: 0;
 		margin: 0;
 		padding: 136px 0 0;
-		background: rgba(0, 0, 0, 0.8);
+		background: rgba(38, 252, 137, .8);
 		display: block;
 		transition: all ease .5s;
 		transform: translateY(-100%);
@@ -188,8 +188,6 @@
 			visibility: visible;
 			display: block;
 			transform: translateY(0);
-
-			border-color: #30f;
 
 			.main-menu__link{
 				opacity: 1;

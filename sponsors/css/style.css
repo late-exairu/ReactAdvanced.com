@@ -647,7 +647,7 @@ h6 {
       right: 0;
       margin: 0;
       padding: 136px 0 0;
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(38, 252, 137, 0.8);
       display: block;
       transition: all ease .5s;
       transform: translateY(-100%);
@@ -662,8 +662,7 @@ h6 {
       .main-menu.open {
         visibility: visible;
         display: block;
-        transform: translateY(0);
-        border-color: #30f; }
+        transform: translateY(0); }
         .main-menu.open .main-menu__link {
           opacity: 1; } }
   @media only screen and (max-width: 480px) {
@@ -784,6 +783,9 @@ h6 {
   background-size: contain;
   height: 100vh;
   min-height: 500px; }
+  @media only screen and (max-width: 680px) {
+    .intro {
+      height: 100vh; } }
   .intro__title {
     display: flex;
     font-size: 100px;
@@ -1966,7 +1968,8 @@ h6 {
     .f-logo {
       margin: 0 auto; }
       .f-logo__link {
-        padding: 7px 0 0 70px; } }
+        padding: 0px 0 0 95px;
+        font-size: 25px; } }
 
 .f-content {
   display: flex;
