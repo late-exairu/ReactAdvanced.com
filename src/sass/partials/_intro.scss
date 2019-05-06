@@ -1,0 +1,37 @@
+
+
+.intro{
+	position: relative;
+	min-height: 100vh;
+	background: url(../img/intro_bg.png) center center no-repeat;
+	background-size: cover;
+
+	&__octo{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(0, -50%);
+		margin: 0 0 0 -1110px;
+		width: 813px;
+		height: 594px;
+		background: url(../img/octo.png) center center no-repeat;
+		background-size: 100%;
+	}
+
+	&__content{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		margin: auto 0;
+		width: 100%;
+	}
+
+	&__desc{
+		max-width: 460px;
+		text-align: center;
+		margin: 22px auto;
+		line-height: 1.72;
+		font-size: 14px;
+		font-weight: 400;
+	}
+}
