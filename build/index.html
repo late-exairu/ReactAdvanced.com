@@ -27,7 +27,6 @@
 	<button class="menu-toggle">
 		<span></span>
 		<span></span>
-		<span></span>
 	</button>
 
 	<header class="header">
@@ -40,25 +39,40 @@
 
 			<div class="header__nav">
 				<nav class="nav">
-					<a class="nav__item js-scroll-to" href="#speakers">Speakers</a>
-					<a class="nav__item js-scroll-to" href="#location">Location</a>
-					<a class="nav__item js-scroll-to" href="#schedule">Schedule</a>
-					<a class="nav__item js-scroll-to" href="#workshops">Workshops</a>
-					<a class="nav__item js-scroll-to" href="#sponsors">Sponsors</a>
-					<a class="nav__item js-scroll-to" href="#jobs">Jobs</a>
+					<li class="nav__item">
+						<a class="nav__link js-scroll-to" href="#speakers">Speakers</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link js-scroll-to" href="#location">Location</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link js-scroll-to" href="#schedule">Schedule</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link js-scroll-to" href="#workshops">Workshops</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link js-scroll-to" href="#advice">Advice lounge</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link js-scroll-to" href="#sponsors">Sponsors</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link js-scroll-to" href="#jobs">Jobs</a>
+					</li>
+
 				</nav>
 			</div>
 
 			<div class="header__socials">
 				<ul class="socials">
-<!--          TODO: slack -->
-<!--					<li class="socials__item">-->
-<!--						<a href="#" target="_blank" class="socials__link">-->
-<!--							<svg class="socials__img sl" role="img" aria-hidden="true">-->
-<!--								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials_sl"></use>-->
-<!--							</svg>-->
-<!--						</a>-->
-<!--					</li>-->
+					<!-- <li class="socials__item">
+						<a href="#" target="_blank" class="socials__link">
+							<svg class="socials__img sl" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials_sl"></use>
+							</svg>
+						</a>
+					</li> -->
 					<li class="socials__item">
 						<a href="http://twitter.com/reactadvanced" target="_blank" class="socials__link">
 							<svg class="socials__img tw" role="img" aria-hidden="true">
@@ -103,6 +117,8 @@
 					</div>
 
 					<div class="intro__octo"></div>
+					
+					<p class="intro__desc">JavaScript is #1 on demand programming language in the world with 25 millions of developers behind it. Meet the ones who shape out the now and the future of the prospering nation</p>
 
 					<div class="stats">
 						<div class="stats__item">
@@ -121,53 +137,73 @@
 						</div>
 					</div>
 
+					<a class="intro__important-guys" href="https://focusreactive.com/"></a>
+
 					<div class="big-day">
 						<div class="big-day__wrap">
 							<div class="big-day__mon">
-								<svg class="big-day__o" role="img" aria-hidden="true">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#O"></use>
-								</svg>ctober
+								<span>O</span>ctober
 							</div>
-							<div class="big-day__date"><span>25, 2019</span></div>
+							<div class="big-day__date"><span>25th/2019</span></div>
 						</div>
+					</div>
 
-						<a class="big-day__reserve basic-btn" href="https://www.eventbrite.com/e/react-advanced-conference-2019-tickets-59948809503">
-							<svg class="basic-btn__arrow-l" role="img" aria-hidden="true">
+					<!-- <a class="intro__reserve basic-btn" href="https://www.eventbrite.com/e/react-advanced-conference-2019-tickets-59948809503">
+						<svg class="basic-btn__arrow-l" role="img" aria-hidden="true">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+						</svg>
+						<div class="basic-btn__inner">
+							Tickets
+							<svg class="arrow-r" role="img" aria-hidden="true">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
 							</svg>
-							<div class="basic-btn__inner">
-								Early Bird Tickets
-								<svg class="arrow-r" role="img" aria-hidden="true">
+						</div>
+					</a> -->
+
+					<a class="intro__reserve basic-btn" href="https://www.eventbrite.com/e/react-advanced-conference-2019-tickets-59948809503">
+						<div class="basic-btn__inner">
+							<div class="basic-btn__arr-l">
+								<svg class="basic-btn__arrow" role="img" aria-hidden="true">
 									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
 								</svg>
 							</div>
-						</a>
-					</div>
+							Tickets
+							<div class="basic-btn__arr-r">
+								<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+								</svg>
+							</div>
+						</div>
+					</a>
 				</div>
 
 			</div>
 		</section>
 
-		<section class="section about bg-black" id="event">
+				<section class="section about bg-black" id="event">
 			<div class="about__decor-1"></div>
 			<div class="about__decor-2"></div>
 
 			<div class="container">
 				<a class="about__reserve basic-btn btn-green" href="https://www.eventbrite.com/e/react-advanced-conference-2019-tickets-59948809503">
-					<svg class="basic-btn__arrow-l" role="img" aria-hidden="true">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
-					</svg>
 					<div class="basic-btn__inner">
-						Early Bird Tickets
-						<svg class="arrow-r" role="img" aria-hidden="true">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
-						</svg>
+						<div class="basic-btn__arr-l">
+							<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+							</svg>
+						</div>
+						Tickets
+						<div class="basic-btn__arr-r">
+							<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+							</svg>
+						</div>
 					</div>
 				</a>
 
 				<div class="about__left">
 					<h2 class="section__title about__title">
-						<span class="initial w">S</span>traight to Business
+						<span class="initial"><span>S</span></span>traight<br/> to Business
 					</h2>
 
 					<p class="about__subtitle">Are you into React, React Native, GraphQL, Reason and hungry to learn from the best?</p>
@@ -180,10 +216,10 @@
 				<div class="about__right">
 					<div class="features">
 						<div class="features__item">
-							<div class="features__img-wrap">
-								<svg class="features__img" role="img" aria-hidden="true">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#feature_1"></use>
-								</svg>
+							<div class="features__time">
+								<div class="features__date">23<span>th</span></div>
+								<div class="features__plus">+</div>
+								<div class="features__date">24<span>th</span></div>
 							</div>
 							<div class="features__desc">
 								<p class="features__title">Workshops</p>
@@ -192,10 +228,9 @@
 						</div>
 
 						<div class="features__item">
-							<div class="features__img-wrap">
-								<svg class="features__img talk" role="img" aria-hidden="true">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#feature_2"></use>
-								</svg>
+							<div class="features__time">
+								<div class="features__date">25<span>th</span></div>
+								<div class="features__plus to-bottom">+</div>
 							</div>
 							<div class="features__desc">
 								<p class="features__title">Expert level talks</p>
@@ -213,6 +248,36 @@
 								<p class="features__title">Advice lounge </p>
 								<p class="features__p">Meet domain experts 1-1 to address your problems with the knowledge of community leaders</p>
 							</div>
+							
+							<div class="advices-techs">
+								<div class="advices-techs__item">
+									<div class="advices-techs__img-wrap">
+										<img src="img/logo-react.svg">
+									</div>
+									<p class="advices-techs__title">React Native</p>
+								</div>
+
+								<div class="advices-techs__item">
+									<div class="advices-techs__img-wrap">
+										<img src="img/logo-graphql.svg">
+									</div>
+									<p class="advices-techs__title">GraphQL</p>
+								</div>
+
+								<div class="advices-techs__item">
+									<div class="advices-techs__img-wrap">
+										<img src="img/logo-typescript.svg">
+									</div>
+									<p class="advices-techs__title">TypeScript</p>
+								</div>
+
+								<div class="advices-techs__item">
+									<div class="advices-techs__img-wrap">
+										<img src="img/logo-reason.svg">
+									</div>
+									<p class="advices-techs__title">Reason</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -220,18 +285,18 @@
 			</div>
 		</section>
 
-		<section class="section speakers" id="speakers">
+				<section class="section speakers" id="speakers">
 			<div class="container">
 
 				<div class="section__head">
 					<div class="section__head-l">
 						<h3 class="section__title with-dots">
-							<span class="initial o">F</span>irst speakers
+							<span class="initial"><span>O</span></span>ur speakers’ guns are set on stun
 						</h3>
 					</div>
 
 					<div class="section__head-r">
-						<p class="section__desc">Core contributors, community leaders and seasoned application engineers will take over two stages at React Advanced Conferences. They’ll shed light on all things puzzling your mind, be it micro-services architecture, Design Systems, GraphQL, types, testing strategies or other.</p>
+						<p class="section__desc">Diversity, sharing of ideas, and critical thinking are the core values when it comes to selection of our speakers. Both React’s pros and its rising stars will take over two stages at React Day Berlin.<br/>They’ll shed light on all things puzzling your mind, be it architecture, Design Systems, GraphQL, Reason or other.</p>
 					</div>
 				</div>
 
@@ -438,7 +503,7 @@
 								<p class="team__company">Freelance, Austria</p>
 
 								<div class="team__info">
-				  Passionate about ReasonML, WebVR, Skiing & Triathlons. Co-Creator of DraftJS Plugins & Polished. Organizer at ReasonConf.
+					Passionate about ReasonML, WebVR, Skiing & Triathlons. Co-Creator of DraftJS Plugins & Polished. Organizer at ReasonConf.
 								</div>
 							</div>
 
@@ -605,7 +670,13 @@
 											</svg>
 										</a>
 									</li>
-<!--                  https://medium.com/@grabbou-->
+									<li class="socials__item">
+										<a href="https://medium.com/@grabbou" target="_blank" class="socials__link">
+											<svg class="socials__img med" role="img" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials_med"></use>
+											</svg>
+										</a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -652,34 +723,716 @@
 
 					<div class="team__item-wrap">
 						<div class="team__item">
-							<a class="basic-btn btn-green" href="https://forms.gle/yiCsoLLwSKnTmeVn7">
-				<svg class="basic-btn__arrow-l" role="img" aria-hidden="true">
-				  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
-				</svg>
-				<div class="basic-btn__inner">
-				  Submit Your Talk
-				  <svg class="arrow-r" role="img" aria-hidden="true">
-					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
-				  </svg>
-				</div>
-			  </a>
+							<a class="basic-btn btn-green marged" href="https://forms.gle/yiCsoLLwSKnTmeVn7">
+								<div class="basic-btn__inner">
+									<div class="basic-btn__arr-l">
+										<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+										</svg>
+									</div>
+									Submit Your Talk
+									<div class="basic-btn__arr-r">
+										<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+										</svg>
+									</div>
+								</div>
+							</a>
 						</div>
 					</div>
-			  </div>
+				</div>
 			</div>
 		</section>
 
-		<section class="section ontop" id="contacts">
+		
+
+				<section class="section advice-lounge" id="advice">
+
+			<div class="container">
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title with-dots">
+							<span class="initial"><span>A</span></span>dvice lounge
+						</h3>
+					</div>
+
+					<div class="section__head-r">
+						<p class="section__desc">
+							Diversity, sharing of ideas, and critical thinking are the core values when it comes to selection of our speakers. Both React’s pros and its rising stars will take over two stages at React Day Berlin.<br/>
+							They’ll shed light on all things puzzling your mind, be it architecture, Design Systems, GraphQL, Reason or other.
+						</p>
+
+						<a class="basic-btn marged" href="advice-lounge.html">
+							<div class="basic-btn__inner">
+								<div class="basic-btn__arr-l">
+									<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+									</svg>
+								</div>
+								Tickets
+								<div class="basic-btn__arr-r">
+									<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+									</svg>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="team">
+
+					<div class="team__item-wrap">
+						<div class="team__item">
+							<div class="team__img-wrap">
+								<img src="pic/speakers/emma.jpg">
+							</div>
+
+							<div class="team__content">
+								<p class="team__name">Emma Brillhart</p>
+								<p class="team__company">Formidable, US</p>
+
+								<div class="team__info">
+									Software Engineer, Team Lead, Co-Maintainer of Spectacle.
+								</div>
+							</div>
+
+							<div class="team__bottom">
+								<div class="advices-techs">
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-react.svg" title="React">
+										</div>
+									</div>
+
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-graphql.svg" title="GraphQL">
+										</div>
+									</div>
+
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-typescript.svg" title="TypeScript">
+										</div>
+									</div>
+
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-reason.svg" title="Reason">
+										</div>
+									</div>
+								</div>
+
+								<ul class="socials">
+									<li class="socials__item">
+										<a href="https://github.com/ebrillhart" target="_blank" class="socials__link">
+											<svg class="socials__img gh" role="img" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials_gh"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item">
+										<a href="https://twitter.com/emmabrillhart" target="_blank" class="socials__link">
+											<svg class="socials__img tw" role="img" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials_tw"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="team__item-wrap">
+						<div class="team__item">
+							<div class="team__img-wrap">
+								<img src="pic/speakers/emma.jpg">
+							</div>
+
+							<div class="team__content">
+								<p class="team__name">Emma Brillhart</p>
+								<p class="team__company">Formidable, US</p>
+
+								<div class="team__info">
+									Software Engineer, Team Lead, Co-Maintainer of Spectacle.
+								</div>
+							</div>
+
+							<div class="team__bottom">
+								<div class="advices-techs">
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-react.svg" title="React">
+										</div>
+									</div>
+
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-graphql.svg" title="GraphQL">
+										</div>
+									</div>
+
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-typescript.svg" title="TypeScript">
+										</div>
+									</div>
+
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-reason.svg" title="Reason">
+										</div>
+									</div>
+								</div>
+
+								<ul class="socials">
+									<li class="socials__item">
+										<a href="https://github.com/ebrillhart" target="_blank" class="socials__link">
+											<svg class="socials__img gh" role="img" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials_gh"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item">
+										<a href="https://twitter.com/emmabrillhart" target="_blank" class="socials__link">
+											<svg class="socials__img tw" role="img" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials_tw"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="team__item-wrap">
+						<div class="team__item">
+							<div class="team__img-wrap">
+								<img src="pic/speakers/emma.jpg">
+							</div>
+
+							<div class="team__content">
+								<p class="team__name">Emma Brillhart</p>
+								<p class="team__company">Formidable, US</p>
+
+								<div class="team__info">
+									Software Engineer, Team Lead, Co-Maintainer of Spectacle.
+								</div>
+							</div>
+
+							<div class="team__bottom">
+								<div class="advices-techs">
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-react.svg" title="React">
+										</div>
+									</div>
+
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-graphql.svg" title="GraphQL">
+										</div>
+									</div>
+
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-typescript.svg" title="TypeScript">
+										</div>
+									</div>
+
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-reason.svg" title="Reason">
+										</div>
+									</div>
+								</div>
+
+								<ul class="socials">
+									<li class="socials__item">
+										<a href="https://github.com/ebrillhart" target="_blank" class="socials__link">
+											<svg class="socials__img gh" role="img" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials_gh"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item">
+										<a href="https://twitter.com/emmabrillhart" target="_blank" class="socials__link">
+											<svg class="socials__img tw" role="img" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials_tw"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="team__item-wrap">
+						<div class="team__item">
+							<div class="team__img-wrap">
+								<img src="pic/speakers/emma.jpg">
+							</div>
+
+							<div class="team__content">
+								<p class="team__name">Emma Brillhart</p>
+								<p class="team__company">Formidable, US</p>
+
+								<div class="team__info">
+									Software Engineer, Team Lead, Co-Maintainer of Spectacle.
+								</div>
+							</div>
+
+							<div class="team__bottom">
+								<div class="advices-techs">
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-react.svg" title="React">
+										</div>
+									</div>
+
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-graphql.svg" title="GraphQL">
+										</div>
+									</div>
+
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-typescript.svg" title="TypeScript">
+										</div>
+									</div>
+
+									<div class="advices-techs__item">
+										<div class="advices-techs__img-wrap">
+											<img src="img/logo-reason.svg" title="Reason">
+										</div>
+									</div>
+								</div>
+
+								<ul class="socials">
+									<li class="socials__item">
+										<a href="https://github.com/ebrillhart" target="_blank" class="socials__link">
+											<svg class="socials__img gh" role="img" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials_gh"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item">
+										<a href="https://twitter.com/emmabrillhart" target="_blank" class="socials__link">
+											<svg class="socials__img tw" role="img" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials_tw"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+				<section class="section mcs" id="mcs">
+			
+			<div class="mcs__decor-fish"></div>
+			<div class="mcs__decor-sub"></div>
+
+			<div class="container">
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title">
+							<span class="initial"><span>M</span></span>eet your MC's
+						</h3>
+					</div>
+				</div>
+
+				<div class="team-mc">
+					<div class="team-mc__item">
+						<div class="team-mc__img-wrap">
+							<img src="pic/speakers/emma.jpg">
+						</div>
+
+						<div class="team-mc__content">
+							<div class="team-mc__head">
+								<p class="team-mc__name">Emma Brillhart</p>
+								<p class="team-mc__company">Formidable, US</p>
+							</div>
+							
+							<div class="team-mc__desc">
+								<div class="team-mc__info">
+									Jani, a veteran of the Frontend Framework wars, has earned his battle scars writing JavaScript on the bleeding edge for the last decade. Today, he leads a team building cross-stack React mobile and web apps at 
+								</div>
+							</div>
+							
+							<div class="team-mc__bottom">
+								<p class="team-mc__tag">Patterns</p>
+							
+								<ul class="socials">
+									<li class="socials__item">
+										<a href="https://github.com/ebrillhart" target="_blank" class="socials__link">
+											<svg class="socials__img gh" role="img" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials_gh"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item">
+										<a href="https://twitter.com/emmabrillhart" target="_blank" class="socials__link">
+											<svg class="socials__img tw" role="img" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials_tw"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="team-mc__item">
+						<div class="team-mc__img-wrap">
+							<img src="pic/speakers/emma.jpg">
+						</div>
+
+						<div class="team-mc__content">
+							<div class="team-mc__head">
+								<p class="team-mc__name">Emma Brillhart</p>
+								<p class="team-mc__company">Formidable, US</p>
+							</div>
+							
+							<div class="team-mc__desc">
+								<div class="team-mc__info">
+									Jani, a veteran of the Frontend Framework wars, has earned his battle scars writing JavaScript on the bleeding edge for the last decade. Today, he leads a team building cross-stack React mobile and web apps at 
+								</div>
+							</div>
+							
+							<div class="team-mc__bottom">
+								<p class="team-mc__tag">Patterns</p>
+							
+								<ul class="socials">
+									<li class="socials__item">
+										<a href="https://github.com/ebrillhart" target="_blank" class="socials__link">
+											<svg class="socials__img gh" role="img" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials_gh"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item">
+										<a href="https://twitter.com/emmabrillhart" target="_blank" class="socials__link">
+											<svg class="socials__img tw" role="img" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials_tw"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+				<section class="section location" id="location">
+			<div class="location__decor-city"></div>
+
 			<div class="container">
 
-				<div class="ontop__decor-1"></div>
-				<div class="ontop__decor-2"></div>
-				<div class="ontop__decor-3"></div>
+				<div class="section__head">
+					<div class="section__head-l">
+
+						<h3 class="section__title">
+							<span class="initial"><span>L</span></span>ocation
+						</h3>
+
+						<p class="section__subtitle">Visit a monument to the future</p>
+
+						<p class="section__desc">With the ever-growing JS ecosystem, it’s only appropriate that we are hosting React Day Berlin in Kosmos, the amazing Space Age theatre from the 1960s. It is situated in the hip neighborhood of Friedrichshain full of great restaurants, bars, clubs and little shops, and the building was built with unconventional visionaries in mind.</p>
+
+						<div class="address">
+							<h3 class="address__title">Oval Space</h3>
+							<p class="address__desc">29–32 The Oval<br/> London – E2 9DT</p>
+							<a class="address__link" href="#">View on map</a>
+						</div>
+
+						<div class="location__decor-zep"></div>
+					</div>
+				</div>
+
+				<div class="location__map">
+					<div id="map"></div>
+
+					<script>
+						function initMap() {
+							var mapDiv = document.getElementById('map');
+
+							var map = new google.maps.Map(mapDiv, {
+								center: {lat: 51.533216, lng: -0.068269},
+								zoom: 16,
+								scrollwheel: false,
+								disableDefaultUI: true,
+								draggable: false
+							});
+
+							var markerImage = new google.maps.MarkerImage('img/marker.svg',
+								new google.maps.Size(225, 255),
+								new google.maps.Point(0, 0),
+								new google.maps.Point(112, 112)
+							);
+
+							if (window.innerWidth > 1024) {
+								map.setCenter(new google.maps.LatLng(51.533216, -0.068269));
+							} else if (window.innerWidth > 767) {
+								map.setCenter(new google.maps.LatLng(51.533216, -0.064269));
+							} else {
+								map.setCenter(new google.maps.LatLng(51.534216, -0.059269));
+							}
+
+							google.maps.event.addDomListener(window, 'resize', function() {
+								if (window.innerWidth > 1024) {
+									map.setCenter(new google.maps.LatLng(51.533216, -0.068269));
+								} else if (window.innerWidth > 767) {
+									map.setCenter(new google.maps.LatLng(51.533216, -0.064269));
+								} else {
+									map.setCenter(new google.maps.LatLng(51.534216, -0.059269));
+								}
+							});
+
+							var styles = [
+								{
+									"featureType": "all",
+									"elementType": "labels.text.fill",
+									"stylers": [
+										{
+											"saturation": 36
+										},
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 40
+										}
+									]
+								},
+								{
+									"featureType": "all",
+									"elementType": "labels.text.stroke",
+									"stylers": [
+										{
+											"visibility": "on"
+										},
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 16
+										}
+									]
+								},
+								{
+									"featureType": "all",
+									"elementType": "labels.icon",
+									"stylers": [
+										{
+											"visibility": "off"
+										}
+									]
+								},
+								{
+									"featureType": "administrative",
+									"elementType": "geometry.fill",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 20
+										}
+									]
+								},
+								{
+									"featureType": "administrative",
+									"elementType": "geometry.stroke",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 17
+										},
+										{
+											"weight": 1.2
+										}
+									]
+								},
+								{
+									"featureType": "landscape",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 20
+										}
+									]
+								},
+								{
+									"featureType": "poi",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 21
+										}
+									]
+								},
+								{
+									"featureType": "road.highway",
+									"elementType": "geometry.fill",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 17
+										}
+									]
+								},
+								{
+									"featureType": "road.highway",
+									"elementType": "geometry.stroke",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 29
+										},
+										{
+											"weight": 0.2
+										}
+									]
+								},
+								{
+									"featureType": "road.arterial",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 18
+										}
+									]
+								},
+								{
+									"featureType": "road.local",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 16
+										}
+									]
+								},
+								{
+									"featureType": "transit",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 19
+										}
+									]
+								},
+								{
+									"featureType": "water",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 17
+										}
+									]
+								}
+							];
+
+							var marker = new google.maps.Marker({
+								map: map,
+								position: new google.maps.LatLng(51.533216, -0.059269),
+								title: 'Oval Space',
+								icon: markerImage
+							});
+
+							map.setOptions({styles: styles});
+						}
+					</script>
+
+					<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJPPKoZEtJZ6tscGcfPLHF16u4s7RqfPA&callback=initMap" type="text/javascript"></script>
+				</div>
+
+				<div class="location__bottom">
+					<div class="loc-desc">
+						<p class="loc-desc__title">The city on the edge  of tomorrow</p>
+						<p class="loc-desc__desc">Berlin, Germany’s capital, is one of the busiest European tech centers and the best talent gravitates towards the city. With two international airports and modern infrastructure, you don’t even need a hyperdrive to get here</p>
+					</div>
+					
+					<div class="location__slider">
+						<div class="loc-slider">
+							<div class="loc-slider__item">
+								<img src="pic/slider_1.jpg">
+							</div>
+					
+							<div class="loc-slider__item">
+								<img src="pic/slider_2.jpg">
+							</div>
+					
+							<div class="loc-slider__item">
+								<img src="pic/slider_3.jpg">
+							</div>
+					
+							<div class="loc-slider__item">
+								<img src="pic/slider_4.jpg">
+							</div>
+					
+							<div class="loc-slider__item">
+								<img src="pic/slider_5.jpg">
+							</div>
+						</div>
+					
+						<div class="loc-slider-nav">
+							<div class="pagination"></div>
+							<div class="captions">
+								<div class="caption">This is a caption for slide 1</div>
+								<div class="caption">This is a caption for slide 2</div>
+								<div class="caption">This is a caption for slide 3</div>
+								<div class="caption">This is a caption for slide 4</div>
+								<div class="caption">This is a caption for slide 5</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+				<section class="section follow-us" id="contacts">
+			<div class="container">
+				<div class="follow-us__decor-pipe"></div>
 
 				<div class="section__head">
 					<div class="section__head-l">
 						<h3 class="section__title">
-							<span class="initial f">F</span>ollow us  for updates
+							<span class="initial"><span>F</span></span>ollow us  for updates
 						</h3>
 
 						<ul class="socials">
@@ -721,18 +1474,22 @@
 							<div class="subscribe-form__input-wrap">
 								<input class="subscribe-form__input" type="email" name="EMAIL" id="mce-EMAIL" placeholder="your@email">
 								<button class="subscribe-form__submit basic-btn" type="submit" name="subscribe" id="mc-embedded-subscribe">
-									<svg class="basic-btn__arrow-l" role="img" aria-hidden="true">
-										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
-									</svg>
 									<div class="basic-btn__inner">
+										<div class="basic-btn__arr-l">
+											<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+											</svg>
+										</div>
 										Subscribe
-										<svg class="arrow-r" role="img" aria-hidden="true">
-											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
-										</svg>
+										<div class="basic-btn__arr-r">
+											<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+											</svg>
+										</div>
 									</div>
 								</button>
 							</div>
-			  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_60e415b507eefaffa4de40e02_7ac7afeb1f" tabindex="-1" value=""></div>
+			  				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_60e415b507eefaffa4de40e02_7ac7afeb1f" tabindex="-1" value=""></div>
 						</form>
 					</div>
 				</div>
@@ -740,37 +1497,640 @@
 
 			</div>
 		</section>
+
+				<section class="section schedule" id="schedule">
+			<div class="container">
+
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title with-dots">
+							<span class="initial"><span>S</span></span>chedule
+						</h3>
+					</div>
+				</div>
+
+				<div class="content-tab">
+					<button class="content-tab__tab js-tabs__tab active" id="general-tab">West hall</button>
+					<button class="content-tab__tab js-tabs__tab" id="react-tab">East hall</button>
+				</div>
+
+				<ul class="schedule-list js-tabs__panel active" id="general-panel">
+					<li class="schedule-list__item green disconnected">
+						<div class="schedule-list__time"><span>8:30</span></div>
+						<div class="schedule-list__desc">
+							<div class="schedule-list__title"><span>Registration starts</span></div>
+						</div>
+					</li>
+
+					<li class="schedule-list__item green disconnected">
+						<div class="schedule-list__time"><span>9:10</span></div>
+						<div class="schedule-list__desc">
+							<div class="schedule-list__title"><span>Conference openning</span></div>
+						</div>
+					</li>
+			
+					<li class="schedule-list__item">
+						<div class="schedule-list__time"><span>9:20</span></div>
+						<div class="schedule-list__desc">
+							<div class="schedule-list__title"><span>The New Hotness: An Exploration  of Reacts Exciting New Feature</span></div>
+							<div class="schedule-list__speaker">Ken Wheeler</div>
+
+							<div class="schedule-list__info">
+								<p class="schedule-list__p">
+									PASTE DESCRIPTION
+								</p>
+							</div>
+						</div>
+					</li>
+			
+					<li class="schedule-list__item">
+						<div class="schedule-list__time"><span>10.00</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Powering Code Reuse with Context  and Render Props</span></h3>
+							<p class="schedule-list__speaker">Forbes Lindsay</p>
+
+							<div class="schedule-list__info">
+								<p class="schedule-list__p">
+									PASTE DESCRIPTION
+								</p>
+							</div>
+						</div>
+					</li>
+			
+					<li class="schedule-list__item disconnected">
+						<div class="schedule-list__time"><span>10.30</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Feature Driven Architecture</span></h3>
+							<p class="schedule-list__speaker">Oleg Isonen</p>
+
+							<div class="schedule-list__info">
+								<p class="schedule-list__p">
+									PASTE DESCRIPTION
+								</p>
+							</div>
+						</div>
+					</li>
+			
+					<li class="schedule-list__item green disconnected">
+						<div class="schedule-list__time"><span>11.00</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Coffee break</span></h3>
+						</div>
+					</li>
+			
+					<li class="schedule-list__item">
+						<div class="schedule-list__time"><span>11:30</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Secrets to a Successful Design  System</span></h3>
+							<p class="schedule-list__speaker">Monica Lent</p>
+
+							<div class="schedule-list__info">
+								<p class="schedule-list__p">
+									PASTE DESCRIPTION
+								</p>
+							</div>
+						</div>
+					</li>
+			
+					<li class="schedule-list__item">
+						<div class="schedule-list__time"><span>12.00</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Tip Top Testing in JavaScript</span></h3>
+							<p class="schedule-list__speaker">Jack Franklin</p>
+
+							<div class="schedule-list__info">
+								<p class="schedule-list__p">
+									PASTE DESCRIPTION
+								</p>
+							</div>
+						</div>
+					</li>
+			
+					<li class="schedule-list__item disconnected">
+						<div class="schedule-list__time"><span>12.30</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Lightning talks</span></h3>
+						</div>
+					</li>
+			
+					<li class="schedule-list__item green disconnected">
+						<div class="schedule-list__time"><span>13.00</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Lunch & networking</span></h3>
+						</div>
+					</li>
+			
+					<li class="schedule-list__item">
+						<div class="schedule-list__time"><span>14:00</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>GitNation Open Source Stage</span></h3>
+						</div>
+					</li>
+			
+					<li class="schedule-list__item">
+						<div class="schedule-list__time"><span>14:30 </span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Navigating the Hype-Driven Frontend Development World Without Going Insane</span></h3>
+							<p class="schedule-list__speaker">Kitze</p>
+
+							<div class="schedule-list__info">
+								<p class="schedule-list__p">
+									PASTE DESCRIPTION
+								</p>
+							</div>
+						</div>
+					</li>
+			
+					<li class="schedule-list__item">
+						<div class="schedule-list__time"><span>15:00</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Writing Your Own React Renderer</span></h3>
+							<div class="schedule-list__speaker">Raphael Amorim</div>
+
+							<div class="schedule-list__info d-block">
+								<p class="schedule-list__p">
+									Thanks to React's component-oriented architecture, the React community has been naturally gravitating towards design systems as a way of standardising our respective design languages into reusable components. When done successfully, it suddenly becomes trivial to translate standard designs into code. In fact, we may even find that this translation step starts to feel somewhat redundant. In a world of components, how should our design processes change? How should our tooling change? How should we, as React developers, better enable this change? In this talk, we'll look at the current state of design and developersment, and where we could go—if we're willing to push for it.
+								</p>
+							</div>
+						</div>
+					</li>
+			
+					<li class="schedule-list__item disconnected">
+						<div class="schedule-list__time"><span>15:30 </span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Structure Your App's Story With  Sagas and Selectors</span></h3>
+							<div class="schedule-list__speaker">Rebecca Hill</div>
+
+							<div class="schedule-list__info">
+								<p class="schedule-list__p">
+									Thanks to React's component-oriented architecture, the React community has been naturally gravitating towards design systems as a way of standardising our respective design languages into reusable components. When done successfully, it suddenly becomes trivial to translate standard designs into code. In fact, we may even find that this translation step starts to feel somewhat redundant. In a world of components, how should our design processes change? How should our tooling change? How should we, as React developers, better enable this change? In this talk, we'll look at the current state of design and developersment, and where we could go—if we're willing to push for it.
+								</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="schedule-list__item green disconnected">
+						<div class="schedule-list__time"><span>16:00</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Coffee break</span></h3>
+						</div>
+					</li>
+					
+					<li class="schedule-list__item">
+						<div class="schedule-list__time"><span>16:30</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Optimizing the Critical Rendering  Path in React</span></h3>
+						</div>
+					</li>
+					
+					<li class="schedule-list__item">
+						<div class="schedule-list__time"><span>17:00</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>The Lonely and Dark Road to  Styling in React</span></h3>
+							<div class="schedule-list__speaker">Sara Vieira</div>
+
+							<div class="schedule-list__info">
+								<p class="schedule-list__p">
+									PASTE DESCRIPTION
+								</p>
+							</div>
+						</div>
+					</li>
+					
+					<li class="schedule-list__item disconnected">
+						<div class="schedule-list__time"><span>17:30</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Closing of day programme</span></h3>
+						</div>
+					</li>
+					
+					<li class="schedule-list__item green disconnected">
+						<div class="schedule-list__time"><span>18:00</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>1.5h break (outside venue)</span></h3>
+						</div>
+					</li>
+
+					<li class="schedule-list__item green disconnected">
+						<div class="schedule-list__time"><span>19:30</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Party starts</span></h3>
+						</div>
+					</li>
+					
+					<li class="schedule-list__item green disconnected">
+						<div class="schedule-list__time"><span>20:00</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>#componentDidSmoosh Comedy Show</span></h3>
+						</div>
+					</li>
+					
+					<li class="schedule-list__item green disconnected">
+						<div class="schedule-list__time"><span>21:00</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>DJ Mila Chiral & VJ Kalma</span></h3>
+						</div>
+					</li>
+					
+					<li class="schedule-list__item green disconnected">
+						<div class="schedule-list__time"><span>22:30 </span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Party ends</span></h3>
+						</div>
+					</li>
+				</ul>
+				
+				<ul class="schedule-list js-tabs__panel" id="react-panel">
+					<li class="schedule-list__item">
+						<div class="schedule-list__time"><span>19:30</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Party starts</span></h3>
+						</div>
+					</li>
+
+					<li class="schedule-list__item">
+						<div class="schedule-list__time"><span>19:30</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Party starts</span></h3>
+						</div>
+					</li>
+
+					<li class="schedule-list__item">
+						<div class="schedule-list__time"><span>19:30</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Party starts</span></h3>
+						</div>
+					</li>
+
+					<li class="schedule-list__item">
+						<div class="schedule-list__time"><span>19:30</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Party starts</span></h3>
+						</div>
+					</li>
+
+					<li class="schedule-list__item">
+						<div class="schedule-list__time"><span>19:30</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Party starts</span></h3>
+						</div>
+					</li>
+					
+					<li class="schedule-list__item disconnected">
+						<div class="schedule-list__time"><span>19:30</span></div>
+						<div class="schedule-list__desc">
+							<h3 class="schedule-list__title"><span>Party starts</span></h3>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+		</section>
+
+
+				<section class="section workshops" id="workshops">
+			<div class="container">
+
+				<div class="workshops__decor-bottom"></div>
+
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title">
+							<span class="initial"><span>W</span></span>orkshops
+						</h3>
+
+						<p class="section__subtitle">October 25-26</p>
+
+						<p class="section__desc">Do you see yourself leading amazing projects? Then you’d better not miss our workshops. Our instructors will help boost up your skills and show you new dimensions of JavaScript problem-solving.</p>
+						<p class="section__desc">Workshops are happening on November 28 and 29,<br/> <a href="#">at SRH Hochschule Berlin</a>.</p>
+
+						<a class="workshops__btn basic-btn btn-green" href="workshops.html">
+							<div class="basic-btn__inner">
+								<div class="basic-btn__arr-l">
+									<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+									</svg>
+								</div>
+								Workshop programmes
+								<div class="basic-btn__arr-r">
+									<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+									</svg>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+				<section class="section party" id="party">
+			
+			<div class="party__decor-disco"></div>
+			<div class="party__decor-scratch"></div>
+
+			<div class="container">
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title">
+							<span class="initial"><span>R</span></span>eact - fuel for a great party
+						</h3>
+
+						<div class="section__desc">Fun is relative, but there’s no chance to be bored in Berlin, one of the party capitals of the world. Our afterparty and comedy show will make React Day Berlin the tech event of the year!</div>
+					</div>
+				</div>
+
+				<div class="team-mc">
+					<div class="team-mc__item">
+						<div class="team-mc__img-wrap">
+							<img src="pic/speakers/emma.jpg">
+						</div>
+
+						<div class="team-mc__content">
+							<div class="team-mc__head">
+								<p class="team-mc__name">Emma Brillhart</p>
+								<p class="team-mc__company">Formidable, US</p>
+							</div>
+							
+							<div class="team-mc__desc">
+								<div class="team-mc__info">
+									Jani, a veteran of the Frontend Framework wars, has earned his battle scars writing JavaScript on the bleeding edge for the last decade. Today, he leads a team building cross-stack React mobile and web apps at 
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="team-mc__item">
+						<div class="team-mc__img-wrap">
+							<img src="pic/speakers/emma.jpg">
+						</div>
+
+						<div class="team-mc__content">
+							<div class="team-mc__head">
+								<p class="team-mc__name">Emma Brillhart</p>
+								<p class="team-mc__company">Formidable, US</p>
+							</div>
+							
+							<div class="team-mc__desc">
+								<div class="team-mc__info">
+									Jani, a veteran of the Frontend Framework wars, has earned his battle scars writing JavaScript on the bleeding edge for the last decade. Today, he leads a team building cross-stack React mobile and web apps at 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+				<section class="section give-back" id="give-back">
+
+			<div class="container">
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title">
+							<span class="initial"><span>G</span></span>iving back to community
+						</h3>
+
+						<p class="section__desc">
+							When we established our JS meetup 9 years ago, we never imagined we would welcome up to 1400 attendees at our events and organize 4 meetups and multiple spin-offs in Europe. Our secret? We welcome people from all walks of life in our community, and we are a proud partner of initiatives like Unicorns in Tech, the global tech network for LGBT professionals and straight allies.
+						</p>
+						<p class="section__desc">
+							We know that supporting diversity inside and outside IT must not end at mere statements, which is why are now developing diversity scholarship programs that will be announced in the coming weeks.</p>
+						<p class="section__desc">
+							On top of our self-funded tickets pool, we're greatly thankful to GitHub for sponsoring extra 35 tickets. Make React community a better place, support our scholarship programme!
+						</p>
+					</div>
+
+					<div class="section__head-r">
+						<div class="thank-progress">
+							<div class="thank-progress__info">
+								<p class="thank-progress__num">35 of 50</p>
+								<p class="thank-progress__desc">extra diversity<br>scholarships<br>sponsored</p>
+							</div>
+
+							<div class="thank-progress__progress">
+								<div class="circle"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="give-back__btns">
+					<a class="give-back__btn basic-btn btn-black" href="workshops.html">
+						<div class="basic-btn__inner">
+							<div class="basic-btn__arr-l">
+								<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+								</svg>
+							</div>
+							Apply for diversity scholarship
+							<div class="basic-btn__arr-r">
+								<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+								</svg>
+							</div>
+						</div>
+					</a>
+
+					<a class="give-back__btn basic-btn btn-green" href="workshops.html">
+						<div class="basic-btn__inner">
+							<div class="basic-btn__arr-l">
+								<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+								</svg>
+							</div>
+							Sponsor diversity tickets
+							<div class="basic-btn__arr-r">
+								<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+								</svg>
+							</div>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</section>
+
+				<section class="section sponsors" id="sponsors">
+
+			<div class="container">
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title with-dots">
+							<span class="initial"><span>S</span></span>ponsors
+						</h3>
+					</div>
+
+					<div class="section__head-r">
+						<div class="section__desc">Would like to work together with the most notable React community supporters in Berlin?</div>
+						<div class="section__desc"><a href="#">Check out the React job offers form our partners.</a></div>
+					</div>
+				</div>
+
+				<div class="sponsors-list">
+					<div class="sponsors-list__title">Gold</div>
+
+					<div class="sponsors-list__list gold">
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/gold1.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/gold2.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/gold3.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/gold4.png">
+						</a>
+					</div>
+
+					<div class="sponsors-list__sep"></div>
+
+					<div class="sponsors-list__title">Silver</div>
+
+					<div class="sponsors-list__list silver">
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/silver1.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/silver2.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/silver3.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/silver4.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/silver5.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/silver6.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/silver7.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/silver8.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/silver9.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/silver10.png">
+						</a>
+					</div>
+
+					<div class="sponsors-list__sep"></div>
+
+					<div class="sponsors-list__title">Partners</div>
+
+					<div class="sponsors-list__list partners">
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner1.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner2.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner3.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner4.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner5.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner6.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner7.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner8.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner9.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner10.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner11.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner12.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner13.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner14.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner15.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner16.png">
+						</a>
+						<a class="sponsors-list__item" href="#">
+							<img src="pic/sponsors/partner17.png">
+						</a>
+					</div>
+
+				</div>
+
+				
+			</div>
+		</section>
+
 	</main><!-- .content -->
 
 
 	<footer class="footer">
 		<div class="container">
 			<div class="f-logo">
-		<a href="https://gitnation.org" target="_blank">
-				<div class="f-logo__desc">
-					<p class="f-logo__by">Event by</p>
-					<p class="f-logo__org">GitNation</p>
-				</div>
-		</a>
+				<a href="https://gitnation.org" target="_blank">
+					<div class="f-logo__desc">
+						<p class="f-logo__by">Event by</p>
+						<p class="f-logo__org">GitNation</p>
+					</div>
+				</a>
 			</div>
 
 			<div class="nav">
-				<a class="nav__item js-scroll-to" href="/sponsors">Sponsorship opportunities</a>
-				<a class="nav__item js-scroll-to" href="http://confcodeofconduct.com">Code of conduct</a>
-				<a class="nav__item js-scroll-to" href="mailto:hi@reactadvanced.com">Email us!</a>
+				<li class="nav__item">
+					<a class="nav__link js-scroll-to" href="/sponsors">Sponsorship opportunities</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link js-scroll-to" href="http://confcodeofconduct.com">Code of conduct</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link js-scroll-to" href="mailto:hi@reactadvanced.com">Email us!</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link js-scroll-to" href="/faq">FAQ</a>
+				</li>
 			</div>
 
 			<div class="f-logo__dummy"></div>
 
 			<a class="f-reserve basic-btn btn-green" href="https://www.eventbrite.com/e/react-advanced-conference-2019-tickets-59948809503">
-				<svg class="basic-btn__arrow-l" role="img" aria-hidden="true">
-					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
-				</svg>
 				<div class="basic-btn__inner">
-					Early Bird Tickets
-					<svg class="arrow-r" role="img" aria-hidden="true">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
-					</svg>
+					<div class="basic-btn__arr-l">
+						<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+						</svg>
+					</div>
+					Tickets
+					<div class="basic-btn__arr-r">
+						<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow_r"></use>
+						</svg>
+					</div>
 				</div>
 			</a>
 		</div>

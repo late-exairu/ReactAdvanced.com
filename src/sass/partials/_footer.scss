@@ -7,7 +7,7 @@
 	background: $clr-black;
 
 	.container{
-		padding: 0 220px 0 20px;
+		padding: 0 254px 0 20px;
 		display: flex;
 		align-items: center;
 		height: 100%;
@@ -15,8 +15,9 @@
 	}
 
 	.nav{
+		margin: 0 20px;
 
-		&__item{
+		&__link{
 			color: $clr-green;
 		}
 	}
@@ -112,17 +113,13 @@
 	bottom: 0;
 	height: auto;
 
-	.basic-btn__inner{
-		padding: 0 35px;
-	}
-
 	@include xs{
 		display: flex;
 		order: 1;
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
-		width: 230px;
+		width: 100%;
 		top: -20px;
 		height: 60px;
 		border: 3px solid $clr-black;

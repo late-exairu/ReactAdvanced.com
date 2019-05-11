@@ -93,20 +93,20 @@ gulp.task('sprite', function () {
 			},
 			mode: {
 				css: {
-					dest: "img/",
+					dest: "src/img/",
 					layout: "diagonal",
 					sprite: '../sprite.svg',
 					bust: false,
 					render: {
 						scss: {
-							dest: "../../sass/helpers/_sprite-svg.scss",
+							dest: "../../src/sass/helpers/_sprite-svg.scss",
 							template: "sass/tpl/_sprite-tpl-css.scss"
 						}
 					}
 				},
 
 				symbol: {
-					dest: "img/",
+					dest: "src/img/",
 					layout: "diagonal",
 					sprite: '../sprite-inline.svg',
 					bust: false,
@@ -122,7 +122,7 @@ gulp.task('sprite', function () {
 				mapname: "icons"
 			}
 		}))
-		.pipe(gulp.dest('build/img/'));
+		.pipe(gulp.dest('src/img/'));
 });
 
 // ==================================================
@@ -221,6 +221,7 @@ gulp.task('deploy', function() {
 gulp.task('watch', ['sass', 'css', 'browser-sync', 'nunjucks', 'copy', 'uglify'], function() {
 	gulp.watch('src/img/sprite.svg');
 	gulp.watch('src/img/*', ['copy:img']);
+	gulp.watch('src/pic/*', ['copy:pic']);
 	gulp.watch('src/fonts/*', ['copy:fonts']);
 	gulp.watch('src/video/*', ['copy:video']);
 	gulp.watch('src/sass/**/*.scss', ['sass']);

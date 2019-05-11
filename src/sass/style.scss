@@ -28,7 +28,7 @@ body {
 }
 
 a {
-	color: #0680ba;
+	color: #18db73;
 	transition: all linear .2s;
 }
 
@@ -67,6 +67,18 @@ a {
 	color: $clr-white;
 }
 
+.d-block{
+	display: block;
+}
+
+.d-flex{
+	display: flex;
+}
+
+.d-none{
+	display: none;
+}
+
 b,
 h1,
 h2,
@@ -81,6 +93,8 @@ h6 {
 @import "helpers/fonts";
 @import "helpers/icons";
 
+@import "vendor/slick";
+
 @import "partials/forms";
 @import "partials/buttons";
 @import "partials/header";
@@ -88,3 +102,14 @@ h6 {
 @import "partials/footer";
 
 @import "partials/intro";
+@import "partials/about";
+@import "partials/speakers";
+@import "partials/mcs";
+@import "partials/location";
+@import "partials/follow-us";
+@import "partials/schedule";
+@import "partials/workshops";
+@import "partials/party";
+@import "partials/give-back";
+@import "partials/sponsors";
+@import "partials/advice-lounge";

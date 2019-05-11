@@ -1,0 +1,233 @@
+
+.give-back{
+	position: relative;
+	background: $clr-black;
+
+	.container{
+		padding: 120px 20px 115px;
+	}
+
+	.section{
+		position: relative;
+
+		&__title{
+			color: $clr-green;
+			position: relative;
+		}
+
+		&__subtitle{
+			color: #24fc89;
+			font-weight: 700;
+			font-size: 18px;
+			margin: 0 0 27px;
+			position: relative;
+		}
+
+		&__desc{
+			color: $clr-white;
+			position: relative;
+			margin: 16px 0 0;
+		}
+
+		&__head-l{
+			max-width: 55%;
+		}
+
+		&__head-r{
+			max-width: 45%;
+			color: $clr-white;
+			margin: auto 0 0;
+			padding: 0px 15px 8px 10px;
+		}
+	}
+
+	&__btns{
+		display: flex;
+		justify-content: center;
+		margin: 70px 0 20px;
+	}
+
+	&__btn{
+		margin: 0 17px;
+		max-width: 292px;
+		font-size: 12px;
+		width: 100%;
+	}
+
+	canvas{
+		max-width: 100%;
+    	max-height: 100%;
+	}
+
+	@include md{
+
+		&__decor-bottom{
+			width: 1024px;
+			height: 412px;
+			margin: 0 0 0 -512px;
+		}
+	}
+
+
+	@include temp{
+
+		.section{
+
+			&__head-l{
+				max-width: none;
+			}
+
+			&__head-r{
+				padding: 0;
+				max-width: none;
+				margin: 40px auto 0;
+			}
+		}
+	}
+
+	@include sm{
+
+		.container{
+			padding: 80px 20px 60px;
+		}
+
+		.section{
+
+			&__head-l{
+				max-width: none;
+			}
+		}
+
+		&__decor-bottom{
+			width: 598px;
+			height: 240px;
+			margin: 0 0 0 -310px;
+		}
+
+		&__btns{
+			flex-direction: column;
+			margin: 25px 0 20px;
+		}
+
+		&__btn{
+			margin: 10px auto;
+		}
+	}
+
+	@include xs{
+
+		&__decor-bottom{
+			width: 554px;
+			height: 222px;
+			margin: 0px 0 0 -356px;
+
+		}
+	}
+}
+
+.thank-progress{
+	width: 304px;
+	height: 304px;
+	margin: 0 0 0 auto;
+	position: relative;
+
+	&__info{
+		position: absolute;
+		left: -95px;
+		top: -14px;
+	}
+	
+	&__num{
+		font-size: 30px;
+		font-weight: 700;
+		color: $clr-green;
+		margin: 0;
+	}
+
+	&__desc{
+		font-size: 16px;
+		color: $clr-white;
+		margin: 0;
+	}
+
+	&__progress{
+		position: relative;
+		width: 304px;
+		height: 304px;
+		margin: 0 0 0 auto;
+
+		&:after{
+			content: '';
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 258px;
+			height: 258px;
+			transform: translate(-50%, -50%);
+			background: url(../img/github-logo.svg) center center no-repeat;
+			background-size: 100%;
+		}
+	}
+
+	@include md{
+
+		&__info{
+			width: 100%;
+			left: 0;
+			top: auto;
+			bottom: 105%;
+			text-align: center;
+
+		}
+	}
+
+	@include temp{
+		margin: 0 auto 0;
+
+		&__info{
+			position: absolute;
+			left: -95px;
+			top: -14px;
+			bottom: auto;
+			text-align: left;
+
+		}
+	}
+
+	@include sm{
+		width: 220px;
+		height: 220px;
+		margin: 0 auto 0;
+
+		&__progress{
+			width: 220px;
+			height: 220px;
+
+			&:after{
+				width: 192px;
+				height: 192px;
+			}
+		}
+
+		&__info{
+			left: -64px;
+		}
+	
+		&__num{
+			font-size: 23px;
+		}
+
+		&__desc{
+			font-size: 12px;
+		}
+	}
+
+	@include xs{
+		height: auto;
+		padding: 48px 0 0;
+
+		&__info{
+			left: -16px;
+		}
+	}
+}

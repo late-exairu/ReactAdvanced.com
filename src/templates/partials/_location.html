@@ -1,0 +1,290 @@
+		<section class="section location" id="location">
+			<div class="location__decor-city"></div>
+
+			<div class="container">
+
+				<div class="section__head">
+					<div class="section__head-l">
+
+						<h3 class="section__title">
+							<span class="initial"><span>L</span></span>ocation
+						</h3>
+
+						<p class="section__subtitle">Visit a monument to the future</p>
+
+						<p class="section__desc">With the ever-growing JS ecosystem, it’s only appropriate that we are hosting React Day Berlin in Kosmos, the amazing Space Age theatre from the 1960s. It is situated in the hip neighborhood of Friedrichshain full of great restaurants, bars, clubs and little shops, and the building was built with unconventional visionaries in mind.</p>
+
+						<div class="address">
+							<h3 class="address__title">Oval Space</h3>
+							<p class="address__desc">29–32 The Oval<br/> London – E2 9DT</p>
+							<a class="address__link" href="#">View on map</a>
+						</div>
+
+						<div class="location__decor-zep"></div>
+					</div>
+				</div>
+
+				<div class="location__map">
+					<div id="map"></div>
+
+					<script>
+						function initMap() {
+							var mapDiv = document.getElementById('map');
+
+							var map = new google.maps.Map(mapDiv, {
+								center: {lat: 51.533216, lng: -0.068269},
+								zoom: 16,
+								scrollwheel: false,
+								disableDefaultUI: true,
+								draggable: false
+							});
+
+							var markerImage = new google.maps.MarkerImage('img/marker.svg',
+								new google.maps.Size(225, 255),
+								new google.maps.Point(0, 0),
+								new google.maps.Point(112, 112)
+							);
+
+							if (window.innerWidth > 1024) {
+								map.setCenter(new google.maps.LatLng(51.533216, -0.068269));
+							} else if (window.innerWidth > 767) {
+								map.setCenter(new google.maps.LatLng(51.533216, -0.064269));
+							} else {
+								map.setCenter(new google.maps.LatLng(51.534216, -0.059269));
+							}
+
+							google.maps.event.addDomListener(window, 'resize', function() {
+								if (window.innerWidth > 1024) {
+									map.setCenter(new google.maps.LatLng(51.533216, -0.068269));
+								} else if (window.innerWidth > 767) {
+									map.setCenter(new google.maps.LatLng(51.533216, -0.064269));
+								} else {
+									map.setCenter(new google.maps.LatLng(51.534216, -0.059269));
+								}
+							});
+
+							var styles = [
+								{
+									"featureType": "all",
+									"elementType": "labels.text.fill",
+									"stylers": [
+										{
+											"saturation": 36
+										},
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 40
+										}
+									]
+								},
+								{
+									"featureType": "all",
+									"elementType": "labels.text.stroke",
+									"stylers": [
+										{
+											"visibility": "on"
+										},
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 16
+										}
+									]
+								},
+								{
+									"featureType": "all",
+									"elementType": "labels.icon",
+									"stylers": [
+										{
+											"visibility": "off"
+										}
+									]
+								},
+								{
+									"featureType": "administrative",
+									"elementType": "geometry.fill",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 20
+										}
+									]
+								},
+								{
+									"featureType": "administrative",
+									"elementType": "geometry.stroke",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 17
+										},
+										{
+											"weight": 1.2
+										}
+									]
+								},
+								{
+									"featureType": "landscape",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 20
+										}
+									]
+								},
+								{
+									"featureType": "poi",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 21
+										}
+									]
+								},
+								{
+									"featureType": "road.highway",
+									"elementType": "geometry.fill",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 17
+										}
+									]
+								},
+								{
+									"featureType": "road.highway",
+									"elementType": "geometry.stroke",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 29
+										},
+										{
+											"weight": 0.2
+										}
+									]
+								},
+								{
+									"featureType": "road.arterial",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 18
+										}
+									]
+								},
+								{
+									"featureType": "road.local",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 16
+										}
+									]
+								},
+								{
+									"featureType": "transit",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 19
+										}
+									]
+								},
+								{
+									"featureType": "water",
+									"elementType": "geometry",
+									"stylers": [
+										{
+											"color": "#000000"
+										},
+										{
+											"lightness": 17
+										}
+									]
+								}
+							];
+
+							var marker = new google.maps.Marker({
+								map: map,
+								position: new google.maps.LatLng(51.533216, -0.059269),
+								title: 'Oval Space',
+								icon: markerImage
+							});
+
+							map.setOptions({styles: styles});
+						}
+					</script>
+
+					<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJPPKoZEtJZ6tscGcfPLHF16u4s7RqfPA&callback=initMap" type="text/javascript"></script>
+				</div>
+
+				<div class="location__bottom">
+					<div class="loc-desc">
+						<p class="loc-desc__title">The city on the edge  of tomorrow</p>
+						<p class="loc-desc__desc">Berlin, Germany’s capital, is one of the busiest European tech centers and the best talent gravitates towards the city. With two international airports and modern infrastructure, you don’t even need a hyperdrive to get here</p>
+					</div>
+					
+					<div class="location__slider">
+						<div class="loc-slider">
+							<div class="loc-slider__item">
+								<img src="pic/slider_1.jpg">
+							</div>
+					
+							<div class="loc-slider__item">
+								<img src="pic/slider_2.jpg">
+							</div>
+					
+							<div class="loc-slider__item">
+								<img src="pic/slider_3.jpg">
+							</div>
+					
+							<div class="loc-slider__item">
+								<img src="pic/slider_4.jpg">
+							</div>
+					
+							<div class="loc-slider__item">
+								<img src="pic/slider_5.jpg">
+							</div>
+						</div>
+					
+						<div class="loc-slider-nav">
+							<div class="pagination"></div>
+							<div class="captions">
+								<div class="caption">This is a caption for slide 1</div>
+								<div class="caption">This is a caption for slide 2</div>
+								<div class="caption">This is a caption for slide 3</div>
+								<div class="caption">This is a caption for slide 4</div>
+								<div class="caption">This is a caption for slide 5</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
