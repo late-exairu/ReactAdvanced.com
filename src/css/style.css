@@ -612,7 +612,7 @@ h6 {
     align-items: center;
     padding: 0 20px 0 80px;
     transform: translateX(-60px);
-    transition: ease all .1s; }
+    transition: all ease .2s; }
   .basic-btn__arr-l, .basic-btn__arr-r {
     position: absolute;
     left: 0;
@@ -1073,7 +1073,8 @@ h6 {
   right: 0;
   top: 0;
   bottom: 0;
-  height: auto; }
+  height: auto;
+  font-size: 14px; }
   @media only screen and (max-width: 480px) {
     .f-reserve {
       display: flex;
@@ -1727,7 +1728,7 @@ h6 {
       transform: scale(1.4);
       fill: #24fc89; }
   .team a {
-    color: #24fc89; }
+    color: #18db73; }
   .team .advices-techs {
     margin: 0; }
     .team .advices-techs__item {
