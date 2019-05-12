@@ -1,0 +1,114 @@
+.party{
+	position: relative;
+
+	.container{
+		padding: 112px 20px 220px;
+		position: relative;
+	}
+
+	.team-mc{
+		margin-top: -230px;
+	}
+
+	&__decor-disco{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin: 0 0 0 -86px;
+		width: 206px;
+		height: 186px;
+		background: url(../img/decor_disco.png) center center no-repeat;
+		background-size: 100%;
+	}
+
+	&__decor-scratch{
+		position: absolute;
+		bottom: -2px;
+		left: 50%;
+		margin: 0 0 0 50px;
+		width: 592px;
+		height: 563px;
+		background: url(../img/decor_scratch.png) center center no-repeat;
+		background-size: 100%;
+	}
+
+	&:before{
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: url(../img/bg-dots.png) center top;
+		z-index: -1;
+
+	}
+
+	&:after{
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 0;
+		right: 0;
+		height: 600px;
+		background: url(../img/bg-dots.png) center top;
+		z-index: -1;
+		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+	}
+
+	.section{
+
+		&__head-l{
+			max-width: 472px;
+		}
+
+		&__desc{
+			margin: 14px 0 0;
+		}
+	}
+
+	@include md{
+		.team-mc{
+			margin-top: 40px;
+		}
+
+		&__decor-scratch{
+			bottom: 0;
+			margin: 0px 0 0 20px;
+			width: 420px;
+			height: 400px;
+		}
+	}
+
+	@include xs{
+
+		.container{
+			padding: 90px 20px 220px;
+			position: relative;
+		}
+
+
+		&__decor-disco{
+			top: 0;
+			margin: 0px 0 0 -54px;
+			width: 120px;
+			height: 108px;
+		}
+
+		&__decor-scratch{
+			bottom: 0;
+			margin: 0 0 0 -140px;
+			width: 280px;
+			height: 266px;
+
+		}
+
+		.team-mc__item {
+			margin-bottom: 65px;
+		}
+	}
+
+	.team-mc__desc{
+		padding-bottom: 45px;
+	}
+}

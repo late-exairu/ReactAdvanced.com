@@ -1,0 +1,377 @@
+.location{
+	position: relative;
+
+	&__map{
+		height: 640px;
+		margin: 0 -1000px 0;
+
+		#map{
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__slider{
+		width: 100%;
+		max-width: 706px;
+		margin: 0 -130px 0 auto;
+	}
+
+	&__decor-city{
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin: 0 0 0 -410px;
+		width: 1200px;
+		height: 360px;
+		background: url(../img/decor_city.png) center center no-repeat;
+		background-size: 100%;
+	}
+
+	&__decor-zep{
+		position: absolute;
+		bottom: -332px;
+		left: 50%;
+		margin: 0 0 0 -452px;
+		width: 366px;
+		height: 418px;
+		background: url(../img/decor_zep.png) center center no-repeat;
+		background-size: 100%;
+	}
+
+	&__bottom{
+		display: flex;
+	}
+
+	.container{
+		position: relative;
+		padding: 0 20px 170px;
+	}
+
+	.section{
+
+		&__head{
+			position: absolute;
+			left: 20px;
+			top: 252px;
+			right: 20px;
+		}
+
+		&__head-l{
+			background: $clr-black;
+			position: relative;
+			padding-top: 84px;
+			padding-right: 90px;
+			padding-bottom: 90px;
+			max-width: 57%;
+			z-index: 1;
+
+			&:after{
+				content: '';
+				position: absolute;
+				width: 9999px;
+				left: -9999px;
+				top: 0;
+				bottom: 0;
+				background: $clr-black;
+				z-index: -1;
+			}
+
+		}
+
+		&__title{
+			color: $clr-green;
+			/*margin: 84px 0 0;*/
+		}
+
+		&__subtitle{
+			color: $clr-green;
+			font-weight: 700;
+			font-size: 18px;
+			margin: 0 0 27px;
+		}
+
+		&__desc{
+			color: $clr-white;
+		}
+	}
+
+	@include md{
+		
+		&__slider{
+			max-width: 50%;
+			margin-right: -20px;
+		}
+	}
+
+	@include sm{
+
+		.section{
+
+			&__head{
+				position: relative;
+				left: 0;
+				top: 0;
+				right: 0;
+				margin: 0 -20px;
+			}
+
+			&__head-l{
+				max-width: none;
+				padding-left: 80px;
+				padding-bottom: 0;
+			}
+		}
+
+		&__decor-zep,
+		&__decor-city{
+			display: none;
+		}
+
+		&__map{
+			height: 480px;
+		}
+
+		&__bottom{
+			flex-direction: column;
+		}
+
+		&__slider{
+			max-width: none;
+			width: auto;
+			margin: 20px -20px 0;
+			display: flex;
+			flex-direction: column-reverse;
+		}
+
+		.container{
+			padding-bottom: 0;
+		}
+	}
+
+	@include xs{
+
+		.section{
+
+			&__head-l{
+				max-width: none;
+				padding: 80px 22px 0;
+			}
+
+			&__subtitle{
+				padding-left: 74px;
+				margin: 0 0 16px;
+			}
+		}
+
+		&__decor-zep{
+			display: none;
+		}
+	}
+
+}
+
+.address{
+	position: absolute;
+	top: -37px;
+	right: -32px;
+	background: $clr-green;
+	color: $clr-black;
+	padding: 32px 37px;
+
+	&:after{
+		content: '';
+		position: absolute;
+		left: 40px;
+		bottom: -24px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 24px 24px 0 0;
+		border-color: #24fc89 transparent transparent transparent;
+	}
+
+	&__title{
+		font-size: 53px;
+		font-weight: 700;
+		margin: 0;
+		line-height: 1;
+	}
+
+	&__desc{
+		font-size: 18px;
+		font-weight: 600;
+		margin: 5px 0 2px;
+		line-height: 1.36;
+	}
+
+	&__link{
+		display: inline-block;
+		font-size: 18px;
+		font-weight: 600;
+		margin: 0;
+		line-height: 1.36;
+		text-decoration: none;
+		color: $clr-black;
+	}
+
+	@include sm{
+		position: relative;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		margin: 20px 0 -120px;
+		max-width: 360px;
+
+		&__title{
+			font-size: 32px;
+		}
+
+		&__desc,
+		&__link{
+			font-size: 16px;
+		}
+	}
+
+	@include xs{
+		margin: 26px 0 -120px;
+		padding: 28px 34px;
+
+	}
+}
+
+.loc-slider{
+	width: 100%;
+
+	&__item{
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.loc-slider-nav{
+	display: flex;
+
+	.pagination{
+		position: relative;
+		z-index: 1;
+	}
+
+	.slick-prev,
+	.slick-next{
+		width: 60px;
+		height: 60px;
+		background: $clr-green;
+		outline: none;
+		border: none;
+		cursor: pointer;
+	}
+
+	.captions{
+		flex: 1 1;
+		font-size: 16px;
+		font-weight: 700;
+		height: 60px;
+		line-height: 1;
+		padding: 0 30px;
+		min-width: 0;
+		align-items: center;
+	}
+
+	.caption{
+		display: flex;
+		height: 60px;
+		align-items: center;
+	}
+
+	@include sm{
+		position: relative;
+
+		.slick-prev,
+		.slick-next{
+			width: 50px;
+			height: 50px;
+		}
+
+		.captions{
+			height: 50px;
+			line-height:1;
+			padding: 0 20px;
+			position: relative;
+			z-index: 1;
+
+			.caption{
+				display: flex;
+				height: 50px;
+				align-items: center;
+			}
+		}
+
+		&:after{
+			content: '';
+			position: absolute;
+			width: 472px;
+			height: 140px;
+			bottom: 0;
+			left: 50%;
+			margin-left: -10px;
+			background: url(../img/decor_city.png) center center no-repeat;
+			background-size: 100%;
+		}
+	}
+}
+
+
+.loc-desc{
+	padding: 240px 20px 18px 104px;
+	margin: auto 0 0;
+	position: relative;
+	z-index: 1;
+
+	&__title{
+		font-size: 35px;
+		font-weight: 700;
+		margin: 0 0 16px;
+		line-height: 1.2;
+		max-width: 380px;
+	}
+
+	&__desc{
+		font-size: 16px;
+		font-weight: 400;
+		margin: 16px 0 0;
+		line-height: 1.56;
+		max-width: 380px;
+	}
+
+	@include temp{
+		padding-left: 60px;
+	}
+
+	@include sm{
+		padding: 93px 0 34px;
+
+		&__title{
+			font-size: 24px;
+			max-width: 180px;
+		}
+
+		&__desc{
+			font-size: 14px;
+		}
+
+		&:after{
+			content: '';
+			position: absolute;
+			right: -90px;
+			top: -54px;
+			width: 220px;
+			height: 254px;
+			background: url(../img/decor_zep.png) center center no-repeat;
+			background-size: 100%;
+		}
+	}
+}

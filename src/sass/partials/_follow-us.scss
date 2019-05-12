@@ -1,0 +1,211 @@
+
+.follow-us{
+	position: relative;
+	background: $clr-green;
+
+	.container{
+		padding: 0 20px 72px;
+	}
+
+	&__decor-pipe{
+		width: 84px;
+		height: 142px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin: 0 0 0 -592px;
+		background: url(../img/decor_pipe.png) center center no-repeat;
+		background-size: 100%;
+	}
+
+	.section{
+
+		&__head-l{
+
+			.section__title{
+				padding-top: 12px;
+				
+				.initial{
+					color: $clr-black;
+					left: 10px;
+				}
+			}
+
+		}
+
+		&__head-r{
+			margin: auto 0 0;
+			padding: 0;
+		}
+	}
+
+	.socials{
+		display: inline-flex;
+		margin: 14px auto 0 -18px;
+
+		&__item{
+			margin: 0;
+			padding: 20px;
+		}
+
+		&__link{
+			width: 60px;
+			height: 60px;
+			background: $clr-black;
+		}
+
+		&__img{
+			transform: scale(1.6);
+			fill: $clr-white;
+		}
+	}
+
+	@include xl {
+
+
+		&__decor-pipe{
+			left: 20px;
+			margin: 0;
+		}
+	}
+
+	@include temp{
+		.section__head{
+			flex-direction: row;
+		}
+
+		.socials{
+			margin: 14px auto 0 -10px;
+		}
+	}
+
+	@include md{
+		.socials{
+			&__item{
+				padding: 20px 10px;
+			}
+		}
+	}
+
+	@include sm{
+		.section__head{
+			flex-direction: column;
+		}
+
+		.socials{
+			justify-content: center;
+
+			&__link{
+				width: 45px;
+				height: 45px;
+			}
+		}
+
+		.section{
+
+			&__head-l{
+
+				.section__title{
+					padding-top: 122px;
+				}
+
+			}
+		}
+	}
+
+	@include xs{
+		.socials{
+			width: 100%;
+			justify-content: space-between;
+			margin: 2px 0 8px;
+
+			&__item{
+				padding: 10px 5px;
+			}
+		}
+
+		&__decor-pipe{
+			left: 20px;
+			margin: 0;
+			width: 62px;
+			height: 68px;
+			background-position: center top;
+			bottom: 0;
+		}
+	}
+}
+
+.subscribe-form{
+	overflow: hidden;
+	padding: 20px 0 20px 10px;
+
+	&__title{
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.38;
+		margin: 0 0 33px;
+	}
+
+	&__input-wrap{
+		position: relative;
+	}
+
+	&__input{
+		font-family: $got;
+		font-size: 13px;
+		font-weight: 700;
+		border: 3px solid $clr-black;
+		height: 62px;
+		padding: 0 20px;
+		width: 100%;
+		transition: all .2s ease;
+
+		&::placeholder{
+			color: $clr-black;
+		}
+
+		&:focus{
+			box-shadow: none;
+			outline: none;
+			border-color: $clr-black;
+		}
+	}
+
+	&__submit{
+		position: absolute;
+		right: 3px;
+		bottom: 3px;
+		top: 3px;
+		font-family: $got;
+		font-size: 13px;
+		font-weight: 700;
+		height: 56px;
+		border: none;
+	}
+
+	@include temp{
+		margin: 0 0 0 20px;
+		padding: 20px 0 20px 0;
+
+		&__title{
+			font-size: 16px;
+			line-height: 1.78;
+			margin: 0 0 35px;
+		}
+	}
+
+	@include sm{
+		margin: 0;
+	}
+
+	@include xs{
+		margin: 0;
+		padding: 0;
+
+		&__title{
+			font-size: 16px;
+			line-height: 1.52;
+			margin: 0 0 18px;
+		}
+	}
+}
