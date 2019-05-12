@@ -1,0 +1,128 @@
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+	position: relative;
+	height: 105px;
+	background: $clr-black;
+
+	.container{
+		padding: 0 254px 0 20px;
+		display: flex;
+		align-items: center;
+		height: 100%;
+		justify-content: space-between;
+	}
+
+	.nav{
+		margin: 0 20px;
+
+		&__link{
+			color: $clr-green;
+		}
+	}
+
+	@include md{
+		height: auto;
+
+		.container{
+			padding: 15px 220px 15px 20px;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.nav{
+			margin: 0 0 0 -20px;
+		}
+	}
+
+	@include sm{
+
+		.nav{
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	@include xs{
+
+		.container{
+			padding: 60px 20px 15px 20px;
+			align-items: center;
+		}
+
+		.nav{
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+
+			&__item{
+				margin: 0;
+			}
+		}
+	}
+}
+
+.f-logo{
+	a {
+		text-decoration: none;
+	}
+
+
+	display: flex;
+
+	&:before{
+		content: '';
+		display: inline-block;
+		width: 40px;
+		height: 50px;
+		margin: 0 10px 0 0;
+		background: url(../img/f-logo.svg) center center no-repeat;
+	}
+
+	&__desc{
+		margin: auto 0;
+	}
+
+	&__by{
+		font-size: 13px;
+		color: $clr-white;
+		margin: 6px 0 0;
+		line-height: 1.2;
+	}
+
+	&__org{
+		position: relative;
+		font-size: 25px;
+		font-weight: 700;
+		color: $clr-green;
+		margin: 0;
+		left: -5px;
+		line-height: 1.2;
+	}
+
+	@include md{
+		margin: 10px 0;
+	}
+}
+
+.f-reserve{
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: auto;
+	font-size: 14px;
+
+	@include xs{
+		display: flex;
+		order: 1;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		top: -20px;
+		height: 60px;
+		border: 3px solid $clr-black;
+	}
+}

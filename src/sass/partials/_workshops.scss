@@ -1,0 +1,100 @@
+
+.workshops{
+	position: relative;
+	background: $clr-black;
+
+	.container{
+		padding: 416px 20px 190px;
+	}
+
+	.section{
+		position: relative;
+
+		&__title{
+			color: $clr-green;
+			position: relative;
+
+			.initial{
+				left: 10px;
+			}
+		}
+
+		&__subtitle{
+			color: #24fc89;
+			font-weight: 700;
+			font-size: 18px;
+			margin: 0 0 27px;
+			position: relative;
+		}
+
+		&__desc{
+			color: $clr-white;
+			position: relative;
+		}
+	}
+
+	&__btn{
+		margin: 40px 0 0;
+	}
+
+	&__decor-bottom{
+		width: 1373px;
+		height: 550px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin: 0 0 0 -700px;
+		background: url(../img/decor_bottom.png) center center no-repeat;
+		background-size: 100%;
+	}
+
+	@include md{
+
+		&__decor-bottom{
+			width: 1024px;
+			height: 412px;
+			margin: 0 0 0 -512px;
+		}
+	}
+
+
+	@include temp{
+
+		.section{
+
+			&__head-l{
+				max-width: 500px;
+			}
+		}
+	}
+
+	@include sm{
+
+		.container{
+			padding: 372px 20px 234px;
+		}
+
+		.section{
+
+			&__head-l{
+				max-width: none;
+			}
+		}
+
+		&__decor-bottom{
+			width: 598px;
+			height: 240px;
+			margin: 0 0 0 -310px;
+		}
+	}
+
+	@include xs{
+
+		&__decor-bottom{
+			width: 554px;
+			height: 222px;
+			margin: 0px 0 0 -356px;
+
+		}
+	}
+}

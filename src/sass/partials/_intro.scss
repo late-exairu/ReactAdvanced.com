@@ -1,0 +1,355 @@
+
+
+.intro{
+	position: relative;
+	min-height: 100vh;
+	background: url(../img/intro_bg.png) center center no-repeat;
+	background-size: cover;
+
+	.container{
+		display: flex;
+		padding: 80px 20px;
+		min-height: 100vh;
+
+		@include temp{
+			padding: 20px 10px 60px;
+		}
+
+		@include xs{
+			padding: 18px 10px 60px;
+		}
+	}
+
+	&__octo{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(0, -50%);
+		margin: 0 0 0 -1110px;
+		width: 813px;
+		height: 594px;
+		background: url(../img/octo_1.png) center center no-repeat;
+		background-size: 100%;
+	}
+
+	&__content{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		margin: auto 0;
+		width: 100%;
+	}
+
+	&__desc{
+		max-width: 460px;
+		text-align: center;
+		margin: 22px auto;
+		line-height: 1.72;
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	&__reserve{
+		position: absolute;
+		margin: 0;
+		z-index: 1;
+		right: 10px;
+		bottom: 35px;
+	}
+
+	&__important-guys{
+		position: absolute;
+		left: 0;
+		bottom: 37px;
+		width: 118px;
+		height: 55px;
+		background: url(../img/focus-reactive.png) center center no-repeat;
+		background-size: 100%;
+		display: block;
+		z-index: 1;
+	}
+
+	@include md{
+
+		&__reserve{
+			margin: 112px 0 0;
+		}
+
+	}
+
+	@include sm{
+
+		&__desc{
+			font-size: 13px;
+			line-height: 1.4;
+			margin: 9px auto;
+		}
+	}
+	@include temp{
+
+
+		&__reserve{
+			margin: auto 0 0 0;
+			bottom: 4px;
+		}
+
+		&__important-guys{
+			bottom: 4px;
+			left: 10px;
+		}
+	}
+
+	@include sm{
+
+		&__octo{
+			margin: 290px 0 0 -620px;
+		}
+	}
+
+	@include xs{
+
+		&__octo{
+			width: 546px;
+			height: 426px;
+			margin: 175px 0 0 -422px;
+		}
+
+		&__content{
+			position: initial;
+		}
+
+		&__reserve{
+			margin: 0;
+			width: 100%;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+
+		&__important-guys{
+			width: 75px;
+			height: 35px;
+			bottom: 75px;
+			left: 25px;
+		}
+	}
+}
+
+.stats{
+	padding: 0;
+	margin: 42px 0 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+
+	&__item{
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		align-self: flex-start;
+		min-width: 200px;
+	}
+
+	&__num{
+		font-size: 45px;
+		font-weight: 700;
+		line-height: 1.25;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+
+		span{
+			display: inline-block;
+			position: relative;
+			margin: 0 auto;
+			padding: 0 10px;
+
+			&:after{
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 4px;
+				top: 53%;
+				background: $clr-green;
+				z-index: -1;
+			}
+		}
+	}
+
+	&__desc{
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.36;
+		margin: 4px 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	@include xl{
+		&__item{
+			min-width: 0;
+			width: 200px;
+		}
+	}
+
+	@include md{
+		margin: 42px 0 0;
+
+		&__num{
+			font-size: 38px;
+		}
+
+		&__desc{
+			font-size: 16px;
+		}
+	}
+
+	@include temp{
+		margin: 42px 0 0;
+	}
+
+	@include xs{
+		margin: 4px 0 0;
+
+		&__item{
+			width: 33%;
+		}
+
+		&__num{
+			font-size: 24px;
+		}
+
+		&__desc{
+			font-size: 10px;
+			margin: 0;
+		}
+	}
+}
+
+.big-day{
+	position: absolute;
+	right: 10px;
+	top: 166px;
+	font-weight: 700;
+	text-align: right;
+	z-index: 1;
+
+	&__mon{
+		font-size: 45px;
+
+		span{
+			margin: 0 -3px 0 0;
+			position: relative;
+			top: -6px;
+			font-family: $rb;
+			font-size: 150px;
+			font-weight: 400;
+			line-height: 100px;
+			color: #24fc89;
+			display: inline-block;
+		}
+	}
+
+	&__date{
+		position: relative;
+		font-size: 28px;
+		line-height: 1.2;
+		margin: 4px 0 0;
+
+		span{
+			display: inline-block;
+			position: relative;
+			margin: 0 auto;
+			padding: 0 0 0 0px;
+
+			&:after{
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -2px;
+				top: 53%;
+				background: $clr-green;
+				z-index: -1;
+			}
+		}
+	}
+
+	@include md{
+		top: 88px;
+
+		&__mon{
+			font-size: 36px;
+		}
+
+		&__date{
+			font-size: 24px;
+		}
+
+	}
+
+	@include temp{
+		top: 0;
+		right: 0;
+		position: relative;
+		display: flex;
+		width: 100%;
+		max-width: 200px;
+		margin: 140px auto 0;
+		justify-content: space-between;
+
+		&__mon{
+			line-height: 1;
+		}
+
+		&__date{
+			line-height: 1;
+		}
+	}
+
+
+	@include sm{
+		max-width: 160px;
+		position: relative;
+		margin: 200px auto 0;
+		left: -40px;
+
+		&__wrap{
+			position: relative;
+			top: -4px;
+			margin: 0 0 0 auto;
+		}
+
+		&__mon{
+			font-size: 28px;
+
+			span{
+				color: #000;
+			}
+		}
+
+		&__date{
+			font-size: 22px;
+		}
+	}
+
+	@include xs{
+		margin: 226px 20px 20px;
+		max-width: none;
+		width: auto;
+		left: 0;
+
+		&__mon{
+			font-size: 36px;
+
+			span{
+				font-size: 125px;
+				line-height: 72px;
+			}
+		}
+	}
+}

@@ -1,0 +1,353 @@
+.schedule{
+
+	.container{
+		padding: 112px 20px 0;
+	}
+
+	.section{
+
+		&__title{
+			position: relative;
+			z-index: 3;
+		}
+	}
+
+	@include temp{
+		.container{
+			padding: 60px 20px 0;
+		}
+	}
+}
+
+
+.content-tab{
+	position: relative;
+	display: block;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	max-width: 968px;
+	margin: 40px auto -2px;
+	border: 2px solid $clr-green;
+
+	&__tab{
+		font-size: 16px;
+		font-weight: 700;
+		position: relative;
+		display: block;
+		height: 58px;
+		line-height: 58px;
+		cursor: pointer;
+		background: transparent;
+		border: none;
+		color: $clr-black;;
+		background: $clr-white;
+		flex: 1 1 auto;
+		outline: none;
+
+		&.active{
+			background: $clr-green;
+		}
+	}
+
+	&:after{
+		content: '';
+		position: absolute;
+		right: -226px;
+		top: -202px;
+		width: 668px;
+		height: 450px;
+		background: url(../img/decor_octo2.png) center center no-repeat;
+		background-size: 100%;
+		z-index: 2;
+		pointer-events: none;
+	}
+
+	@include sm{
+		margin: 28px 0 -2px;
+		
+		&__tab{
+			font-size: 16px;
+			height: 48px;
+			line-height: 48px;
+
+			span{
+				display: none;
+			}
+		}
+
+		&:after{
+			right: -126px;
+			top: -112px;
+			width: 370px;
+			height: 250px;
+		}
+	}
+	
+	@include xs{
+		
+		&__tab{
+			font-size: 14px;
+		}
+	}
+
+	@include sm{
+
+	}
+}
+
+.schedule-list{
+	position: relative;
+	padding: 0;
+	list-style: none;
+	font-size: 24px;
+	line-height: 1.2;
+	max-width: 968px;
+	margin: 0 auto -300px;
+	display: none;
+	border: 2px solid $clr-green;
+	padding: 84px 0;
+	background: $clr-white;
+	z-index: 1;
+
+	&.active{
+		display: block;
+	}
+
+	&__container{
+		max-width: 900px;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__container{
+		max-width: 900px;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__item{
+		cursor: pointer;
+		position: relative;
+		width: 100%;
+		clear: both;
+		margin: 0;
+		padding: 18px 0;
+		display: flex;
+
+		&:before{
+			content: '';
+			position: absolute;
+			left: 35%;
+			top: 0;
+			bottom: 0;
+			width: 2px;
+			background: $clr-green;
+			transform: translateY(30px);
+		}
+
+		&:after{
+			width: 8px;
+			height: 8px;
+			border: 2px solid $clr-green;
+			content: '';
+			position: absolute;
+			left: calc(35% + 1px);
+			top: 28px;
+			transform: translateX(-50%);
+			border-radius: 50px;
+			background: $clr-white;
+		}
+
+		&:hover,
+		&.open{
+			.schedule-list__time{
+				span{
+					background: $clr-black;
+					color: $clr-white;
+				}
+			}
+
+			.schedule-list__title{
+				span{
+					background: $clr-black;
+					color: $clr-white;
+				}
+			}
+		}
+
+		&.active{
+			&:after{
+				background: $clr-green;
+			}
+		}
+
+		&.green{
+			color: $clr-greenD;
+
+			&:after{
+				background: $clr-green;
+				border-color: $clr-green;
+			}
+		}
+
+		&.disconnected{
+
+			&:before{
+				display: none;
+			}
+
+			&.green{
+
+				&:after{
+					width: 4px;
+					height: 4px;
+				}
+			}
+		}
+	}
+
+	&__time{
+		font-size: 26px;
+		font-weight: 700;
+		line-height: 1.2;
+		max-width: 35%;
+		width: 100%;
+		padding: 0 60px 0;
+		margin: 0 0 0 0;
+		text-align: right;
+
+		span{
+			padding: 0 2px;
+			transition: all ease .1s;
+		}
+	}
+
+	&__desc{
+		max-width: 65%;
+		flex-grow: 1;
+		padding: 0 60px;
+	}
+
+	&__title{
+		font-size: 22px;
+		line-height: 1.2;
+		font-weight: 700;
+		margin: 0;
+		padding: 1px 0 0;
+
+		span{
+			display: inline-block;
+			padding: 1px 2px 2px;
+			transition: all ease .1s;
+		}
+	}
+
+	&__speaker{
+		font-size: 18px;
+		line-height: 1.2;
+		width: 100%;
+		margin: 6px 0 0;
+	}
+
+	&__p{
+		font-size: 16px;
+		line-height: 1.66;
+		margin: 14px 0 0;
+		padding: 0;
+		color: #5f5f5f;
+	}
+
+	&__info{
+		display: none;
+	}
+
+	&__shift-title{
+		margin: 0 0 0 -36.5%;
+		float: left;
+		color: #bbb;
+	}
+
+	&__pic{
+		float: left;
+		margin: 0 24px 0 0;
+	}
+
+	@include sm{
+		padding: 20px 0;
+		
+		&__item{
+			padding: 15px 12px 15px 12px;
+			flex-wrap: wrap;
+
+			&:after{
+				top: 24px;
+			}
+		}
+
+		&__time{
+			font-size: 22px;
+			padding: 0 30px;
+		}
+
+		&__desc{
+			padding: 0 30px;
+		}
+
+		&__title{
+			font-size: 18px;
+			padding: 2px 0 0;
+		}
+
+		&__speaker{
+			font-size: 16px;
+			margin: 0;
+		}
+	}
+
+	@include xs{
+		margin-bottom: -280px;
+		
+		&__item{
+			flex-direction: column;
+			padding: 15px 12px 15px 12px;
+			flex-wrap: wrap;
+
+			&:after{
+				left: -1px;
+			}
+
+			&:before{
+				left: -2px;
+			}
+		}
+
+		&__time{
+			max-width: 60px;
+			margin: 0 10px 0 0;
+			text-align: left;
+			padding: 0;
+		}
+
+		&__title{
+			padding: 0;
+		}
+
+		&__speaker{
+			max-width: none;
+
+			.schedule-list__p{
+				margin: 0 0 12px;
+			}
+		}
+
+		&__desc{
+			max-width: none;
+			padding: 0;
+		}
+
+		&__p{
+
+		}
+	}
+}
