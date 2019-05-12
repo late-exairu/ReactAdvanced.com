@@ -133,7 +133,7 @@
 	opacity: 0;
 	transform: rotate(120deg) scale(0.5);
 	transition: all 0.5s;
-	
+
 	&__link {
 		display: block;
 		height: 100%;
@@ -151,10 +151,11 @@
 	list-style: none;
 	font-weight: 700;
 	flex: 1 1 auto;
-	justify-content: space-between;
+	//justify-content: space-between;
 
 	&__item{
 		position: relative;
+		margin-right: 10px;
 
 		&:after{
 			content: '';

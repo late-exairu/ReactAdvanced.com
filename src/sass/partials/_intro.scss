@@ -28,7 +28,7 @@
 		margin: 0 0 0 -1110px;
 		width: 813px;
 		height: 594px;
-		background: url(../img/octo.png) center center no-repeat;
+		background: url(../img/octo_1.png) center center no-repeat;
 		background-size: 100%;
 	}
 
@@ -107,7 +107,7 @@
 	}
 
 	@include xs{
-		
+
 		&__octo{
 			width: 546px;
 			height: 426px;
