@@ -60,12 +60,73 @@
 		}
 	}
 
+	&.tall{
+		background: url('../img/bg-dots.png'), $clr-white;
+
+		.follow-us__decor-pipe{
+			display: none;
+		}
+
+		.follow-us__decor-fish{
+			width: 226px;
+			height: 121px;
+			position: absolute;
+			top: 158px;
+			left: 50%;
+			margin: 0 0 0 -198px;
+			background: url(../img/decor_fish2.png) center center no-repeat;
+			background-size: 100%;
+		}
+
+		.follow-us__decor-sub{
+			width: 544px;
+			height: 350px;
+			position: absolute;
+			bottom: 52px;
+			left: 50%;
+			margin: 0 0 0 168px;
+			background: url(../img/decor_submarine.png) center center no-repeat;
+			background-size: 100%;
+		}
+
+		.container{
+			padding: 260px 20px 240px;
+		}
+
+		.section{
+			&__head-l{
+
+				.section__title{
+					
+					&.initial{
+						color: $clr-green;
+					}
+				}
+			}
+		}
+
+		.subscribe-form{
+			position: relative;
+			padding: 20px;
+			background: $clr-white;
+			z-index: 1;
+		}
+	}
+
 	@include xl {
 
 
 		&__decor-pipe{
 			left: 20px;
 			margin: 0;
+		}
+	}
+
+	@include md{
+		.socials{
+			&__item{
+				padding: 20px 10px;
+			}
 		}
 	}
 
@@ -77,12 +138,17 @@
 		.socials{
 			margin: 14px auto 0 -10px;
 		}
-	}
 
-	@include md{
-		.socials{
-			&__item{
-				padding: 20px 10px;
+		&.tall{
+
+			.follow-us__decor-fish{
+				top: 100px;
+			}
+
+			.follow-us__decor-sub{
+				width: 470px;
+				height: 304px;
+				margin: 0 0 0 -268px;
 			}
 		}
 	}
@@ -111,6 +177,27 @@
 
 			}
 		}
+
+		&.tall{
+
+			.container{
+				padding: 20px 20px 180px;
+			}
+
+			.follow-us__decor-fish{
+				top: 30px;
+				width: 160px;
+				height: 88px;
+				margin: 0;
+			}
+
+			.follow-us__decor-sub{
+				width: 260px;
+				height: 170px;
+				bottom: 30px;
+				margin: 0 0 0 -132px;
+			}
+		}
 	}
 
 	@include xs{
@@ -131,6 +218,16 @@
 			height: 68px;
 			background-position: center top;
 			bottom: 0;
+		}
+
+		&.tall{
+			.section{
+				&__head-r{
+					width: auto;
+					margin-left: -20px;
+					margin-right: -20px;
+				}
+			}
 		}
 	}
 }
@@ -206,6 +303,17 @@
 			font-size: 16px;
 			line-height: 1.52;
 			margin: 0 0 18px;
+		}
+
+		&__submit{
+
+			.basic-btn__inner{
+				padding: 0 0 0 60px;
+			}
+
+			.basic-btn__text{
+				display: none;
+			}
 		}
 	}
 }
