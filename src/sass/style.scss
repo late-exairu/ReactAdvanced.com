@@ -30,6 +30,10 @@ body {
 a {
 	color: #18db73;
 	transition: all linear .2s;
+
+	&:hover{
+		text-decoration: none;
+	}
 }
 
 .clearfix:after {

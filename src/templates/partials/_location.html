@@ -17,7 +17,12 @@
 						<div class="address">
 							<h3 class="address__title">Oval Space</h3>
 							<p class="address__desc">29–32 The Oval<br/> London – E2 9DT</p>
-							<a class="address__link" href="https://goo.gl/maps/9aJ18fpuKm96appu8" target="_blank">View on map</a>
+							<a class="address__link" href="https://goo.gl/maps/9aJ18fpuKm96appu8" target="_blank">
+								View on map
+								<svg class="address__link-arrow" role="img" aria-hidden="true">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow-r"></use>
+								</svg>
+							</a>
 						</div>
 
 						<div class="location__decor-zep"></div>
@@ -35,8 +40,7 @@
 								center: {lat: 51.533216, lng: -0.068269},
 								zoom: 16,
 								scrollwheel: false,
-								disableDefaultUI: true,
-								draggable: false
+								disableDefaultUI: true
 							});
 
 							var markerImage = new google.maps.MarkerImage('img/marker.svg',
@@ -254,23 +258,31 @@
 					<div class="location__slider">
 						<div class="loc-slider">
 							<div class="loc-slider__item">
-								<img src="pic/slider_1.jpg">
+								<img src="pic/loc_1.jpg">
 							</div>
 
 							<div class="loc-slider__item">
-								<img src="pic/slider_2.jpg">
+								<img src="pic/loc_2.jpg">
 							</div>
 
 							<div class="loc-slider__item">
-								<img src="pic/slider_3.jpg">
+								<img src="pic/loc_3.jpg">
 							</div>
 
 							<div class="loc-slider__item">
-								<img src="pic/slider_4.jpg">
+								<img src="pic/loc_4.jpg">
 							</div>
 
 							<div class="loc-slider__item">
-								<img src="pic/slider_5.jpg">
+								<img src="pic/loc_5.jpg">
+							</div>
+
+							<div class="loc-slider__item">
+								<img src="pic/loc_6.jpg">
+							</div>
+
+							<div class="loc-slider__item">
+								<img src="pic/loc_7.jpg">
 							</div>
 						</div>
 
@@ -282,6 +294,8 @@
 								<div class="caption">This is a caption for slide 3</div>
 								<div class="caption">This is a caption for slide 4</div>
 								<div class="caption">This is a caption for slide 5</div>
+								<div class="caption">This is a caption for slide 6</div>
+								<div class="caption">This is a caption for slide 7</div>
 							</div>
 						</div>
 					</div>

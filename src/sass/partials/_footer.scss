@@ -19,6 +19,16 @@
 
 		&__link{
 			color: $clr-green;
+
+			&:hover{
+			}
+		}
+
+		&__item{
+			&:after{
+				background: $clr-green;
+				transform: translateY(-1px);
+			}
 		}
 	}
 
