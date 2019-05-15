@@ -114,6 +114,10 @@
 	background: $clr-white;
 	z-index: 1;
 
+	&.alligned-margin{
+		margin: 0 0 -130px;
+	}
+
 	&.active{
 		display: block;
 	}
