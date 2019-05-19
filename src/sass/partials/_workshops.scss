@@ -4,7 +4,30 @@
 	background: $clr-black;
 
 	.container{
-		padding: 416px 20px 190px;
+		padding: 100px 20px 190px;
+	}
+
+	&.ws-workshop{
+
+		.section{
+			&__head-l{
+				max-width: 55%;
+			}
+
+			&__title{
+				color: $clr-white;
+			}
+		}
+
+		.container{
+			padding: 130px 20px 516px;
+			margin-bottom: -300px;
+		}
+
+		.workshops__decor-bottom{
+			bottom: 280px;
+		}
+
 	}
 
 	.section{
@@ -86,6 +109,16 @@
 			height: 240px;
 			margin: 0 0 0 -310px;
 		}
+
+		&.ws-workshop{
+
+			.section{
+				&__head-l{
+					max-width: none;
+				}
+			}
+
+		}
 	}
 
 	@include xs{
@@ -95,6 +128,60 @@
 			height: 222px;
 			margin: 0px 0 0 -356px;
 
+		}
+	}
+}
+
+.ws-desc{
+	display: flex;
+	color: $clr-white;
+	max-width: 1080px;
+	margin: 50px auto;
+
+	&__left,
+	&__right{
+		padding: 0 20px;
+	}
+
+	&__title{
+		font-size: 24px;
+		line-height: 1.26;
+		margin: 0 0 10px 0;
+	}
+
+	&__p{
+		font-size: 16px;
+		line-height: 1.56;
+		margin: 0;
+	}
+
+	@include sm{
+		flex-direction: column;
+
+		&__left{}
+
+		&__left,
+		&__right{
+			padding: 0 0;
+
+			&:first-child{
+				margin-bottom: 16px;
+			}
+		}
+
+		&__title{
+			font-size: 22px;
+		}
+	}
+
+	@include xs{
+
+		&__title{
+			font-size: 20px;
+		}
+
+		&__p{
+			font-size: 14px;
 		}
 	}
 }

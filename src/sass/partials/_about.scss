@@ -419,7 +419,40 @@
 		align-items: center;
 
 		img{
-			
+		}
+	}
+
+	&__img{
+		fill: $clr-black;
+
+		&.react{
+			width: 28px;
+			height: 25px;
+		}
+
+		&.react-native{
+			width: 28px;
+			height: 25px;
+		}
+		
+		&.graphql{
+			width: 22px;
+			height: 25px;
+		}
+		
+		&.typescript{
+			width: 20px;
+			height: 20px;
+		}
+		
+		&.reason{
+			width: 20px;
+			height: 20px;
+		}
+		
+		&.jest{
+			width: 22px;
+			height: 23px;
 		}
 	}
 
@@ -449,5 +482,9 @@
 		width: 100%;
 		flex-wrap: nowrap;
 		flex: 1 1 auto;
+
+		&__img{
+			transform: scale(0.85);
+		}
 	}
 }

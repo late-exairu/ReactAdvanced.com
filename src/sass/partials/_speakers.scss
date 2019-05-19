@@ -22,6 +22,11 @@
 		&:nth-child(2n){
 			margin-top: -38px;
 		}
+
+		&.fill-width{
+			width: auto;
+			flex: 1;
+		}
 	}
 
 	&__item{
@@ -95,6 +100,7 @@
 		align-items: center;
 		justify-content: space-between;
 		margin: 0;
+		flex-wrap: wrap;
 	}
 
 	&__name{
@@ -120,7 +126,6 @@
 	&__tag{
 		font-size: 14px;
 		position: relative;
-		height: 23px;
 		line-height: 23px;
 		color: $clr-black;
 		padding: 0 0 0 8px;
@@ -147,17 +152,19 @@
 		}
 
 		&__link{
+			width: 34px;
+			height: 34px;
 			&:hover{
 
 				.socials__img{
-					transform: scale(1.4);
+					transform: scale(1.5);
 					fill: $clr-black;
 				}
 			}
 		}
 
 		&__img{
-			transform: scale(1.4);
+			transform: scale(1.5);
 			fill: $clr-green;
 		}
 	}
@@ -176,8 +183,8 @@
 		}
 
 		&__img-wrap{
-			width: 20px;
-			height: 20px;
+			width: 28px;
+			height: 28px;
 			margin: 0;
 
 			img{
@@ -266,6 +273,10 @@
 		.socials__link{
 			width: 30px;
 			height: 30px;
+		}
+
+		.advices-techs{
+			flex: 0 0;
 		}
 
 	}

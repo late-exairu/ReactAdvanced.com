@@ -28,8 +28,23 @@
 		margin: 0 0 0 -1110px;
 		width: 813px;
 		height: 594px;
-		background: url(../img/octo_1.png) center center no-repeat;
+		background: url(../img/octo.png) center center no-repeat;
 		background-size: 100%;
+
+		&-text{
+			position: absolute;
+			right: 118px;
+			top: 89px;
+			line-height: 1.54;
+			font-size: 14px;
+			text-align: center;
+			font-weight: 600;
+			height: 63px;
+			width: 140px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 
 	&__content{
@@ -112,6 +127,12 @@
 			width: 546px;
 			height: 426px;
 			margin: 175px 0 0 -422px;
+
+			&-text{
+				font-size: 10px;
+				right: 57px;
+				top: 62px;
+			}
 		}
 
 		&__content{
@@ -132,6 +153,74 @@
 			height: 35px;
 			bottom: 75px;
 			left: 25px;
+		}
+	}
+}
+
+.logo {
+	height: 266px;
+	width: 458px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+
+	&__link {
+		display: block;
+		height: 100%;
+		background: url(../img/logo.svg) no-repeat;
+		transition: none;
+		background-size: 100%;
+	}
+
+	&.short{
+		height: 109px;
+	}
+
+	@include md{
+		height: 214px;
+		width: 368px;
+
+		&.short{
+			height: 88px;
+		}
+	}
+
+	@include sm{
+		height: 157px;
+		width: 270px;
+		margin: 38px auto 0;
+
+		&.short{
+			height: 65px;
+		}
+	}
+}
+
+.logo-desc{
+	font-family: $rb;
+	font-size: 80px;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 24px auto 5px;
+
+	span{
+		font-size: 65px;
+	}
+
+	@include md{
+		font-size: 72px;
+
+		span{
+			font-size: 55px;
+		}
+	}
+
+	@include sm{
+		font-size: 50px;
+
+		span{
+			font-size: 38px;
 		}
 	}
 }

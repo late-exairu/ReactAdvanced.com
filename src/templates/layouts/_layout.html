@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>React Advanced London Conference, Oct 25, 2019</title>
+	<title>{{ title }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="keywords" content="ReactJS, React, React Native, Reason, GraphQL framework, JavaScript, development, Facebook, workshops, conference" />
 	<meta name="description" content="React Advanced is London based community and a conference, addressing most complex and trickiest to solve topics. Engineers of any level are welcome, but be prepared for hardcore." />
@@ -42,6 +42,23 @@
   })();
 </script>
 
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1374905195888955');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=1374905195888955&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>

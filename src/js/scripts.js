@@ -43,18 +43,18 @@ $(function() {
 	// Location slider
 	$('.loc-slider').slick({
 		adaptiveHeight: true,
-		infinite: false,
+		infinite: true,
 		arrows: false
 	});
 
 	$(".captions").slick({
 		asNavFor: '.loc-slider',
-		infinite: false,
+		infinite: true,
 		speed: 200,
 		fade: true,
 		appendArrows: $('.pagination'),
-		prevArrow: '<button type="button" class="slick-prev"><img src="img/svg/arrow-l.svg"/></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="img/svg/arrow-r.svg"/></button>'
+		prevArrow: '<button type="button" class="slick-prev"><svg class="captions-arrow" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow-l"></use></svg></button>',
+		nextArrow: '<button type="button" class="slick-next"><svg class="captions-arrow" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow-r"></use></svg></button>'
 	});
 
 	/*---------------------------------------------------*/

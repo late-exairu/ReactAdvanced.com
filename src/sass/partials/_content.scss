@@ -6,33 +6,6 @@
 }
 
 
-.logo {
-	height: 266px;
-	width: 458px;
-	margin: 0 auto;
-	position: relative;
-	z-index: 1;
-
-	&__link {
-		display: block;
-		height: 100%;
-		background: url(../img/logo.svg) no-repeat;
-		transition: none;
-		background-size: 100%;
-	}
-
-	@include md{
-		height: 214px;
-		width: 368px;
-	}
-
-	@include sm{
-		height: 157px;
-		width: 270px;
-		margin: 38px auto 0;
-	}
-}
-
 .section{
 
 	&__head{
@@ -82,29 +55,9 @@
 				right: 100%;
 			}
 
-			// &.w{
-			// 	margin-right: 0.05em;
-
-			// 	@include xs{
-			// 		margin: 0 3px 0 -15px;
-			// 	}
-			// }
-
-			// &.o{
-			// 	margin-right: -10px;
-			// }
-
-			// &.f{
-			// 	margin-right: -28px;
-
-			// 	@include temp{
-			// 		margin-right: -20px;
-			// 	}
-
-			// 	@include xs{
-			// 		margin-right: -18px;
-			// 	}
-			// }
+			&.w{
+				left: 10px;
+			}
 
 		}
 
@@ -131,7 +84,16 @@
 		}
 	}
 
-	&.intro{
+	&.black{
+
+		background: $clr-black;
+
+		.section{
+			&__head{
+				color: $clr-white;
+			}
+
+		}
 
 	}
 
