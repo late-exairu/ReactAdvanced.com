@@ -53,8 +53,8 @@ $(function() {
 		speed: 200,
 		fade: true,
 		appendArrows: $('.pagination'),
-		prevArrow: '<button type="button" class="slick-prev"><svg class="captions-arrow" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow-l"></use></svg></button>',
-		nextArrow: '<button type="button" class="slick-next"><svg class="captions-arrow" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow-r"></use></svg></button>'
+		prevArrow: '<button type="button" class="slick-prev"><svg class="captions-arrow" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#arrow-l"></use></svg></button>',
+		nextArrow: '<button type="button" class="slick-next"><svg class="captions-arrow" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#arrow-r"></use></svg></button>'
 	});
 
 	/*---------------------------------------------------*/
@@ -107,7 +107,7 @@ $(function() {
 
 	// $(window).scroll(function(){
 	// 	var fromTop = $(this).scrollTop()+topMenuHeight;
-		
+
 	// 	var cur = scrollItems.map(function(){
 	// 		if ($(this).offset().top < fromTop)
 	// 		return this;
@@ -115,7 +115,7 @@ $(function() {
 	// 	console.log(cur);
 	// 	cur = cur[cur.length-1];
 	// 	var id = cur && cur.length ? cur[0].id : "";
-		
+
 	// 	if (lastId !== id) {
 	// 		lastId = id;
 	// 		menuItems
