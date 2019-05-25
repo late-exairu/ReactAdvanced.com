@@ -157,14 +157,14 @@
 		margin: 0 0 0 auto;
 
 		&:after{
-			content: '';
+			content: "";
 			position: absolute;
 			left: 50%;
 			top: 50%;
-			width: 258px;
-			height: 258px;
-			transform: translate(-50%, -50%);
-			background: url(../img/github-logo.svg) center center no-repeat;
+			width: 220px;
+			height: 246px;
+			transform: translate(-50%,-48%);
+			background: url(../img/family.svg) 50% no-repeat;
 			background-size: 100%;
 		}
 	}
@@ -204,7 +204,7 @@
 			height: 220px;
 
 			&:after{
-				width: 192px;
+				width: 170px;
 				height: 192px;
 			}
 		}

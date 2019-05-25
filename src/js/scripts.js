@@ -59,7 +59,7 @@ $(function() {
 
 	/*---------------------------------------------------*/
 	// Schedule
-	$('.schedule-list__item').click(function () {
+	$('.schedule-list__item.clickable').click(function () {
 		$(this).toggleClass('open');
 		$(this).find('.schedule-list__info').slideToggle();
 	});
@@ -75,9 +75,10 @@ $(function() {
 
 	/*---------------------------------------------------*/
 	// Burger menu
-	$('.menu-toggle').click(function () {
-		$(this).toggleClass('open');
-		$(this).siblings('.header').toggleClass('open');
+	$('.menu-toggle, .nav__link').click(function () {
+		var menuToggle = $('.menu-toggle');
+		$(menuToggle).toggleClass('open');
+		$(menuToggle).siblings('.header').toggleClass('open');
 	});
 
 	/*---------------------------------------------------*/
@@ -170,6 +171,5 @@ $(function() {
 	/*---------------------------------------------------*/
 
 	$('input[placeholder], textarea[placeholder]').placeholder();
-
 
 });

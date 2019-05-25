@@ -1,90 +1,17 @@
 
 {% set title = 'Workshops at React Advanced Conference - Oct 23-24, 2019' %}
 {% set followUsTall = true %}
+{% set pageWorkshop = true %}
 
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 
-	<button class="menu-toggle">
-		<span></span>
-		<span></span>
-	</button>
-
-	<header class="header">
-		<div class="container">
-			<div class="header__logo">
-				<div class="logo-mini ir">
-					<a href="/" class="logo-mini__link">React Advanced London</a>
-				</div>
-			</div>
-
-			<div class="header__nav">
-				<nav class="nav">
-					<li class="nav__item">
-						<a class="nav__link js-scroll-to" href="#about">About</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link js-scroll-to" href="#programmes">Programmes</a>
-					</li>
-<!--					<li class="nav__item">-->
-<!--						<a class="nav__link js-scroll-to" href="#trainers">Trainers</a>-->
-<!--					</li>-->
-					<li class="nav__item">
-						<a class="nav__link" href="https://www.eventbrite.com/e/react-advanced-conference-2019-tickets-59948809503">Tickets</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link js-scroll-to" href="/">Conference page</a>
-					</li>
-				</nav>
-			</div>
-
-			<div class="header__socials">
-				<ul class="socials">
-					<!-- <li class="socials__item">
-						<a href="#" target="_blank" class="socials__link">
-							<svg class="socials__img sl" role="img" aria-hidden="true">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#socials_sl"></use>
-							</svg>
-						</a>
-					</li> -->
-					<li class="socials__item">
-						<a href="http://twitter.com/reactadvanced" target="_blank" class="socials__link">
-							<svg class="socials__img tw" role="img" aria-hidden="true">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#socials_tw"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="socials__item">
-						<a href="https://youtube.com/c/ReactConferences" target="_blank" class="socials__link">
-							<svg class="socials__img yt" role="img" aria-hidden="true">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#socials_yt"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="socials__item">
-						<a href="https://www.facebook.com/ReactAdvanced" target="_blank" class="socials__link">
-							<svg class="socials__img fb" role="img" aria-hidden="true">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#socials_fb"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="socials__item">
-						<a href="https://medium.com/@ReactAdvanced" target="_blank" class="socials__link">
-							<svg class="socials__img med" role="img" aria-hidden="true">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#socials_med"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</header><!-- .header -->
-
-
+{% include "partials/_header.html" %}
+	
 	<main class="content">
 
-		<section class="section intro" id="intro">
+		<section class="section intro height-auto" id="intro">
 			<div class="container">
 
 				<div class="intro__content">
@@ -149,7 +76,7 @@
 					<button class="content-tab__tab js-tabs__tab" id="react-tab">24th Ocober</button>
 				</div>
 
-				<ul class="schedule-list alligned-margin max-width js-tabs__panel active" id="general-panel">
+				<ul class="schedule-list max-width js-tabs__panel active" id="general-panel">
 					<li class="schedule-list__item single">
 						<div class="schedule-list__line single">
 							<div class="schedule-list__sep"></div>
@@ -178,23 +105,36 @@
 									<li class="dashed-list__item">What are the moving pieces of a design system</li>
 									<li class="dashed-list__item">How to define a design system for your company</li>
 									<li class="dashed-list__item">Balancing flexibility and consistency across your components</li>
-									<li class="dashed-list__item"><strong>Design concepts</strong></li>
-									<li class="dashed-list__item">Doing an inventory of your existing products or on-going design concept</li>
-									<li class="dashed-list__item">Breaking your screens into re-usable atomic components</li>
-									<li class="dashed-list__item">Systemize brand attributes and design decisions into tokens</li>
-									<li class="dashed-list__item">Formalise the definition and usage guidelines into documentation</li>
-									<li class="dashed-list__item"><strong>Development</strong></li>
-									<li class="dashed-list__item">Plan the architecture of all the moving parts of the system</li>
-									<li class="dashed-list__item">Creating a technology agnostic library of reusable tokens</li>
-									<li class="dashed-list__item">Staring a component library with fundamental building blocks</li>
-									<li class="dashed-list__item">Combining building blocks to build advanced compound components</li>
-									<li class="dashed-list__item">Defining a consistent, easy to use API across your components</li>
-									<li class="dashed-list__item">Distributing your system with versioning and good documentation</li>
-									<li class="dashed-list__item"><strong>Collaboration</strong></li>
-									<li class="dashed-list__item">Designing a cross-functional design system team</li>
-									<li class="dashed-list__item">Creating a implementation strategy and publishing a long-term roadmap</li>
-									<li class="dashed-list__item">Getting buy-in and driving adoption in your company</li>
-									<li class="dashed-list__item">Common roadblocks that you will hit</li>
+									<li class="dashed-list__item">
+										<strong>Design concepts</strong>
+										<ul class="dashed-list sub">
+											<li class="dashed-list__item">Doing an inventory of your existing products or on-going design concept</li>
+											<li class="dashed-list__item">Breaking your screens into re-usable atomic components</li>
+											<li class="dashed-list__item">Systemize brand attributes and design decisions into tokens</li>
+											<li class="dashed-list__item">Formalise the definition and usage guidelines into documentation</li>
+										</ul>
+									</li>
+									<li class="dashed-list__item">
+										<strong>Development</strong>
+										<ul class="dashed-list sub">
+											<li class="dashed-list__item">Plan the architecture of all the moving parts of the system</li>
+											<li class="dashed-list__item">Creating a technology agnostic library of reusable tokens</li>
+											<li class="dashed-list__item">Staring a component library with fundamental building blocks</li>
+											<li class="dashed-list__item">Combining building blocks to build advanced compound components</li>
+											<li class="dashed-list__item">Defining a consistent, easy to use API across your components</li>
+											<li class="dashed-list__item">Distributing your system with versioning and good documentation</li>
+										</ul>
+									</li>
+
+									<li class="dashed-list__item">
+										<strong>Collaboration</strong>
+										<ul class="dashed-list sub">
+											<li class="dashed-list__item">Designing a cross-functional design system team</li>
+											<li class="dashed-list__item">Creating a implementation strategy and publishing a long-term roadmap</li>
+											<li class="dashed-list__item">Getting buy-in and driving adoption in your company</li>
+											<li class="dashed-list__item">Common roadblocks that you will hit</li>
+										</ul>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -288,7 +228,7 @@
 
 				</ul>
 
-				<ul class="schedule-list alligned-margin max-width js-tabs__panel" id="react-panel">
+				<ul class="schedule-list max-width js-tabs__panel" id="react-panel">
 					<li class="schedule-list__item single">
 						<div class="schedule-list__line single">
 							<div class="schedule-list__sep"></div>

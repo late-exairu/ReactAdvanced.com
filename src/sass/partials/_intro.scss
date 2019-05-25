@@ -6,6 +6,18 @@
 	background: url(../img/intro_bg.png) center center no-repeat;
 	background-size: cover;
 
+	&.height-auto{
+		min-height: 0;
+
+		.container{
+			min-height: 0;
+		}
+
+		.intro__content{
+			margin: 50px 0;
+		}
+	}
+
 	.container{
 		display: flex;
 		padding: 80px 20px;
@@ -90,6 +102,10 @@
 			margin: 112px 0 0;
 		}
 
+		&__octo{
+			margin: 0 0 0 -950px;
+		}
+
 	}
 
 	@include sm{
@@ -126,7 +142,7 @@
 		&__octo{
 			width: 546px;
 			height: 426px;
-			margin: 175px 0 0 -422px;
+			margin: 154px 0 0 -422px;
 
 			&-text{
 				font-size: 10px;
@@ -137,6 +153,7 @@
 
 		&__content{
 			position: initial;
+			margin: 0;
 		}
 
 		&__reserve{
@@ -193,6 +210,10 @@
 		&.short{
 			height: 65px;
 		}
+	}
+
+	@include xs{
+		margin: 20px auto 0;
 	}
 }
 
@@ -428,6 +449,7 @@
 
 	@include xs{
 		margin: 226px 20px 20px;
+		margin: auto 20px 20px;
 		max-width: none;
 		width: auto;
 		left: 0;

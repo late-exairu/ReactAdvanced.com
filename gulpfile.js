@@ -4,6 +4,7 @@ var 	autoprefixer	= require('autoprefixer'),
 		cssnano			= require('cssnano'),
 		gulp			= require('gulp'),
 		gulpCached		= require('gulp-cached'),
+		cachebust		= require('gulp-cache-bust'),
 		gutil			= require('gulp-util'),
 		sass			= require('gulp-sass'),
 		sourcemaps		= require('gulp-sourcemaps'),
@@ -45,6 +46,9 @@ gulp.task('nunjucks', function () {
 	return gulp.src('src/templates/*.html')
 		.pipe(nunjucksRender({
 			path: ['src/templates/']
+		}))
+		.pipe(cachebust({
+			type: 'timestamp'
 		}))
 		.pipe(gulp.dest('build'));
 });

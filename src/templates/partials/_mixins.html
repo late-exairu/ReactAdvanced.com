@@ -1,0 +1,35 @@
+
+{% macro workshop(conf) %}
+<ul class="schedule-list max-width js-tabs__panel active" id="general-panel">
+
+	<li class="schedule-list__item single">
+		<div class="schedule-list__line">
+			<div class="schedule-list__sep"></div>
+			<div class="schedule-list__time"><span>{{conf.time}}</span></div>
+			<div class="schedule-list__desc">
+				<div class="schedule-list__title"><span>{{conf.title}}</span></div>
+				<div class="schedule-list__speaker">{{conf.speakerName}}</div>
+				{{conf.desc}}
+			</div>
+		</div>
+
+		<div class="schedule-list__line">
+			<div class="schedule-list__left">
+				<p class="schedule-list__l-title">{{conf.l-title}}</p>
+			</div>
+
+			<div class="schedule-list__right">{{conf.r-desc}}</div>
+		</div>
+
+		<div class="schedule-list__line">
+			<div class="schedule-list__time">{{conf.endtime}}</div>
+		</div>
+	</li>
+
+</ul>
+{% endmacro %}
+
+
+{% macro dummy(conf) %}
+<div>asd</div>
+{% endmacro %}
