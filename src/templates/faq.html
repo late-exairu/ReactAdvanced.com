@@ -1,0 +1,70 @@
+---
+title: FAQ
+followUsTall: true
+inner: true
+faqs: [
+	{
+		question: 'A word about measurements',
+		ansver: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+	},
+	{
+		question: 'Secrets of Bubble Wrap',
+		ansver: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+	},
+	{
+		question: 'Polythene Sheeting Help',
+		ansver: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+	},
+	{
+		question: 'Specification & Conformity - Stock polyethylene',
+		ansver: '
+			<p>Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.</p>
+		'
+	}
+]
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+{% include "partials/_header.html" %}
+	
+	<main class="content">
+
+		<section class="section">
+			<div class="container">
+
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title with-dots">
+							<span class="initial"><span>F</span></span>AQ
+						</h3>
+					</div>
+
+					<div class="section__head-r no-width">
+						<p class="section__desc">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the<br><br>
+							leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+						</p>
+					</div>
+				</div>
+
+				<ul class="faq marged">
+				{% for faq in faqs %}
+				{{mixins.faq({
+					question: faq.question,
+					ansver: faq.ansver
+				})}}
+				{% endfor %}
+				</ul>
+			</div>
+		</section>
+
+		{% include "partials/_follow.html" %}
+
+	</main>
+
+{% include "partials/_footer.html" %}
+
+{% endblock %}

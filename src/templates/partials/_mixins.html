@@ -1,34 +1,66 @@
 
 {% macro workshop(conf) %}
-<ul class="schedule-list max-width js-tabs__panel active" id="general-panel">
+<div class="schedule-list__line">
+	<div class="schedule-list__sep"></div>
+	<div class="schedule-list__time"><span>{{conf.time}}</span></div>
+	<div class="schedule-list__desc">
+		<div class="schedule-list__title"><span>{{conf.title}}</span></div>
+		<div class="schedule-list__speaker">{{conf.name}}</div>
+		{{conf.desc | safe}}
+	</div>
+</div>
 
-	<li class="schedule-list__item single">
-		<div class="schedule-list__line">
-			<div class="schedule-list__sep"></div>
-			<div class="schedule-list__time"><span>{{conf.time}}</span></div>
-			<div class="schedule-list__desc">
-				<div class="schedule-list__title"><span>{{conf.title}}</span></div>
-				<div class="schedule-list__speaker">{{conf.speakerName}}</div>
-				{{conf.desc}}
-			</div>
-		</div>
+<div class="schedule-list__line">
+	<div class="schedule-list__left">
+		<p class="schedule-list__l-title">{{conf.l-Ttle}}</p>
+	</div>
 
-		<div class="schedule-list__line">
-			<div class="schedule-list__left">
-				<p class="schedule-list__l-title">{{conf.l-title}}</p>
-			</div>
+	<div class="schedule-list__right">{{conf.rDesc | safe | safe}}</div>
+</div>
 
-			<div class="schedule-list__right">{{conf.r-desc}}</div>
-		</div>
-
-		<div class="schedule-list__line">
-			<div class="schedule-list__time">{{conf.endtime}}</div>
-		</div>
-	</li>
-
-</ul>
+<div class="schedule-list__line">
+	<div class="schedule-list__time">{{conf.endtime}}</div>
+</div>
 {% endmacro %}
 
+
+
+{% macro card(conf) %}
+<div class="card__inner">
+	<div class="card__img">
+		<img src="pic/jobs/{{conf.img}}" alt=""/>
+	</div>
+	<div class="card__content">
+		<div class="card__title">{{conf.title}}</div>
+		<div class="card__desc">{{conf.descr | safe}}</div>
+		<a class="card__link basic-btn btn-green" href="{{conf.link}}">
+			<div class="basic-btn__inner">
+				<div class="basic-btn__arr-l">
+					<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#arrow_r"></use>
+					</svg>
+				</div>
+				Learn more
+				<div class="basic-btn__arr-r">
+					<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#arrow_r"></use>
+					</svg>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+{% endmacro %}
+
+{% macro faq(conf) %}
+<li class="faq__item">
+	<svg class="faq__arrow" role="img" aria-hidden="true">
+		<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow-r"></use>
+	</svg>
+	<div class="faq__question">{{conf.question}}</div>
+	<div class="faq__ansver">{{conf.ansver | safe}}</div>
+</li>
+{% endmacro %}
 
 {% macro dummy(conf) %}
 <div>asd</div>

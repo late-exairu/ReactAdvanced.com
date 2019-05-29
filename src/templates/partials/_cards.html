@@ -1,0 +1,28 @@
+<section class="section black">
+	<div class="container">
+		<div class="section__head">
+			<div class="section__head-l w-100">
+				<h3 class="section__title">
+					<span class="initial w"><span>W</span></span>ould like to work together with the most notable React community supporters?
+				</h3>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container">
+
+		{% for card in cards %}
+		<div class="card">
+			{{mixins.card({
+				mod: card.mod,
+				img: card.img,
+				title: card.title,
+				descr: card.descr,
+				link: card.link
+			})}}
+		</div>
+		{% endfor %}
+	</div>
+</section>

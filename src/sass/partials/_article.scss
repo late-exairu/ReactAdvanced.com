@@ -1,0 +1,43 @@
+.article{
+	font-size: 14px;
+	max-width: 960px;
+	margin: 20px auto;
+
+	h2,
+	h3,
+	h4,
+	h5,
+	h6{
+		font-size: 35px;
+		margin: 82px 0 0;
+	}
+
+	p{
+		margin: 8px 0 22px;
+		line-height: 1.5;
+	}
+
+	@include sm{
+
+		h2,
+		h3,
+		h4,
+		h5,
+		h6{
+			font-size: 28px;
+			margin: 60px 0 0;
+		}
+	}
+
+	@include xs{
+
+		h2,
+		h3,
+		h4,
+		h5,
+		h6{
+			font-size: 22px;
+			margin: 40px 0 0;
+		}
+	}
+}

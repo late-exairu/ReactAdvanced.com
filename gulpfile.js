@@ -16,6 +16,7 @@ var 	autoprefixer	= require('autoprefixer'),
 		nunjucksRender 	= require('gulp-nunjucks-render'),
 		prettify 		= require('gulp-prettify'),
 		uglify 			= require('gulp-uglify'),
+		frontMatter		= require('gulp-front-matter');
 		cssnext			= require('postcss-cssnext'),
 		precss			= require('precss'),
 		ftp 			= require('vinyl-ftp'),
@@ -44,6 +45,7 @@ var err = {
 
 gulp.task('nunjucks', function () {
 	return gulp.src('src/templates/*.html')
+		.pipe(frontMatter({ property: 'data' }))
 		.pipe(nunjucksRender({
 			path: ['src/templates/']
 		}))

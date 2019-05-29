@@ -1,0 +1,71 @@
+---
+title: Jobs
+innerPage: true
+followUsTall: true
+pageWorkshop: true
+
+cards: [
+	{
+		img: 'job-gh.jpg',
+		title: 'Careers @ GitHub',
+		descr: "<p>Do you want to have an impact on a product that is used by millions of users across multiple devices on a daily basis?</p>
+		<p>DAZN streams over 40 different sports from more than 300 different leagues in 9 markets including Germany, Italy, Japan, Canada, USA, Spain and Brazil (with more to come). Since we launched 2 years ago we have streamed more than 300 million hours of content!</p>
+		<p>We are looking for experienced Front End Engineers and Software Engineering Managers who are passionate about building modern, scalable web applications.</p>
+		<p>We are using Micro-Frontends architecture and our current tech stack includes React, RxJS, MobX, Webpack and much more.</p>",
+		link: 'https://git.io/sparkles'
+	},
+	{
+		img: 'job-eg.jpg',
+		title: 'Careers at Evolution Gaming',
+		descr: "<p>Evolution Gaming is looking to hire skilled and highly motivated engineers to work in Amsterdam, Riga and Tallinn offices.</p>
+		<p>Our engineers are passionate about innovation and develop the solutions that allow Evolution Gaming to provide its services to licensees.<br/>
+		Our teams are critical to the successful running of the company, with any code change having a potentially huge financial impact.</p>
+		<ul class='dotted-list'>
+			<li class='dotted-list__item'>Join us as aJavaScript Developer</li>
+			<li class='dotted-list__item'>Scala Developer</li>
+			<li class='dotted-list__item'>QA Engineer</li>
+			<li class='dotted-list__item'>A yearly budget for your individual learning and development goals</li>
+		</ul>",
+		link: 'https://www.evolutiongamingcareers.com/engineering-positions/'
+	}
+]
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+{% include "partials/_header.html" %}
+		
+	<main class="content">
+		<section class="section intro height-auto" id="intro">
+			<div class="container">
+				<div class="intro__content">
+					<div class="logo short ir">
+						<a href="/" class="logo__link">React Advanced London</a>
+					</div>
+					<p class="logo-desc">
+						Top react jobs<br/>
+						<span>london</span>
+					</p>
+					<div class="stats">
+						<div class="stats__item">
+							<p class="stats__num"><span>14</span></p>
+							<p class="stats__desc">Partners</p>
+						</div>
+						<div class="stats__item">
+							<p class="stats__num"><span>25+</span></p>
+							<p class="stats__desc">Job offers</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		{% include "partials/_cards.html" %}
+		{% include "partials/_follow.html" %}
+		<!-- .content -->
+	</main>
+
+{% include "partials/_footer.html" %}
+
+{% endblock %}

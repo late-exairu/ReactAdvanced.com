@@ -45,6 +45,20 @@
 				}
 			}
 		}
+
+		&.with-button{
+			&:hover{
+
+				.team__img-wrap{
+					&:after{
+						display: none;
+					}
+					img{
+						transform: translate(0, 0);
+					}
+				}
+			}
+		}
 	}
 
 	&__img-wrap{
@@ -87,6 +101,10 @@
 			height: auto;
 			transform: translate(0, 0);
 			transition: all ease 0.1s;
+		}
+
+		.basic-btn{
+			width: 100%;
 		}
 
 	}
