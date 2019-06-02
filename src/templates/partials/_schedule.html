@@ -1,4 +1,4 @@
-		<section class="section schedule" id="schedule">
+<!-- 		<section class="section schedule" id="schedule">
 			<div class="container">
 
 				<div class="section__head">
@@ -342,6 +342,51 @@
 							</div>
 						</div>
 					</li>
+				</ul>
+
+			</div>
+		</section> -->
+
+		<section class="section schedule" id="schedule">
+			<div class="container">
+
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title with-dots">
+							<span class="initial"><span>S</span></span>chedule
+						</h3>
+					</div>
+				</div>
+
+				<div class="content-tab">
+					<button class="content-tab__tab js-tabs__tab active" id="general-tab">West hall</button>
+					<button class="content-tab__tab js-tabs__tab" id="react-tab">East hall</button>
+
+					<div class="content-tab__octo"></div>
+				</div>
+
+				<ul class="schedule-list js-tabs__panel active" id="general-panel">
+					{% for item in scheduleEast %}
+					{{mixins.schedule({
+						time: item.time,
+						title: item.title,
+						speaker: item.speaker,
+						desc: item.desc,
+						disconnected: item.disconnected
+					})}}
+					{% endfor %}
+				</ul>
+				
+				<ul class="schedule-list js-tabs__panel" id="react-panel">
+					{% for item in scheduleWest %}
+					{{mixins.schedule({
+						time: item.time,
+						title: item.title,
+						speaker: item.speaker,
+						desc: item.desc,
+						disconnected: item.disconnected
+					})}}
+					{% endfor %}
 				</ul>
 
 			</div>

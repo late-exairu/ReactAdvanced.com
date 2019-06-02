@@ -1,5 +1,404 @@
 ---
 title: React Advanced London
+
+intro: {
+	index: true,
+
+	stats: [
+		{
+			num: '500',
+			desc: 'JS and React<br> engineers'
+		}, {
+			num: '30+',
+			desc: 'experts'
+		}, {
+			num: '2',
+			desc: 'Tracks - General +<br/> Native/Alternative'
+		}
+	]
+}
+
+speakers: [
+	{
+		img: 'ken.jpg',
+		name: 'Ken Wheeler',
+		company: 'React Artist, US',
+		info: 'Core Architecture@[REDACTED], ReactJS Advocate, Speaker, Producer, Synthwave Artist, Google Dev Expert.',
+		tag: 'Keynote',
+		socials: [
+			{
+				link: 'https://github.com/kenwheeler',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/ken_wheeler',
+				icon: 'tw',
+			}
+		]
+	}, {
+		img: 'rachel.jpg',
+		name: 'Rachel Nabors',
+		company: 'Facebook, UK',
+		info: 'Rachel Nabors began telling <a href="http://rachelnabors.com" target="_blank">stories online</a> as a teenager with her award-winning <a href="http://rachelthegreat.com" target="_blank">web comics</a>. Her love of web technologies transformed into a career in front end development, where she has worked with Mozilla, the W3C, and Microsoft to build the web forward. At the moment, she&apos;s working at Facebook React Core team addressing documentation improvements.',
+		tag: 'React Core',
+		socials: [
+			{
+				link: 'https://github.com/rachelnabors',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/rachelnabors',
+				icon: 'tw',
+			}
+		]
+	}, {
+		img: 'jared.jpg',
+		name: 'Jared Palmer',
+		company: Palmer Group, US',
+		info: 'Engineering Lead, co-host of The Undefined Podcast, Open Source Samurai, creator of Formik, Razzle, Backpack, After.js, react-fns.',
+		tag: 'Architecture',
+		socials: [
+			{
+				link: 'https://github.com/jaredpalmer',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/jaredpalmer',
+				icon: 'tw',
+			}
+		]
+	}, {
+		img: 'shawn.jpeg',
+		name: 'Shawn Swyx Wang',
+		company: Netlify, US',
+		info: 'Swyx is an Infinite Builder working on Developer Experience at Netlify. In his free time he helps people Learn in Public at Egghead.io and /r/reactjs.',
+		tag: 'Under-the-hood',
+		socials: [
+			{
+				link: 'https://github.com/sw-yx',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/swyx',
+				icon: 'tw',
+			}
+		]
+	}, {
+		img: 'emma.jpg',
+		name: 'Emma Brillhart',
+		company: Formidable, US',
+		info: 'Software Engineer, Team Lead, Co-Maintainer of Spectacle.',
+		tag: 'Patterns',
+		socials: [
+			{
+				link: 'https://github.com/ebrillhart',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/emmabrillhart',
+				icon: 'tw',
+			}
+		]
+	}, {
+		img: 'mike.jpg',
+		name: 'Mike Grabowski',
+		company: Callstack, Poland',
+		info: 'Head of Open Source at Callstack, React Native Core Contributor.',
+		tag: 'React Native',
+		socials: [
+			{
+				link: 'https://github.com/grabbou',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/grabbou',
+				icon: 'tw',
+			},{
+				link: 'https://medium.com/@grabbou',
+				icon: 'med',
+			}
+		]
+	}, {
+		img: 'nik.jpg',
+		name: 'Nik Graf',
+		company: Freelance, Austria',
+		info: 'Passionate about ReasonML, WebVR, Skiing & Triathlons. Co-Creator of DraftJS Plugins & Polished. Organizer at ReasonConf.',
+		tag: 'Reason',
+		socials: [
+			{
+				link: 'https://github.com/nikgraf',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/nikgraf',
+				icon: 'tw',
+			}
+		]
+	}, {
+		img: 'laura.jpg',
+		name: 'Laura Medalia',
+		company: Tech Lead, US',
+		info: 'Software Engineer working at a health tech startup in NYC. Also runs a <a href="https://www.lauramedalia.com/blog">blog all about tech</a>, fashion, productivity, and career tips.',
+		tag: 'React Native',
+		socials: [
+			{
+				link: 'tw',
+				icon: 'https://twitter.com/codergirl__',
+			}
+		]
+	}, {
+		img: 'sid.jpg',
+		name: 'Siddharth Kshetrapal',
+		company: Independent Developer, India',
+		info: 'Sid builds tools for developers. In the past, he worked on Design Systems at Auth0 and as the frontend architect at Practo. He loves talking about design, performance and open source.',
+		tag: 'Patterns',
+		socials: [
+			{
+				link: 'https://github.com/siddharthkp',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/siddharthkp',
+				icon: 'tw',
+			}
+		]
+	}, {
+		img: 'olga.jpg',
+		name: 'Olga Petrova',
+		company: Sencha, Germany',
+		info: 'Software developer with more than 14 years of experience in developing applications. Worked with a broad range of web technologies, JavaScript frameworks, and have a special interest in data visualization.',
+		tag: 'AI',
+		socials: [
+			{
+				link: 'https://github.com/olga-petrova',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/tyoushe',
+				icon: 'tw',
+			}
+		]
+	}, {
+		img: 'nader.jpg',
+		name: 'Nader Dabit',
+		company: Amazon AWS, USA',
+		info: 'Nader has been developing with React Native for over 2.5 years. He has worked with and trained developers from fortune 500 companies like Amazon, Visa, American Express, and Microsoft, helping them to get up to speed with React Native as quickly as possible.',
+		tag: 'React Native',
+		socials: [
+			{
+				link: 'https://github.com/dabit3',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/dabit3',
+				icon: 'tw',
+			}
+		]
+	}
+]
+
+adviceLounge: [
+	{
+		img: 'christoph.jpg',
+		name: 'Christoph Nakazawa',
+		company: 'Facebook, UK',
+		info: '👨🏻‍💻 Engineering Manager at Facebook · ⚛️ React Native · 🚇 Metro · 🃏 Jest · 📦 Yarn',
+		advicesTechs: [
+			{
+				techIcon: 'react-native',
+				techTitle: 'React Native',
+			},{
+				techIcon: 'jest',
+				techTitle: 'Jest',
+			}
+		],
+		socials: [
+			{
+				link: 'http://github.com/cpojer',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/cpojer',
+				icon: 'tw',
+			}
+		]
+	}, {
+		img: 'kitze.jpg',
+		name: 'Kitze',
+		company: 'ReactAcademy, Poland',
+		info: 'Teaching React & Javascript at React Academy. Cares about open source, made and maintains sizzy.co, custom-react-scripts, and mobx-router. He had the chance to work and experiment with a variety of languages and frameworks.',
+		tag: 'Keynote',
+		advicesTechs: [
+			{
+				techIcon: 'react',
+				techTitle: 'React',
+			},{
+				techIcon: 'graphql',
+				techTitle: 'GraphQL',
+			}
+		],
+		socials: [
+			{
+				link: 'https://github.com/kitze',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/thekitze',
+				icon: 'tw',
+			}
+		]
+	}, {
+		img: 'michel.jpg',
+		name: 'Michel Weststrate',
+		company: 'Freelance, Netherlands',
+		info: 'Independent OSS maintainer, speaker, trainer & consultant. Author of MobX, mobx-state-tree, serializr, immer.',
+		advicesTechs: [
+			{
+				techIcon: 'react',
+				techTitle: 'React',
+			},{
+				techIcon: 'typescript',
+				techTitle: 'TypeScript',
+			}
+		],
+		socials: [
+			{
+				link: 'https://github.com/mweststrate',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/mweststrate',
+				icon: 'tw',
+			}
+		]
+	}, {
+		img: 'vladimir.jpg',
+		name: 'Vladimir Novick',
+		company: 'Hasura, Israel',
+		info: 'Developer advocate at hasura.io, Google Developer Expert, consultant, worldwide speaker, published author, host of the 3factorRadio podcast and OSS contributor. Currently, Vladimir works with Web, Mobile, VR, AR, and IoT technologies and advocates the use of GraphQL and serverless architectures as well as functional languages such as ReasonML.',
+		advicesTechs: [
+			{
+				techIcon: 'react',
+				techTitle: 'React',
+			},{
+				techIcon: 'graphql',
+				techTitle: 'GraphQL',
+			}
+		],
+		socials: [
+			{
+				link: 'https://github.com/vnovick',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/VladimirNovick',
+				icon: 'tw',
+			},{
+				link: 'http://vnovick.com',
+				icon: 'web',
+			}
+		]
+	}
+]
+
+locSlider: [
+	{
+		img: 'loc_1.jpg',
+		caption: 'Main Hall',
+	},{
+		img: 'loc_2.jpg',
+		caption: 'The London Eye',
+	},{
+		img: 'loc_3.jpg',
+		caption: 'Big Ben',
+	},{
+		img: 'loc_4.jpg',
+		caption: 'Tower Bridge',
+	},{
+		img: 'loc_5.jpg',
+		caption: 'The Shard',
+	},{
+		img: 'loc_6.jpg',
+		caption: 'London City',
+	},{
+		img: 'loc_7.jpg',
+		caption: 'Oval Space',
+	}
+]
+
+scheduleEast: [
+	{
+		time: '8:30',
+		title: 'Registration starts',
+		disconnected: true
+	},{
+		time: '9:10',
+		title: 'Conference openning',
+		disconnected: true
+	},{
+		time: '9:20',
+		title: 'The New Hotness: An Exploration  of Reacts Exciting New Feature',
+		speaker: 'Ken Wheeler',
+		desc: '<p class="schedule-list__p">Thanks to React&apos;s component-oriented architecture, the React community has been naturally gravitating towards design systems as a way of standardising our respective design languages into reusable components. When done successfully, it suddenly becomes trivial to translate standard designs into code. In fact, we may even find that this translation step starts to feel somewhat redundant. In a world of components, how should our design processes change? How should our tooling change? How should we, as React developers, better enable this change? In this talk, we&apos;ll look at the current state of design and developersment, and where we could go—if we&apos;re willing to push for it.</p>'
+	},{
+		time: '10.00',
+		title: 'Powering Code Reuse with Context  and Render Props',
+		speaker: 'Forbes Lindsay',
+		desc: 'PASTE DESCRIPTION'
+	}
+]
+
+scheduleWest: [
+	{
+		time: '8:30',
+		title: 'Registration starts',
+		disconnected: true
+	},{
+		time: '9:10',
+		title: 'Conference openning',
+		disconnected: true
+	},{
+		time: '9:20',
+		title: 'The New Hotness: An Exploration  of Reacts Exciting New Feature',
+		speaker: 'Ken Wheeler',
+		desc: '<p class="schedule-list__p">Thanks to React&apos;s component-oriented architecture, the React community has been naturally gravitating towards design systems as a way of standardising our respective design languages into reusable components. When done successfully, it suddenly becomes trivial to translate standard designs into code. In fact, we may even find that this translation step starts to feel somewhat redundant. In a world of components, how should our design processes change? How should our tooling change? How should we, as React developers, better enable this change? In this talk, we&apos;ll look at the current state of design and developersment, and where we could go—if we&apos;re willing to push for it.</p>'
+	},{
+		time: '10.00',
+		title: 'Powering Code Reuse with Context  and Render Props',
+		speaker: 'Forbes Lindsay',
+		desc: 'PASTE DESCRIPTION'
+	}
+]
+
+sponsors: [
+	{
+		title: 'Gold',
+		mod: 'gold',
+
+		logos: [
+			{
+				link: 'https://aws.amazon.com/',
+				img: 'aws.png'
+			},{
+				link: 'https://focusreactive.com/',
+				img: 'focus-reactive.png'
+			},
+		]
+	}, {
+		title: 'Silver',
+		mod: 'silver',
+
+		logos: [
+			{
+				link: 'https://www.theodo.co.uk/',
+				img: 'theodo.png'
+			},{
+				link: 'https://formidable.com/',
+				img: 'formidable.png'
+			},
+		]
+	}, {
+		title: 'Partners',
+		mod: 'partners',
+		last: true,
+
+		logos: [
+			{
+				link: 'https://www.stickermule.com',
+				img: 'stickermule.png'
+			},{
+				link: 'https://www.meetup.com/ReactJS-Girls-London/',
+				img: 'react-girls.png'
+			},
+		]
+	}
+]
 ---
 
 {% extends "layouts/_layout.html" %}
@@ -26,7 +425,7 @@ title: React Advanced London
 
 		{# {% include "partials/_schedule.html" %} #}
 
-		{% include "partials/_workshops.html" %}
+		{% include "partials/_workshop-promo.html" %}
 
 		{# {% include "partials/_party.html" %} #}
 
