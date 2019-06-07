@@ -243,12 +243,12 @@ speakers: [
 			<div class="container pt-0">
 
 				<div class="content-tab max-width">
-					<button class="content-tab__tab js-tabs__tab active" id="general-tab">23th October</button>
-					<button class="content-tab__tab js-tabs__tab" id="react-tab">24th Ocober</button>
+					<button class="content-tab__tab js-tabs__tab active" id="general-tab">24th Ocober</button>
+					<button class="content-tab__tab js-tabs__tab" id="react-tab">23th Ocober</button>
 				</div>
 
 				<ul class="schedule-list max-width js-tabs__panel active" id="general-panel">
-					{% for item in workshopsGeneral %}
+					{% for item in workshopsReact %}
 					{{mixins.workshop({
 						time: item.time,
 						title: item.title,
@@ -261,7 +261,7 @@ speakers: [
 				</ul>
 
 				<ul class="schedule-list max-width js-tabs__panel" id="react-panel">
-					{% for item in workshopsReact %}
+					{% for item in workshopsGeneral %}
 					{{mixins.workshop({
 						time: item.time,
 						title: item.title,

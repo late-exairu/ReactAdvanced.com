@@ -35,6 +35,13 @@
 			bottom: 280px;
 		}
 
+		@include sm{
+
+			.container{
+				padding: 65px 20px 516px;
+			}
+		}
+
 	}
 
 	.section{
@@ -101,7 +108,7 @@
 	@include sm{
 
 		.container{
-			padding: 130px 20px 234px;
+			padding: 65px 20px 234px;
 		}
 
 		.section{

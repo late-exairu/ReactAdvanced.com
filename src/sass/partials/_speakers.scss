@@ -31,6 +31,8 @@
 
 	&__item{
 		position: relative;
+		max-width: 260px;
+		margin: 0 auto;
 
 		&:hover{
 			.team__img-wrap{

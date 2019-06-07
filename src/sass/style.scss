@@ -65,6 +65,10 @@ a {
 	max-width: 1220px;
 	margin: 0 auto;
 	padding: 130px 20px;
+
+	@include sm{
+		padding: 65px 20px;
+	}
 }
 
 .bg-black{

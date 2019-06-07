@@ -156,6 +156,14 @@
 		height: 304px;
 		margin: 0 0 0 auto;
 
+		.circle{
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+
 		&:after{
 			content: "";
 			position: absolute;
