@@ -1,0 +1,16 @@
+ProjectTitle: react-london-advanced
+
+PageList:
+- file: index.html
+  ready: 50
+- file: coc.html
+  ready: 50
+- file: jobs.html
+  ready: 50
+- file: workshops.html
+  ready: 50
+- file: advice-lounge.html
+  ready: 50
+- file: faq.html
+  ready: 50
+
