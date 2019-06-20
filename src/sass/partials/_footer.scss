@@ -32,6 +32,13 @@
 		}
 	}
 
+	@include temp{
+
+		.nav{
+			font-size: 14px;
+		}
+	}
+
 	@include md{
 		height: auto;
 
@@ -48,20 +55,14 @@
 
 	@include sm{
 
-		.nav{
-			display: flex;
-			flex-direction: column;
-		}
-	}
-
-	@include xs{
-
 		.container{
 			padding: 60px 20px 15px 20px;
 			align-items: center;
 		}
 
 		.nav{
+			display: flex;
+			flex-direction: column;
 			text-align: center;
 			justify-content: center;
 			align-items: center;
@@ -69,6 +70,12 @@
 			&__item{
 				margin: 0;
 			}
+		}
+	}
+
+	@include xs{
+
+		.nav{
 		}
 	}
 }
@@ -124,15 +131,20 @@
 	height: auto;
 	font-size: 14px;
 
-	@include xs{
+	@include sm{
 		display: flex;
 		order: 1;
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
 		width: 100%;
+		max-width: 320px;
 		top: -20px;
 		height: 60px;
 		border: 3px solid $clr-black;
+	}
+
+	@include xs{
+		max-width: none;
 	}
 }

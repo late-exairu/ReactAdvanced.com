@@ -13,32 +13,25 @@
 
 			<div class="header__nav">
 				<nav class="nav">
-					<li class="nav__item">
-						<a class="nav__link js-scroll-to" href="#event">About</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link js-scroll-to" href="#speakers">Speakers</a>
-					</li>
-<!--					<li class="nav__item">-->
-<!--						<a class="nav__link js-scroll-to" href="#location">Location</a>-->
-<!--					</li>-->
-					<li class="nav__item">
-						<a class="nav__link js-scroll-to" href="#advice">Advice Lounge</a>
-					</li>
-
-					<li class="nav__item">
-						<a class="nav__link js-scroll-to" href="#location">Location</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link js-scroll-to" href="#workshops">Workshops</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link js-scroll-to" href="#sponsors">Sponsors</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="https://forms.gle/yiCsoLLwSKnTmeVn7">Submit your talk</a>
-					</li>
-
+          			{% if pageWorkshop %}
+          			<li class="nav__item"><a class="nav__link js-scroll-to" href="#about">About</a></li>
+					<li class="nav__item"><a class="nav__link js-scroll-to" href="#programmes">Programmes</a></li>
+				<!--<li class="nav__item"><a class="nav__link js-scroll-to" href="#trainers">Trainers</a></li>-->
+					<li class="nav__item"><a class="nav__link" href="https://www.eventbrite.com/e/react-advanced-conference-2019-tickets-59948809503">Tickets</a></li>
+					<li class="nav__item"><a class="nav__link" href="/">Conference page</a></li>
+					{% elseif inner %}
+					<li class="nav__item"><a class="nav__link" href="https://www.eventbrite.com/e/react-advanced-conference-2019-tickets-59948809503">Tickets</a></li>
+					<li class="nav__item"><a class="nav__link" href="/">Conference page</a></li>
+					{% else %}
+					<li class="nav__item"><a class="nav__link js-scroll-to" href="#event">About</a></li>
+					<li class="nav__item"><a class="nav__link js-scroll-to" href="#speakers">Speakers</a></li>
+				<!--<li class="nav__item"><a class="nav__link js-scroll-to" href="#location">Location</a></li>-->
+					<li class="nav__item"><a class="nav__link js-scroll-to" href="#advice">Advice Lounge</a></li>
+					<li class="nav__item"><a class="nav__link js-scroll-to" href="#location">Location</a></li>
+					<li class="nav__item"><a class="nav__link js-scroll-to" href="#workshops">Workshops</a></li>
+					<li class="nav__item"><a class="nav__link js-scroll-to" href="#sponsors">Sponsors</a></li>
+					<li class="nav__item"><a class="nav__link" href="https://forms.gle/yiCsoLLwSKnTmeVn7">Submit your talk</a></li>
+					{% endif %}
 				</nav>
 			</div>
 

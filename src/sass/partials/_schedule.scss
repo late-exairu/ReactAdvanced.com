@@ -8,8 +8,11 @@
 
 		&__title{
 			position: relative;
-			z-index: 3;
 		}
+	}
+
+	.schedule-list{
+		margin-bottom: -300px;
 	}
 
 	@include temp{
@@ -17,12 +20,19 @@
 			padding: 60px 20px 0;
 		}
 	}
+
+	@include xs{
+		.schedule-list{
+			margin-bottom: -280px;
+		}
+	}
 }
 
 
 .content-tab{
-	position: relative;
-	display: block;
+	position: sticky;
+	align-items: flex-start;
+	top: 200px;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -107,7 +117,7 @@
 	font-size: 16px;
 	line-height: 1.56;
 	max-width: 968px;
-	margin: 0 auto -300px;
+	margin: 0 auto 50px;
 	display: none;
 	border: 2px solid $clr-green;
 	padding: 84px 0;
@@ -139,7 +149,6 @@
 	}
 
 	&__item{
-		cursor: pointer;
 		position: relative;
 		width: 100%;
 		clear: both;
@@ -168,6 +177,10 @@
 			transform: translateX(-50%);
 			border-radius: 50px;
 			background: $clr-white;
+		}
+
+		&.clickable{
+			cursor: pointer;
 		}
 
 		&.open{
@@ -437,7 +450,6 @@
 	}
 
 	@include xs{
-		margin-bottom: -280px;
 
 		&__item{
 			padding: 15px 12px 15px 12px;
@@ -488,6 +500,11 @@
 			margin: 0 10px 0 0;
 			text-align: left;
 			padding: 0;
+
+			span{
+				padding: 2px;
+				margin: 0 0 0 -2px;
+			}
 		}
 
 		&__left{
@@ -502,6 +519,11 @@
 
 		&__title{
 			padding: 0;
+
+			span{
+				padding: 2px;
+				margin: 0 0 0 -2px;
+			}
 		}
 
 		&__speaker{
@@ -524,6 +546,7 @@
 }
 
 .dashed-list{
+	font-size: 16px;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -547,6 +570,22 @@
 			width: 16px;
 			height: 2px;
 			background: $clr-greenD;
+		}
+	}
+
+	&.sub{
+		font-size: 14px;
+
+		.dashed-list__item{
+			padding: 0 0 0 20px;
+			margin: 14px 0 0 0;
+
+			&:before{
+				top: 6px;
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+			}
 		}
 	}
 }

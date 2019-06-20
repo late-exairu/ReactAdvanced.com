@@ -1,0 +1,8 @@
+<div class="stats">
+	{% for stat in stats %}
+	{{mixins.stat({
+		num: stat.num,
+		desc: stat.desc
+	})}}
+	{% endfor %}
+</div>

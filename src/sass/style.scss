@@ -65,6 +65,10 @@ a {
 	max-width: 1220px;
 	margin: 0 auto;
 	padding: 130px 20px;
+
+	@include sm{
+		padding: 65px 20px;
+	}
 }
 
 .bg-black{
@@ -121,8 +125,11 @@ h6 {
 @import "partials/location";
 @import "partials/follow-us";
 @import "partials/schedule";
+@import "partials/cards";
 @import "partials/workshops";
 @import "partials/party";
 @import "partials/give-back";
 @import "partials/sponsors";
 @import "partials/advice-lounge";
+@import "partials/faq";
+@import "partials/article";

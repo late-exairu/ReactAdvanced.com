@@ -1,4 +1,4 @@
-		<section class="section schedule" id="schedule">
+<!-- 		<section class="section schedule" id="schedule">
 			<div class="container">
 
 				<div class="section__head">
@@ -35,7 +35,7 @@
 						</div>
 					</li>
 			
-					<li class="schedule-list__item">
+					<li class="schedule-list__item clickable">
 						<div class="schedule-list__line">
 							<div class="schedule-list__time"><span>9:20</span></div>
 							<div class="schedule-list__desc">
@@ -51,7 +51,7 @@
 						</div>
 					</li>
 			
-					<li class="schedule-list__item">
+					<li class="schedule-list__item clickable">
 						<div class="schedule-list__line">
 							<div class="schedule-list__time"><span>10.00</span></div>
 							<div class="schedule-list__desc">
@@ -67,7 +67,7 @@
 						</div>
 					</li>
 			
-					<li class="schedule-list__item disconnected">
+					<li class="schedule-list__item clickable disconnected">
 						<div class="schedule-list__line">
 							<div class="schedule-list__time"><span>10.30</span></div>
 							<div class="schedule-list__desc">
@@ -92,7 +92,7 @@
 						</div>
 					</li>
 			
-					<li class="schedule-list__item">
+					<li class="schedule-list__item clickable">
 						<div class="schedule-list__line">
 							<div class="schedule-list__time"><span>11:30</span></div>
 							<div class="schedule-list__desc">
@@ -108,7 +108,7 @@
 						</div>
 					</li>
 			
-					<li class="schedule-list__item">
+					<li class="schedule-list__item clickable">
 						<div class="schedule-list__line">
 							<div class="schedule-list__time"><span>12.00</span></div>
 							<div class="schedule-list__desc">
@@ -124,7 +124,7 @@
 						</div>
 					</li>
 			
-					<li class="schedule-list__item disconnected">
+					<li class="schedule-list__item clickable disconnected">
 						<div class="schedule-list__line">
 							<div class="schedule-list__time"><span>12.30</span></div>
 							<div class="schedule-list__desc">
@@ -151,7 +151,7 @@
 						</div>
 					</li>
 			
-					<li class="schedule-list__item">
+					<li class="schedule-list__item clickable">
 						<div class="schedule-list__line">
 							<div class="schedule-list__time"><span>14:30 </span></div>
 							<div class="schedule-list__desc">
@@ -167,7 +167,7 @@
 						</div>
 					</li>
 			
-					<li class="schedule-list__item">
+					<li class="schedule-list__item clickable">
 						<div class="schedule-list__line">
 							<div class="schedule-list__time"><span>15:00</span></div>
 							<div class="schedule-list__desc">
@@ -183,7 +183,7 @@
 						</div>
 					</li>
 			
-					<li class="schedule-list__item disconnected">
+					<li class="schedule-list__item clickable disconnected">
 						<div class="schedule-list__line">
 							<div class="schedule-list__time"><span>15:30 </span></div>
 							<div class="schedule-list__desc">
@@ -208,7 +208,7 @@
 						</div>
 					</li>
 					
-					<li class="schedule-list__item">
+					<li class="schedule-list__item clickable">
 						<div class="schedule-list__line">
 							<div class="schedule-list__time"><span>16:30</span></div>
 							<div class="schedule-list__desc">
@@ -217,7 +217,7 @@
 						</div>
 					</li>
 					
-					<li class="schedule-list__item">
+					<li class="schedule-list__item clickable">
 						<div class="schedule-list__line">
 							<div class="schedule-list__time"><span>17:00</span></div>
 							<div class="schedule-list__desc">
@@ -342,6 +342,51 @@
 							</div>
 						</div>
 					</li>
+				</ul>
+
+			</div>
+		</section> -->
+
+		<section class="section schedule" id="schedule">
+			<div class="container">
+
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title with-dots">
+							<span class="initial"><span>S</span></span>chedule
+						</h3>
+					</div>
+				</div>
+
+				<div class="content-tab">
+					<button class="content-tab__tab js-tabs__tab active" id="general-tab">West hall</button>
+					<button class="content-tab__tab js-tabs__tab" id="react-tab">East hall</button>
+
+					<div class="content-tab__octo"></div>
+				</div>
+
+				<ul class="schedule-list js-tabs__panel active" id="general-panel">
+					{% for item in scheduleEast %}
+					{{mixins.schedule({
+						time: item.time,
+						title: item.title,
+						speaker: item.speaker,
+						desc: item.desc,
+						disconnected: item.disconnected
+					})}}
+					{% endfor %}
+				</ul>
+				
+				<ul class="schedule-list js-tabs__panel" id="react-panel">
+					{% for item in scheduleWest %}
+					{{mixins.schedule({
+						time: item.time,
+						title: item.title,
+						speaker: item.speaker,
+						desc: item.desc,
+						disconnected: item.disconnected
+					})}}
+					{% endfor %}
 				</ul>
 
 			</div>

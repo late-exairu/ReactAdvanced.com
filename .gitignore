@@ -1,5 +1,18 @@
-.idea
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+
+# OS or Editor folders
 .DS_Store
+._*
+Thumbs.db
 .cache
 .project
 .settings
@@ -8,9 +21,17 @@
 nbproject
 *.sublime-project
 *.sublime-workspace
+.idea
+
+# Folders to ignore
+.sass-cache
+.tmp
+_tmp
+node_modules
+bower_components
+
+build
+minifestjs.json
+minifestcss.json
 
 package-lock.json
-
-node_modules
-
-/build

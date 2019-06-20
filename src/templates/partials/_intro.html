@@ -1,36 +1,39 @@
-		<section class="section intro" id="intro">
+		<section class="section intro {{intro.mod}}" id="intro">
 			<div class="container">
 
 				<div class="intro__content">
-					<div class="logo ir">
+					<div class="logo ir {{intro.logoMod}}">
 						<a href="/" class="logo__link">React Advanced London</a>
 					</div>
 
+					{% if intro.index %}
 					<div class="intro__octo">
 						<div class="intro__octo-text">We will be<br/> diving deep</div>
 					</div>
 
 					<p class="intro__desc">
-<!--            JavaScript is #1 on demand programming language in the world with 25 millions of developers behind it. Meet the ones who shape out the now and the future of the prospering nation-->
-          </p>
+						<!--JavaScript is #1 on demand programming language in the world with 25 millions of developers behind it. Meet the ones who shape out the now and the future of the prospering nation-->
+					</p>
+					{% endif %}
 
+					{% if intro.desc %}
+					<p class="logo-desc">
+						{{intro.desc | safe}}
+					</p>
+					{% endif %}
+
+					{% if intro.stats %}
 					<div class="stats">
+						{% for stat in intro.stats %}
 						<div class="stats__item">
-							<p class="stats__num"><span>500</span></p>
-							<p class="stats__desc">JS and React<br> engineers</p>
+							<p class="stats__num"><span>{{stat.num}}</span></p>
+							<p class="stats__desc">{{stat.desc | safe}}</p>
 						</div>
-
-						<div class="stats__item">
-							<p class="stats__num"><span>30+</span></p>
-							<p class="stats__desc">experts</p>
-						</div>
-
-						<div class="stats__item">
-							<p class="stats__num"><span>2</span></p>
-							<p class="stats__desc">Tracks - General +<br/> Native/Alternative</p>
-						</div>
+						{% endfor %}
 					</div>
+					{% endif %}
 
+					{% if intro.index %}
 					<a class="intro__important-guys" href="https://focusreactive.com/" target="_blank"></a>
 
 					<div class="big-day">
@@ -57,6 +60,7 @@
 							</div>
 						</div>
 					</a>
+					{% endif %}
 				</div>
 
 			</div>

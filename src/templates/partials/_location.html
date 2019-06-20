@@ -154,7 +154,22 @@
 											"color": "#000000"
 										},
 										{
-											"lightness": 21
+											"lightness": 25
+										}
+									]
+								},
+								{
+									"featureType": "poi",
+									"elementType": "labels.icon",
+									"stylers": [
+										{
+											"saturation": -100
+										},
+										{
+											"lightness": -45
+										},
+										{
+											"visibility": "on"
 										}
 									]
 								},
@@ -256,48 +271,9 @@
 					</div>
 
 					<div class="location__slider">
-						<div class="loc-slider">
-							<div class="loc-slider__item">
-								<img src="pic/loc_1.jpg">
-							</div>
-
-							<div class="loc-slider__item">
-								<img src="pic/loc_2.jpg">
-							</div>
-
-							<div class="loc-slider__item">
-								<img src="pic/loc_3.jpg">
-							</div>
-
-							<div class="loc-slider__item">
-								<img src="pic/loc_4.jpg">
-							</div>
-
-							<div class="loc-slider__item">
-								<img src="pic/loc_5.jpg">
-							</div>
-
-							<div class="loc-slider__item">
-								<img src="pic/loc_6.jpg">
-							</div>
-
-							<div class="loc-slider__item">
-								<img src="pic/loc_7.jpg">
-							</div>
-						</div>
-
-						<div class="loc-slider-nav">
-							<div class="pagination"></div>
-							<div class="captions">
-								<div class="caption">Main Hall</div>
-								<div class="caption">The London Eye</div>
-								<div class="caption">Big Ben</div>
-								<div class="caption">Tower Bridge</div>
-								<div class="caption">The Shard</div>
-								<div class="caption">London City</div>
-								<div class="caption">Oval Space</div>
-							</div>
-						</div>
+						{{mixins.slider({
+							source: locSlider
+						})}}
 					</div>
 				</div>
 			</div>

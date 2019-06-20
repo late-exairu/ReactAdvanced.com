@@ -1,0 +1,191 @@
+---
+title: Advice lounge
+followUsTall: true
+inner: true
+
+locSlider: [
+	{
+		img: 'loc_1.jpg',
+		caption: 'Main Hall',
+	},{
+		img: 'loc_2.jpg',
+		caption: 'The London Eye',
+	},{
+		img: 'loc_3.jpg',
+		caption: 'Big Ben',
+	},{
+		img: 'loc_4.jpg',
+		caption: 'Tower Bridge',
+	},{
+		img: 'loc_5.jpg',
+		caption: 'The Shard',
+	},{
+		img: 'loc_6.jpg',
+		caption: 'London City',
+	},{
+		img: 'loc_7.jpg',
+		caption: 'Oval Space',
+	}
+]
+
+adviceLounge: [
+	{
+		img: 'christoph.jpg',
+		link: '#somelink',
+		name: 'Christoph Nakazawa',
+		company: 'Facebook, UK',
+		info: '👨🏻‍💻 Engineering Manager at Facebook · ⚛️ React Native · 🚇 Metro · 🃏 Jest · 📦 Yarn',
+		advicesTechs: [
+			{
+				techIcon: 'react-native',
+				techTitle: 'React Native',
+			},{
+				techIcon: 'jest',
+				techTitle: 'Jest',
+			}
+		],
+		socials: [
+			{
+				link: 'http://github.com/cpojer',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/cpojer',
+				icon: 'tw',
+			}
+		]
+	}, {
+		img: 'kitze.jpg',
+		link: '#somelink',
+		name: 'Kitze',
+		company: 'ReactAcademy, Poland',
+		info: 'Teaching React & Javascript at React Academy. Cares about open source, made and maintains sizzy.co, custom-react-scripts, and mobx-router. He had the chance to work and experiment with a variety of languages and frameworks.',
+		tag: 'Keynote',
+		advicesTechs: [
+			{
+				techIcon: 'react',
+				techTitle: 'React',
+			},{
+				techIcon: 'graphql',
+				techTitle: 'GraphQL',
+			}
+		],
+		socials: [
+			{
+				link: 'https://github.com/kitze',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/thekitze',
+				icon: 'tw',
+			}
+		]
+	}, {
+		img: 'michel.jpg',
+		link: '#somelink',
+		name: 'Michel Weststrate',
+		company: 'Freelance, Netherlands',
+		info: 'Independent OSS maintainer, speaker, trainer & consultant. Author of MobX, mobx-state-tree, serializr, immer.',
+		advicesTechs: [
+			{
+				techIcon: 'react',
+				techTitle: 'React',
+			},{
+				techIcon: 'typescript',
+				techTitle: 'TypeScript',
+			}
+		],
+		socials: [
+			{
+				link: 'https://github.com/mweststrate',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/mweststrate',
+				icon: 'tw',
+			}
+		]
+	}, {
+		img: 'vladimir.jpg',
+		link: '#somelink',
+		name: 'Vladimir Novick',
+		company: 'Hasura, Israel',
+		info: 'Developer advocate at hasura.io, Google Developer Expert, consultant, worldwide speaker, published author, host of the 3factorRadio podcast and OSS contributor. Currently, Vladimir works with Web, Mobile, VR, AR, and IoT technologies and advocates the use of GraphQL and serverless architectures as well as functional languages such as ReasonML.',
+		advicesTechs: [
+			{
+				techIcon: 'react',
+				techTitle: 'React',
+			},{
+				techIcon: 'graphql',
+				techTitle: 'GraphQL',
+			}
+		],
+		socials: [
+			{
+				link: 'https://github.com/vnovick',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/VladimirNovick',
+				icon: 'tw',
+			},{
+				link: 'http://vnovick.com',
+				icon: 'web',
+			}
+		]
+	}
+]
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+{% include "partials/_header.html" %}
+	
+	<main class="content">
+
+		<section class="section">
+			<div class="container">
+
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title with-dots">
+							<span class="initial"><span>A</span></span>dvice lounge
+						</h3>
+						
+						<div class="section__desc">
+							<p>Hey React Amsterdam attendees!</p>
+							<p>The 2019 edition of our conference is attended by some of the top people in the industry. Would you like to get their advice on your work?</p>
+							<p>If that’s the case, you can join our Advice Lounge, a new React Amsterdam discussion format held at the conference venue at the speakers’ balcony on April 12. The lounge provides a laid-back setup open for your questions to advisers.</p>
+							<p>They will be present at the spot during the breaks and talks, and there's a system for you to book time with specific people – check out the Calendly links below.</p>
+							<p><b>The advisers will be available to consult the following topics:</b></p>
+						</div>
+					</div>
+
+					<div class="section__head-r no-width">
+						<div class="slider-wrap">
+							{{mixins.slider({
+								source: locSlider
+							})}}
+						</div>
+					</div>
+				</div>
+
+				<div class="team">
+					{% for item in adviceLounge %}
+						{{mixins.speaker({
+							img: item.img,
+							link: item.link,
+							name: item.name,
+							company: item.company,
+							info: item.info,
+							advicesTechs: item.advicesTechs,
+							socials: item.socials
+						})}}
+					{% endfor %}
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+{% include "partials/_footer.html" %}
+
+{% endblock %}

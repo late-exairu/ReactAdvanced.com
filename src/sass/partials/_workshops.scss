@@ -7,6 +7,13 @@
 		padding: 100px 20px 190px;
 	}
 
+	&.padded-top{
+
+		.container{
+			padding-top: 415px;
+		}
+	}
+
 	&.ws-workshop{
 
 		.section{
@@ -26,6 +33,13 @@
 
 		.workshops__decor-bottom{
 			bottom: 280px;
+		}
+
+		@include sm{
+
+			.container{
+				padding: 65px 20px 516px;
+			}
 		}
 
 	}
@@ -94,7 +108,7 @@
 	@include sm{
 
 		.container{
-			padding: 372px 20px 234px;
+			padding: 65px 20px 234px;
 		}
 
 		.section{
@@ -108,6 +122,12 @@
 			width: 598px;
 			height: 240px;
 			margin: 0 0 0 -310px;
+		}
+
+		&.padded-top{
+			.container{
+				padding-top: 380px;
+			}
 		}
 
 		&.ws-workshop{

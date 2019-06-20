@@ -50,18 +50,30 @@
 		&.gold{
 			.sponsors-list__item{
 				width: 25%;
+
+				img{
+					max-height: 120px;
+				}
 			}
 		}
 
 		&.silver{
 			.sponsors-list__item{
 				width: 20%;
+
+				img{
+					max-height: 110px;
+				}
 			}
 		}
 
 		&.partners{
 			.sponsors-list__item{
 				width: 16.6%;
+
+				img{
+					max-height: 100px;
+				}
 			}
 		}
 
@@ -72,7 +84,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 15px 10px;
+		padding: 20px 25px;
 		transition: all ease .1s;
 		
 		img{
@@ -161,6 +173,10 @@
 				}
 			}
 
+		}
+
+		&__item{
+			padding: 15px 10px;
 		}
 
 		&__sep{

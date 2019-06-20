@@ -1,0 +1,200 @@
+{% macro workshop(conf) %}
+<li class="schedule-list__item single">
+	<div class="schedule-list__line">
+		<div class="schedule-list__sep"></div>
+		<div class="schedule-list__time"><span>{{conf.time}}</span></div>
+		<div class="schedule-list__desc">
+			<div class="schedule-list__title"><span>{{conf.title}}</span></div>
+			<div class="schedule-list__speaker">{{conf.name}}</div>
+			{{conf.desc | safe}}
+		</div>
+	</div>
+
+	{% for item in conf.descLines %}
+	<div class="schedule-list__line">
+		<div class="schedule-list__left">
+			<p class="schedule-list__l-title">{{item.lineTitle}}</p>
+		</div>
+
+		<div class="schedule-list__right">{{item.lineDesc | safe }}</div>
+	</div>
+	{% endfor %}
+
+	<div class="schedule-list__line">
+		<div class="schedule-list__time">{{conf.endtime}}</div>
+	</div>
+</li>
+{% endmacro %}
+
+{% macro card(conf) %}
+<div class="card__inner">
+	<div class="card__img">
+		<img src="pic/jobs/{{conf.img}}" alt=""/>
+	</div>
+	<div class="card__content">
+		<div class="card__title">{{conf.title}}</div>
+		<div class="card__desc">{{conf.descr | safe}}</div>
+		<a class="card__link basic-btn btn-green" href="{{conf.link}}">
+			<div class="basic-btn__inner">
+				<div class="basic-btn__arr-l">
+					<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#arrow_r"></use>
+					</svg>
+				</div>
+				Learn more
+				<div class="basic-btn__arr-r">
+					<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#arrow_r"></use>
+					</svg>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+{% endmacro %}
+
+{% macro speaker(conf) %}
+<div class="team__item-wrap">
+	<div class="team__item {{ 'with-button' if conf.link }}">
+		<div class="team__img-wrap">
+			<img src="pic/speakers/{{conf.img}}">
+
+			{% if conf.link %}
+			<a class="basic-btn btn-green" href="{{conf.link}}">
+				<div class="basic-btn__inner">
+					<div class="basic-btn__arr-l">
+						<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#arrow_r"></use>
+						</svg>
+					</div>
+					Learn More
+					<div class="basic-btn__arr-r">
+						<svg class="basic-btn__arrow" role="img" aria-hidden="true">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#arrow_r"></use>
+						</svg>
+					</div>
+				</div>
+			</a>
+			{% endif %}
+		</div>
+
+		<div class="team__content">
+			<p class="team__name">{{conf.name}}</p>
+			<p class="team__company">{{conf.company}}</p>
+
+			<div class="team__info">{{conf.info | safe}}</div>
+		</div>
+
+		<div class="team__bottom">
+			{% if conf.tag %}
+			<p class="team__tag">{{conf.tag}}</p>
+			{% endif %}
+
+			{% if conf.advicesTechs %}
+			<div class="advices-techs">
+				{% for item in conf.advicesTechs %}
+				<div class="advices-techs__item">
+					<div class="advices-techs__img-wrap">
+						<svg class="advices-techs__img {{item.techIcon}}" role="img" aria-hidden="true" title="React Native">
+							<title>{{item.techTitle}}</title>
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#logo-{{item.techIcon}}"></use>
+						</svg>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			{% endif %}
+
+			{% if conf.socials %}
+			<ul class="socials">
+				{% for item in conf.socials %}
+				<li class="socials__item">
+					<a href="{{item.link}}" target="_blank" class="socials__link">
+						<svg class="socials__img {{item.icon}}" role="img" aria-hidden="true">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#socials_{{item.icon}}"></use>
+						</svg>
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% endmacro %}
+
+{% macro slider(conf) %}
+	<div class="loc-slider">
+		{% for item in conf.source %}
+		<div class="loc-slider__item">
+			<img src="pic/{{item.img}}">
+		</div>
+		{% endfor %}
+	</div>
+
+	<div class="loc-slider-nav">
+		<div class="pagination"></div>
+		<div class="captions">
+			{% for item in conf.source %}
+			<div class="caption">{{item.caption}}</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endmacro %}
+
+{% macro faq(conf) %}
+<li class="faq__item">
+	<svg class="faq__arrow" role="img" aria-hidden="true">
+		<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow-r"></use>
+	</svg>
+	<div class="faq__question">{{conf.question}}</div>
+	<div class="faq__ansver">{{conf.ansver | safe}}</div>
+</li>
+{% endmacro %}
+
+{% macro stat(conf) %}
+<div class="stats__item">
+	<p class="stats__num"><span>{{conf.num}}</span></p>
+	<p class="stats__desc">{{conf.desc}}</p>
+</div>
+{% endmacro %}
+
+{% macro schedule(conf) %}
+<li class="schedule-list__item {{ 'clickable' if conf.desc }} {{ 'green' if not(conf.speaker) }} {{ 'disconnected' if conf.disconnected }}">
+	<div class="schedule-list__line">
+		<div class="schedule-list__time"><span>{{conf.time}}</span></div>
+
+		<div class="schedule-list__desc">
+			<div class="schedule-list__title"><span>{{conf.title}}</span></div>
+			{% if conf.speaker %}
+			<div class="schedule-list__speaker">{{conf.speaker}}</div>
+			{% endif %}
+
+			{% if conf.desc %}
+			<div class="schedule-list__info">{{conf.desc | safe}}</div>
+			{% endif %}
+		</div>
+	</div>
+</li>
+{% endmacro %}
+
+{% macro sponsors(conf) %}
+<div class="sponsors-list__title">{{conf.title}}</div>
+
+<div class="sponsors-list__list {{conf.mod}}">
+	{% for item in conf.logos %}
+	<a class="sponsors-list__item" href="{{item.link}}" target="_blank">
+		<img src="pic/sponsors/{{item.img}}">
+	</a>
+	{% endfor %}
+</div>
+
+{% if not (conf.last) %}
+<div class="sponsors-list__sep"></div>
+{% endif %}
+
+{% endmacro %}
+
+{% macro dummy(conf) %}
+<div>asd</div>
+{% endmacro %}

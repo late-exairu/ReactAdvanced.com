@@ -31,6 +31,8 @@
 
 	&__item{
 		position: relative;
+		max-width: 260px;
+		margin: 0 auto;
 
 		&:hover{
 			.team__img-wrap{
@@ -42,6 +44,20 @@
 				&:after{
 					transform: translate(10px, -10px);
 					opacity: 1;
+				}
+			}
+		}
+
+		&.with-button{
+			&:hover{
+
+				.team__img-wrap{
+					&:after{
+						display: none;
+					}
+					img{
+						transform: translate(0, 0);
+					}
 				}
 			}
 		}
@@ -89,6 +105,10 @@
 			transition: all ease 0.1s;
 		}
 
+		.basic-btn{
+			width: 100%;
+		}
+
 	}
 
 	&__content{
@@ -130,7 +150,7 @@
 		color: $clr-black;
 		padding: 0 0 0 8px;
 		font-weight: 700;
-		margin: 0;
+		margin: 4px 0;
 
 		&:after{
 			content: '';
