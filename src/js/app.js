@@ -43,6 +43,7 @@ $(function() {
   /*---------------------------------------------------*/
   // Location slider
   $('.loc-slider').slick({
+    asNavFor: '.captions',
     adaptiveHeight: true,
     infinite: true,
     arrows: false
