@@ -1,4 +1,4 @@
-# Amsterdam JSNation Conference Website
+# React Advanced Conference Website
 
 ## How to use
 
