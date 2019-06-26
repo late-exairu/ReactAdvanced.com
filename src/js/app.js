@@ -170,7 +170,7 @@ $(function() {
   /*---------------------------------------------------*/
   // circleProgress
   $('.circle').circleProgress({
-    value: 0.75,
+    value: 0.20,
     size: 304,
     thickness: 4,
     fill: '#24fc89',
