@@ -358,12 +358,12 @@
 					</div>
 				</div>
 
-				<div class="content-tab">
+				<!-- <div class="content-tab">
 					<button class="content-tab__tab js-tabs__tab active" id="general-tab">West hall</button>
 					<button class="content-tab__tab js-tabs__tab" id="react-tab">East hall</button>
 
 					<div class="content-tab__octo"></div>
-				</div>
+				</div> -->
 
 				<ul class="schedule-list js-tabs__panel active" id="general-panel">
 					{% for item in scheduleEast %}
@@ -377,7 +377,7 @@
 					{% endfor %}
 				</ul>
 				
-				<ul class="schedule-list js-tabs__panel" id="react-panel">
+				<!-- <ul class="schedule-list js-tabs__panel" id="react-panel">
 					{% for item in scheduleWest %}
 					{{mixins.schedule({
 						time: item.time,
@@ -387,7 +387,7 @@
 						disconnected: item.disconnected
 					})}}
 					{% endfor %}
-				</ul>
+				</ul> -->
 
 			</div>
 		</section>
