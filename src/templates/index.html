@@ -170,8 +170,7 @@ speakers: [
 		img: 'omri_bruchim.jpg',
 		name: 'Omri Bruchim',
 		company: 'Wix, Israel',
-		info: 'Passionate about iOS & React Native, working mostly on infrastructure & mobile performance, organizer of React Native Talks meetups series.
-For the past few years, I’ve been lucky enough to be part of scaling the Wix Mobile application and its team. Mostly focused on leading Mobile engineers working with our React Native app. My drive is working with talented people to create great products.',
+		info: 'Passionate about iOS & React Native, working mostly on infrastructure & mobile performance, organizer of React Native Talks meetups series. For the past few years, I’ve been lucky enough to be part of scaling the Wix Mobile application and its team. Mostly focused on leading Mobile engineers working with our React Native app. My drive is working with talented people to create great products.',
 		tag: 'React Native',
 		socials: [
 			{
@@ -269,6 +268,21 @@ For the past few years, I’ve been lucky enough to be part of scaling the Wix M
 				icon: 'gh',
 			},{
 				link: 'https://twitter.com/vmiksu',
+				icon: 'tw',
+			}
+		]
+	}, {
+		img: 'david_gomes.jpg',
+		name: 'David Gomes',
+		company: 'MemSQL, Portugal',
+		info: 'Engineering Manager at MemSQL. Passionate about competitive programming, building user interfaces and mechanical keyboards.',
+		tag: '',
+		socials: [
+			{
+				link: 'https://github.com/davidgomes',
+				icon: 'gh',
+			},{
+				link: 'https://twitter.com/davidrfgomes',
 				icon: 'tw',
 			}
 		]
@@ -403,55 +417,114 @@ locSlider: [
 scheduleEast: [
 	{
 		disconnected: true,
-		time: 'TBD',
+		time: '',
 		title: 'Don’t Let Your Unit Tests Slow You Down',
 		speaker: 'Daniel Irvine',
 		desc: 'Do your unit tests feel like a chore to maintain? Are they sometimes useful but come with a high maintenance cost? Do you secretly believe you’d work faster without them there? A great test suite should help speed up your development process, not slow you down. This talk highlights some techniques you can use to improve the front-end unit tests you write.'
 	},{
 		disconnected: true,
-		time: 'TBD',
+		time: '',
 		title: 'React Native at Wix - Architecture For App in Scale',
 		speaker: 'Omri Bruchim',
 		desc: 'Ever wondered how to use micro-services approach in a FED\mobile application? Hesitating to choose React Native for your big project? I’m here to eliminate the school of thought that React Native is mostly for small mobile applications.'
 	},{
 		disconnected: true,
-		time: 'TBD',
+		time: '',
 		title: 'React-ing to tech debt',
 		speaker: 'Leonardo Garcia Crespo',
 		desc: 'TweetDeck is complex application with a massive codebase that’s been around for more than 10 years. It started as an Adobe Air app, but the current codebase really started as a Chrome Web Store app. It once powered a windows app, and now it is a single page app that is accessed in a browser but also as a Mac app. It went through countless refactors, tech stacks, feature additions, removals and modifications, and lots of bugfixes and workarounds for now old browsers. As such, it accumulated technical debt and a lot of different coding paradigms. However, we managed to introduce React and successfully migrate several parts of the application, which allowed us to start moving faster again in those places. In this talk I want to show how we did that, some techniques and problems to solve when migrating an old codebase into React, and also learn to love what React gives us by looking at the problems we had before and how React removes them.'
 	},{
 		disconnected: true,
-		time: 'TBD',
+		time: '',
 		title: 'Moving intensive logic Elsewhere.',
 		speaker: 'Alex Thomas',
 		desc: 'With the recent publication of react-native-elsewhere, there is now a pure JavaScript method of decoupling computationally-intense operations from the UI thread. We’ll talk through how to take advantage of an &lt;Elsewhere&#47;&gt;, tackle even tricky problems such as persistence, and work through it actually functions under the hood.'
 	},{
 		disconnected: true,
-		time: 'TBD',
+		time: '',
 		title: 'Escape from React!',
 		speaker: 'David Miller',
 		desc: 'You have an application that uses ReactJS in its view layer, but your Hot New Feature is not a good fit for React’s declarative programming model 😱! Oh no! Let’s explore some examples where that might be the case, and some strategies where React’s new(ish) Hooks API can help you escape from React and interface with non-React parts of your codebase.'
 	},{
 		disconnected: true,
-		time: 'TBD',
+		time: '',
 		title: 'Build your own Native Module',
 		speaker: 'Patrick Loureiro',
 		desc: 'Sometimes an app needs to access a platform API and React Native doesn’t have a corresponding module yet. Maybe you want to reuse some existing Objective-C, Swift or C++ code without having to reimplement it in JavaScript, or write some high performance, multi-threaded code such as for image processing, a database, or any number of advanced extensions. In this talk you will learn how to do that and see a real-world example.'
 	},{
 		disconnected: true,
-		time: 'TBD',
+		time: '',
 		title: 'React Native: the Past, the Present and the Future',
 		speaker: 'Lorenzo Sciandra',
 		desc: 'React Native is now 4 years old. During this time, we’ve observed more progression than ever before towards the vision of a cross-platform mobile solution. Even still, we have yet to realise its core mission of being as powerful as pure native. There have been many challenges that we’ve faced head on as they’ve surfaced. In overcoming them with the support of the community, we’ve managed to establish React Native as a force that is now defining the future of the segment.<br/>
 		In this talk, we’ll explore this history-in-the-making before diving deeper into more technical subjects including the JSI & JSC upgrade, TurboModules & Fabric, and the CodeGen. With all the pieces of the puzzle in place and landing on master by end of the year, we are closer to reaching our original objective than ever before - while pushing the limits to a whole new level.'
 	},{
 		disconnected: true,
-		time: 'TBD',
+		time: '',
 		title: 'What a Drag',
 		speaker: 'Vojtech Miksu',
 		desc: '"Can we do this thing drag and droppable?". That’s one of the sentences that every front end developer fears the most. There are many DnD libraries out there but did you ever consider building something from scratch before adding additional 100kB to your bundle?<br/>
 		Let’s take a look what tools browsers offer today. You can build beautiful and accessible experiences while supporting mobile devices and not sacrificing the performance! This talk is inspired by the recently released react-movable library.'
+	},{
+		disconnected: true,
+		time: '',
+		title: 'React (with Hooks) from Scratch',
+		speaker: 'Shawn Wang',
+		desc: 'In this talk, we’ll create an effective mental model of React Hooks by building a tiny clone of React! This will serve two purposes – to demonstrate the effective use of closures, and to show how you can build a Hooks clone in just 29 lines of readable JS. Finally, we arrive at how you get Custom Hooks and the Rules of Hooks out of this incredible mental model!'
+	},{
+		disconnected: true,
+		time: '',
+		title: 'Design Systems design system',
+		speaker: 'Siddharth Kshetrapal',
+		desc: 'This is a meta talk about building design systems and all the angles you can approach it from. The description is a little vague, I’ll refine it as I form the talk.<br/><br/>Working description: ""Design systems are for people"", not just dev and design people, all the people. There are so many angles that you can approach design systems from and all of them are valid. I’ve been doing this for more than 2 years now, and I’m still discovering new ideas and patterns. Here are some of my thoughts on a system for designing design systems.'
+	},{
+		disconnected: true,
+		time: '',
+		title: 'Hooking Up A Conference In Real-Time With React Native & GraphQL',
+		speaker: 'Nader Dabit',
+		desc: '<p>You’re starting a conference. You announce the conference, start planning the venue, getting sponsors, & fielding talks. Things start getting serious, & before you know it you’re overloaded with obligations. Oh, & you forgot: You also need a conference app!</p>
+		<p>You don’t just want any conference app; you want it to be fun, engaging, & a valuable addition to the attendees. How can you do this in the least amount of time?</p>
+		<p>In this talk, I’ll show how you can rapidly prototype, build, & deploy your app using GraphQL, React Native, & AWS AppSync so you can spend your time worrying about more important things in life. In addition to what you’d expect from a conference app, we’ll be adding live chat so attendees discuss talks & speakers can field questions & interact with them in real-time.</p>'
+	},{
+		disconnected: true,
+		time: '',
+		title: 'Visual Feature Engineering for Machine Learning with React',
+		speaker: 'Olga Petrova',
+		desc: '<a href="https://www.tensorflow.org/js">Tensorflow.js</a> brought Machine Learning to Javascript that gives a wide range of possibilities. Now it is possible to build, train and use ML models directly in browser. But the efficiency of ML model highly depends on the features that it is using. React allows to reinforce ML feature engineering process. It is great for displaying fast-changing data in web and let to visualize features, model’s layers and weights in a run-time during model training that gives useful insides on how features correspond to the result, what are good features and what features could be removed. During the session we will use React-based model visualization to pick the best features to predict results of soccer matches played at the FIFA World Cups. We will check count of matches that team have won and lost, count of wins and loses against a particular competitor, goal differences, stage, etc. We will validate our model using matches results from the last Mundial in Russia in 2018.'
+	},
+	#{
+	#	disconnected: true,
+	#	time: '',
+	#	title: 'React Native Dev Tools: Debugging Like A Pro',
+	#	speaker: 'Laura Medalia',
+	#	desc: 'dddddddddddddddd'
+	#},
+	{
+		disconnected: true,
+		time: '',
+		title: 'A More Readable React Codebase Using TypeScript, GraphQL, and Hooks',
+		speaker: 'Emma Brillhart',
+		desc: 'We’ve all looked at a chunk of code and had no idea what it does - only to realize that we were the ones who wrote it, six or so months ago. If we can’t read our own code after a few months, how can we expect anybody else to? What kind of effect does this have on developer productivity and overall project robustness? This talk will explore how we were able to make a client’s React codebase more readable and improve communication and productivity on their team by leveraging technologies like TypeScript, GraphQL, and React hooks in a rewrite of their website. Increase the speed at which new developers are able to onboard to your project, cut down on the time between when a PR is submitted and when it’s merged, and streamline the bug squashing process.'
+	},{
+		disconnected: true,
+		time: '',
+		title: 'Performance is magic',
+		speaker: 'Ken Wheeler',
+		desc: 'This talk will explore strategies for fixing performance issues in your apps when they arise. We will look at how we can make our React apps “Blazing” fast, and when it’s time to bail out of React in the name of perf.'
+	},{
+		disconnected: true,
+		time: '',
+		title: 'Statically Typing JavaScript',
+		speaker: 'David Gomes',
+		desc: 'Let’s explore the challenge of statically typing JavaScript, which is notoriously complicated due to the dynamic nature of the language. We’ll start in 2005, when academia researchers first started exploring the idea of adding a strongly typed system on top of JavaScript. We’ll walk through the complications at hand (with plenty of examples), and understand the design goals of both TypeScript and Flow. After understanding the state of the art, we’ll briefly go over what’s going to change in this space over the next few years.'
 	}
+	#,{
+	#	disconnected: true,
+	#	time: '',
+	#	title: 'tttttttttttttttttttt',
+	#	speaker: 'sssssssssssssss',
+	#	desc: 'dddddddddddddddd'
+	#}
 ]
 
 scheduleWest: [

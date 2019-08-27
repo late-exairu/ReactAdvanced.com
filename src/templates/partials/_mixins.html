@@ -57,7 +57,7 @@
 <div class="team__item-wrap">
 	<div class="team__item {{ 'with-button' if conf.link }}">
 		<div class="team__img-wrap">
-			<img src="pic/speakers/{{conf.img}}">
+			<img src="pic/speakers/{{conf.img}}"/>
 
 			{% if conf.link %}
 			<a class="basic-btn btn-green" href="{{conf.link}}">
@@ -127,7 +127,7 @@
 	<div class="loc-slider">
 		{% for item in conf.source %}
 		<div class="loc-slider__item">
-			<img src="pic/{{item.img}}">
+			<img src="pic/{{item.img}}"/>
 		</div>
 		{% endfor %}
 	</div>
@@ -160,9 +160,11 @@
 {% endmacro %}
 
 {% macro schedule(conf) %}
-<li class="schedule-list__item {{ 'clickable' if conf.desc }} {{ 'green' if not(conf.speaker) }} {{ 'disconnected' if conf.disconnected }}">
+<li class="schedule-list__item {{ 'clickable' if conf.desc }} {{ 'green' if not(conf.speaker) }} {{ 'disconnected' if conf.disconnected }} {{ 'no-time' if not conf.time }}">
 	<div class="schedule-list__line">
+		{% if conf.time %}
 		<div class="schedule-list__time"><span>{{conf.time}}</span></div>
+		{% endif %}
 
 		<div class="schedule-list__desc">
 			<div class="schedule-list__title"><span>{{conf.title}}</span></div>
@@ -184,7 +186,7 @@
 <div class="sponsors-list__list {{conf.mod}}">
 	{% for item in conf.logos %}
 	<a class="sponsors-list__item" href="{{item.link}}" target="_blank">
-		<img src="pic/sponsors/{{item.img}}">
+		<img src="pic/sponsors/{{item.img}}"/>
 	</a>
 	{% endfor %}
 </div>
