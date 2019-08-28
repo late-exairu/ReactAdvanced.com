@@ -105,13 +105,13 @@
 			</div>
 			{% endif %}
 
-			{% if conf.socials %}
-			<ul class="socials">
-				{% for item in conf.socials %}
-				<li class="socials__item">
-					<a href="{{item.link}}" target="_blank" class="socials__link">
-						<svg class="socials__img {{item.icon}}" role="img" aria-hidden="true">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#socials_{{item.icon}}"></use>
+			{% if conf.scls %}
+			<ul class="scls">
+				{% for item in conf.scls %}
+				<li class="scls__item">
+					<a href="{{item.link}}" target="_blank" class="scls__link">
+						<svg class="scls__img {{item.icon}}" role="img" aria-hidden="true">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#scl{{item.icon}}"></use>
 						</svg>
 					</a>
 				</li>

@@ -165,7 +165,7 @@
 		}
 	}
 
-	.socials{
+	.scls{
 		margin: 0;
 
 		&__item{
@@ -177,7 +177,7 @@
 			height: 34px;
 			&:hover{
 
-				.socials__img{
+				.scls__img{
 					transform: scale(1.5);
 					fill: $clr-black;
 				}
@@ -291,7 +291,7 @@
 			}
 		}
 
-		.socials__link{
+		.scls__link{
 			width: 30px;
 			height: 30px;
 		}
