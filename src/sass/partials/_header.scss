@@ -24,13 +24,13 @@
 			transform: rotate(0) scale(1);
 		}
 
-		.socials{
+		.scls{
 
 			&__link{
 				fill: $clr-green;
 
 				&:hover{
-					.socials__img{
+					.scls__img{
 						fill: $clr-white;
 					}
 				}
@@ -46,7 +46,7 @@
 		flex: 1 0 auto;
 	}
 
-	&__socials{
+	&__scls{
 		margin: 0 0 0 14px;
 	}
 
@@ -81,7 +81,7 @@
 					margin: auto;
 				}
 			}
-			&__socials{
+			&__scls{
 				order: 3;
 				margin: 0 0 100px;
 			}
@@ -104,7 +104,7 @@
 			margin: 0 auto;
 		}
 
-		.socials{
+		.scls{
 			margin: 0 auto;
 			justify-content: center;
 
@@ -198,7 +198,7 @@
 	}
 }
 
-.socials{
+.scls{
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -212,31 +212,31 @@
 		}
 
 		// &:nth-child(1){
-		// 	.socials__link:after{
+		// 	.scls__link:after{
 		// 		transform: rotate(260deg);
 		// 	}
 		// }
 
 		// &:nth-child(2){
-		// 	.socials__link:after{
+		// 	.scls__link:after{
 		// 		transform: rotate(144deg);
 		// 	}
 		// }
 
 		// &:nth-child(3){
-		// 	.socials__link:after{
+		// 	.scls__link:after{
 		// 		transform: rotate(72deg);
 		// 	}
 		// }
 
 		// &:nth-child(4){
-		// 	.socials__link:after{
+		// 	.scls__link:after{
 		// 		transform: rotate(280deg);
 		// 	}
 		// }
 
 		// &:nth-child(5){
-		// 	.socials__link:after{
+		// 	.scls__link:after{
 		// 		transform: rotate(300deg);
 		// 	}
 		// }
@@ -265,7 +265,7 @@
 		// }
 
 		&:hover{
-			.socials__img{
+			.scls__img{
 				fill: $clr-green;
 			}
 
@@ -282,32 +282,32 @@
 		fill: $clr-black;
 		transition: all 0.2s ease;
 
-		&.sl{
+		&.sclsl{
 			width: 15px;
 			height: 16px
 		}
 
-		&.tw{
+		&.scltw{
 			width: 15px;
 			height: 12px
 		}
 
-		&.yt{
+		&.sclyt{
 			width: 17px;
 			height: 12px
 		}
 
-		&.fb{
+		&.sclfb{
 			width: 6px;
 			height: 12px
 		}
 
-		&.med{
+		&.sclmed{
 			width: 16px;
 			height: 12px
 		}
 
-		&.gh{
+		&.sclgh{
 			width: 15px;
 			height: 14px
 		}

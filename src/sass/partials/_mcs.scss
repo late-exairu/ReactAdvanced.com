@@ -209,7 +209,7 @@
 		font-weight: 600;
 	}
 
-	.socials{
+	.scls{
 		margin: 0;
 
 		&__item{
@@ -219,7 +219,7 @@
 		&__link{
 			&:hover{
 
-				.socials__img{
+				.scls__img{
 					transform: scale(1.4);
 					fill: $clr-white;
 				}
