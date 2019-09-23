@@ -70,6 +70,13 @@
 		}
 	}
 
+	&__nav-link{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 300px;
+	}
+
 	&__btn{
 		margin: 40px 0 0;
 	}
