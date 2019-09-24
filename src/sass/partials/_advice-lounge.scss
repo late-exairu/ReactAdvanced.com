@@ -5,4 +5,12 @@
 	.container{
 		padding: 0 20px 0;
 	}
+
+	&__nav-link{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: -120px;
+		z-index: 1000;
+	}
 }
