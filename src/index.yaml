@@ -5,7 +5,7 @@ PageList:
   ready: 50
 - file: coc.html
   ready: 50
-- file: jobs.html
+- file: react-jobs.html
   ready: 50
 - file: workshops.html
   ready: 50
