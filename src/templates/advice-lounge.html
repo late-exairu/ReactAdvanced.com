@@ -30,27 +30,30 @@ locSlider: [
 
 adviceLounge: [
 	{
-		img: 'christoph.jpg',
+		img: 'glen_maddern.jpg',
+		name: 'Glen Maddern',
 		link: '#somelink',
-		name: 'Christoph Nakazawa',
-		company: 'Facebook, UK',
-		info: 'Engineering Manager at Facebook. Working on React Native Core, Metro, Jest, Yarn.',
+		company: 'Link, UK',
+		info: 'Local business owner and cat enthusiast. Founder/CTO of <b>@linc_bot</b>. Co-creator <b>@fab_spec</b>, styled-components, CSS Modules.',
 		advicesTechs: [
 			{
-				techIcon: 'react-native',
-				techTitle: 'React Native',
+				techIcon: 'styled-components',
+				techTitle: 'Styled Components',
 			},{
-				techIcon: 'jest',
-				techTitle: 'Jest',
+				techIcon: 'css-modules',
+				techTitle: 'CSS Modules',
 			}
 		],
-		socials: [
+		scls: [
 			{
-				link: 'http://github.com/cpojer',
+				link: 'https://github.com/geelen',
 				icon: 'gh',
 			},{
-				link: 'https://twitter.com/cpojer',
+				link: 'https://twitter.com/glenmaddern',
 				icon: 'tw',
+			},{
+				link: 'https://glenmaddern.com',
+				icon: 'web',
 			}
 		]
 	}, {
@@ -69,7 +72,7 @@ adviceLounge: [
 				techTitle: 'GraphQL',
 			}
 		],
-		socials: [
+		scls: [
 			{
 				link: 'https://github.com/kitze',
 				icon: 'gh',
@@ -93,7 +96,7 @@ adviceLounge: [
 				techTitle: 'TypeScript',
 			}
 		],
-		socials: [
+		scls: [
 			{
 				link: 'https://github.com/mweststrate',
 				icon: 'gh',
@@ -117,7 +120,7 @@ adviceLounge: [
 				techTitle: 'GraphQL',
 			}
 		],
-		socials: [
+		scls: [
 			{
 				link: 'https://github.com/vnovick',
 				icon: 'gh',
@@ -177,7 +180,7 @@ adviceLounge: [
 							company: item.company,
 							info: item.info,
 							advicesTechs: item.advicesTechs,
-							socials: item.socials
+							scls: item.scls
 						})}}
 					{% endfor %}
 				</div>

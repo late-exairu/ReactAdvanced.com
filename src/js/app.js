@@ -55,8 +55,8 @@ $(function() {
     speed: 200,
     fade: true,
     appendArrows: $('.pagination'),
-    prevArrow: '<button type="button" class="slick-prev"><svg class="captions-arrow" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#arrow-l"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg class="captions-arrow" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v2#arrow-r"></use></svg></button>'
+    prevArrow: '<button type="button" class="slick-prev"><svg class="captions-arrow" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v3#arrow-l"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="captions-arrow" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg?v3#arrow-r"></use></svg></button>'
   });
 
   /*---------------------------------------------------*/
