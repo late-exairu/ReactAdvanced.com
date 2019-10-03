@@ -8,6 +8,22 @@
 
 	.team-mc{
 		margin-top: -230px;
+		margin-bottom: 150px;
+	}
+
+	&__sponsor{
+		position: absolute;
+		left: 40px;
+		bottom: 20px;
+		max-width: 300px;
+		width: 100%;
+		font-size: 16px;
+
+		img{
+			width: 100%;
+			height: auto;
+			margin: 10px 0 0;
+		}
 	}
 
 	&__decor-disco{
@@ -105,6 +121,13 @@
 
 		.team-mc__item {
 			margin-bottom: 40px;
+		}
+
+		&__sponsor{
+			position: absolute;
+			left: 20px;
+			bottom: 270px;
+			width: 200px;
 		}
 	}
 
