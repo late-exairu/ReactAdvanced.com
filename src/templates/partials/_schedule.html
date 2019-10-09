@@ -365,7 +365,7 @@
 					<div class="content-tab__octo"></div>
 				</div> -->
 
-				<ul class="schedule-list js-tabs__panel active" id="general-panel">
+				<ul class="schedule-list js-tabs__panel active no-margin" id="general-panel">
 					{% for item in scheduleEast %}
 					{{mixins.schedule({
 						time: item.time,
@@ -388,6 +388,51 @@
 					})}}
 					{% endfor %}
 				</ul> -->
+
+			</div>
+		</section>
+
+		<section class="section schedule">
+			<div class="container">
+
+				<div class="section__head">
+					<div class="section__head-l">
+						<h3 class="section__title with-dots">
+							<span class="initial"><span>L</span></span>ightning Talks
+						</h3>
+					</div>
+				</div>
+
+				<div class="content-tab">
+					<button class="content-tab__tab js-tabs__tab active" id="general-le-tab">West hall</button>
+					<button class="content-tab__tab js-tabs__tab" id="react-le-tab">East hall</button>
+
+					<div class="content-tab__octo"></div>
+				</div>
+
+				<ul class="schedule-list js-tabs__panel active" id="general-le-panel">
+					{% for item in scheduleLTEast %}
+					{{mixins.schedule({
+						time: item.time,
+						title: item.title,
+						speaker: item.speaker,
+						desc: item.desc,
+						disconnected: item.disconnected
+					})}}
+					{% endfor %}
+				</ul>
+
+				<ul class="schedule-list js-tabs__panel" id="react-le-panel">
+					{% for item in scheduleLTWest %}
+					{{mixins.schedule({
+						time: item.time,
+						title: item.title,
+						speaker: item.speaker,
+						desc: item.desc,
+						disconnected: item.disconnected
+					})}}
+					{% endfor %}
+				</ul>
 
 			</div>
 		</section>

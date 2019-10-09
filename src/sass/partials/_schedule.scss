@@ -24,6 +24,10 @@
 	@include xs{
 		.schedule-list{
 			margin-bottom: -280px;
+
+			&.no-margin{
+				margin: 0px auto;
+			}
 		}
 	}
 }
@@ -123,6 +127,10 @@
 	padding: 84px 0;
 	background: $clr-white;
 	z-index: 1;
+
+	&.no-margin{
+		margin: 0px auto;
+	}
 
 	&.alligned-margin{
 		margin: 0 0 -130px;
