@@ -83,7 +83,7 @@
 
 	@include sm{
 		margin: 28px 0 -2px;
-		
+
 		&__tab{
 			font-size: 16px;
 			height: 48px;
@@ -101,9 +101,9 @@
 			height: 250px;
 		}
 	}
-	
+
 	@include xs{
-		
+
 		&__tab{
 			font-size: 14px;
 		}
@@ -368,6 +368,10 @@
 		padding: 0 100px 0 60px;
 	}
 
+	&__desc-lt {
+		padding: 20px 0;
+	}
+
 	&__title{
 		font-size: 22px;
 		line-height: 1.2;
@@ -382,7 +386,28 @@
 		}
 	}
 
+	&__title-lt {
+		font-size: 22px;
+		line-height: 1.2;
+		font-weight: 700;
+		margin: 0;
+		padding: 1px 0 0;
+
+		span{
+			display: inline-block;
+			padding: 1px 2px 2px;
+			transition: all ease .1s;
+		}
+	}
+
 	&__speaker{
+		font-size: 18px;
+		line-height: 1.2;
+		width: 100%;
+		margin: 6px 0 0;
+	}
+
+	&__speaker-lt {
 		font-size: 18px;
 		line-height: 1.2;
 		width: 100%;
@@ -439,7 +464,7 @@
 			}
 
 		}
-		
+
 		&__line{
 			flex-wrap: wrap;
 		}
@@ -509,7 +534,7 @@
 			}
 
 		}
-		
+
 		&__line{
 			flex-direction: column;
 			flex-wrap: wrap;
