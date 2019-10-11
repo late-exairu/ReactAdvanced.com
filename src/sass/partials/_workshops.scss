@@ -92,7 +92,7 @@
 		background-size: 100%;
 	}
 
-	@include lg{
+	@include md{
 
 		&__decor-bottom{
 			width: 1024px;
@@ -102,7 +102,7 @@
 	}
 
 
-	@include med{
+	@include temp{
 
 		.section{
 

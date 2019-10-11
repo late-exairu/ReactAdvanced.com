@@ -59,7 +59,7 @@
     	max-height: 100%;
 	}
 
-	@include lg{
+	@include md{
 
 		&__decor-bottom{
 			width: 1024px;
@@ -69,7 +69,7 @@
 	}
 
 
-	@include med{
+	@include temp{
 
 		.section{
 
@@ -177,7 +177,7 @@
 		}
 	}
 
-	@include lg{
+	@include md{
 
 		&__info{
 			width: 100%;
@@ -189,7 +189,7 @@
 		}
 	}
 
-	@include med{
+	@include temp{
 		margin: 0 auto 0;
 
 		&__info{

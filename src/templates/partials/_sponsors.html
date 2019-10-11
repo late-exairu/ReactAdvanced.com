@@ -17,22 +17,15 @@
 					</div>
 				</div>
 
-				{% for item in sponsors %}
-					<div class="sponsors-block {{item.mod}}">
-						{% if item.title %}
-						<div class="sponsors-block__title">{{item.title}}</div>
-						{% endif %}
-
-						<ul class="sponsors-block__list">
-							{% for sponsor in item.list %}
-								<li class="sponsors-block__item">
-									<a href="{{sponsor.link}}" target="_blank">
-										<img src="pic/sponsors/{{sponsor.img}}" alt="{{sponsor.name}}" width="{{sponsor.width}}"/>
-									</a>
-								</li>
-							{% endfor %}
-						</ul>
-					</div>
-				{% endfor %}
+				<div class="sponsors-list">
+					{% for item in sponsors %}
+					{{mixins.sponsors({
+						title: item.title,
+						mod: item.mod,
+						logos: item.logos,
+						last: item.last
+					})}}
+					{% endfor %}
+				</div>
 			</div>
 		</section>

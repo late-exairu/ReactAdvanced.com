@@ -32,14 +32,14 @@
 		}
 	}
 
-	@include med{
+	@include temp{
 
 		.nav{
 			font-size: 14px;
 		}
 	}
 
-	@include lg{
+	@include md{
 		height: auto;
 
 		.container{
@@ -118,7 +118,7 @@
 		line-height: 1.2;
 	}
 
-	@include lg{
+	@include md{
 		margin: 10px 0;
 	}
 }

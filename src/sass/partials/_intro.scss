@@ -23,7 +23,7 @@
 		padding: 80px 20px;
 		min-height: 100vh;
 
-		@include med{
+		@include temp{
 			padding: 20px 10px 60px;
 		}
 
@@ -96,7 +96,7 @@
 		z-index: 1;
 	}
 
-	@include lg{
+	@include md{
 
 		&__reserve{
 			margin: 112px 0 0;
@@ -116,7 +116,7 @@
 			margin: 9px auto;
 		}
 	}
-	@include med{
+	@include temp{
 
 
 		&__reserve{
@@ -201,7 +201,7 @@
 		height: 109px;
 	}
 
-	@include lg{
+	@include md{
 		height: 214px;
 		width: 368px;
 
@@ -237,7 +237,7 @@
 		font-size: 65px;
 	}
 
-	@include lg{
+	@include md{
 		font-size: 72px;
 
 		span{
@@ -314,7 +314,7 @@
 		}
 	}
 
-	@include lg{
+	@include md{
 		margin: 42px 0 0;
 
 		&__num{
@@ -326,7 +326,7 @@
 		}
 	}
 
-	@include med{
+	@include temp{
 		margin: 42px 0 0;
 	}
 
@@ -397,7 +397,7 @@
 		}
 	}
 
-	@include lg{
+	@include md{
 		top: 88px;
 
 		&__mon{
@@ -410,7 +410,7 @@
 
 	}
 
-	@include med{
+	@include temp{
 		top: 0;
 		right: 0;
 		position: relative;

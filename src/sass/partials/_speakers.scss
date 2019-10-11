@@ -1,7 +1,7 @@
 
 .speakers{
 
-	@include med{
+	@include temp{
 		.container{
 			padding: 60px 20px;
 		}
@@ -226,14 +226,14 @@
 		}
 	}
 
-	@include lg{
+	@include md{
 
 		&__item-wrap{
 			width: 33.3%;
 		}
 	}
 
-	@include med{
+	@include temp{
 
 
 		&__img-wrap{

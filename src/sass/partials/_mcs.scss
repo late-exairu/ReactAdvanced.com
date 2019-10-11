@@ -56,7 +56,7 @@
 		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 	}
 
-	@include lg{
+	@include md{
 		.team-mc{
 			margin-top: 40px;
 		}
@@ -236,7 +236,7 @@
 		}
 	}
 
-	@include lg{
+	@include md{
 
 		&__item{
 			height: auto;
