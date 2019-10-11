@@ -124,7 +124,7 @@
 			justify-content: space-between;
 		}
 
-		@include temp{
+		@include med{
 			.container{
 				flex-direction: column;
 				padding: 60px 25px;
@@ -136,7 +136,7 @@
 		.container{
 			padding-bottom: 0;
 
-			@include temp{
+			@include med{
 				padding: 60px 20px 0;
 			}
 
@@ -145,7 +145,7 @@
 		}
 	}
 
-	@include md{
+	@include lg{
 
 		&__title{
 			font-size: 46px;
@@ -156,7 +156,7 @@
 		}
 	}
 
-	@include temp{
+	@include med{
 
 
 		&__head{
