@@ -141,11 +141,11 @@ $sprite: map-get($icons, sprite) !default;
 	@media only screen and (max-width : 1280px) { @content; }
 }
 
-@mixin lg {
+@mixin md {
 	@media only screen and (max-width : 1024px) { @content; }
 }
 
-@mixin med {
+@mixin temp {
 	@media only screen and (max-width : 890px) { @content; }
 }
 

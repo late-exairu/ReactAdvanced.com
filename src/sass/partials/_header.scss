@@ -50,7 +50,7 @@
 		margin: 0 0 0 14px;
 	}
 
-	@include med{
+	@include temp{
 		transition: all .3s ease;
 		height: 62px;
 		overflow: hidden;
@@ -116,7 +116,7 @@
 	}
 
 	&.open{
-		@include med{
+		@include temp{
 			visibility: visible;
 			opacity: 1;
 			background: $clr-white;
@@ -189,11 +189,11 @@
 		color: $clr-black;
 	}
 
-	@include lg{
+	@include md{
 		font-size: 12px;
 	}
 
-	@include med{
+	@include temp{
 		font-size: 16px;
 	}
 }
@@ -349,7 +349,7 @@
 		}
 	}
 
-	@include med {
+	@include temp {
 		display: block;
 	}
 }
