@@ -122,7 +122,7 @@
 		}
 	}
 
-	@include md{
+	@include lg{
 		.scls{
 			&__item{
 				padding: 20px 10px;
@@ -130,7 +130,7 @@
 		}
 	}
 
-	@include temp{
+	@include med{
 		.section__head{
 			flex-direction: row;
 		}
@@ -280,7 +280,7 @@
 		border: none;
 	}
 
-	@include temp{
+	@include med{
 		margin: 0 0 0 20px;
 		padding: 20px 0 20px 0;
 

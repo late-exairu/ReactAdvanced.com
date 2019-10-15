@@ -96,7 +96,7 @@
 		}
 	}
 
-	@include md{
+	@include lg{
 		
 		&__slider{
 			max-width: 50%;
@@ -378,7 +378,7 @@
 		max-width: 380px;
 	}
 
-	@include temp{
+	@include med{
 		padding-left: 60px;
 	}
 
